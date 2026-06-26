@@ -315,6 +315,57 @@ def motion_label(motions: list[dict[str, object]]) -> str:
     return ", ".join(f"{count} {kind.replace('_', ' ')}" for kind, count in sorted(kinds.items()))
 
 
+def unique_items(items: list[str]) -> list[str]:
+    seen = set()
+    result = []
+    for item in items:
+        compact = re.sub(r"\s+", " ", item).strip()
+        if compact and compact not in seen:
+            seen.add(compact)
+            result.append(compact)
+    return result
+
+
+def floor_attention_items(
+    fincom: dict[str, object] | None,
+    motions: list[dict[str, object]],
+    actions: list[dict[str, object]],
+    meeting_has_actions: bool,
+) -> list[str]:
+    items = []
+    if fincom:
+        recommendation = text(fincom.get("recommendation")).casefold()
+        if recommendation and not recommendation.startswith("favorable") and recommendation not in {"all favorable"}:
+            items.append(f"Finance Committee posture is {text(fincom.get('recommendation'))}; confirm how this affects the motion expected on the floor.")
+        threshold = text(fincom.get("motion_vote_threshold"))
+        if threshold and threshold.casefold() not in {"requires a majority vote", "majority vote"}:
+            items.append(f"Vote threshold may require attention: {threshold}.")
+
+    for motion in motions:
+        kind = text(motion.get("kind"), "motion")
+        status = text(motion.get("status"))
+        title = text(motion.get("title"), "Article-specific motion")
+        if kind in {"procedural_motion", "substitute_motion", "amendment"}:
+            motion_kind = kind.replace("_", " ")
+            article = "an" if motion_kind[0] in "aeiou" else "a"
+            items.append(f"{title} is {article} {motion_kind}; confirm precedence, scope, and vote threshold before floor use.")
+        if status in {"blank_template", "no_extractable_text"}:
+            items.append(f"{title} has status {status}; review the source before relying on it.")
+        impact = text(motion.get("floor_impact"))
+        if impact and "Needs review" not in impact and "Confirm" not in impact:
+            items.append(f"{title}: {impact}")
+
+    if actions:
+        for action in actions:
+            status = text(action.get("status")).casefold()
+            if any(term in status for term in ("referred", "postpon", "reconsider", "failed", "withdraw")):
+                items.append(f"Final action record may affect retrospective review: {text(action.get('summary'), text(action.get('status')))}")
+    elif meeting_has_actions:
+        items.append("Other articles in this meeting have parsed final actions, but this article does not.")
+
+    return unique_items(items)
+
+
 def article_trace(
     article_sources: list[dict[str, object]],
     motions: list[dict[str, object]],
@@ -353,18 +404,19 @@ def article_section(
     fincom: dict[str, object] | None,
     motions: list[dict[str, object]],
     actions: list[dict[str, object]],
+    meeting_has_actions: bool,
 ) -> str:
     article_id = text(article.get("article"))
     brief_path = article_file(meeting_dir, article)
-    warning_count = sum(1 for motion in motions if text(motion.get("status")) in {"blank_template", "no_extractable_text"})
-    article_open_items = list(article.get("open_items", []))
-    for motion in motions:
-        article_open_items.extend(motion.get("open_items", []))
-    if not actions:
-        article_open_items.append("No parsed final action is available for this article.")
-    if warning_count:
-        article_open_items.append(f"{warning_count} motion/source record(s) need manual review.")
+    article_attention_items = floor_attention_items(fincom, motions, actions, meeting_has_actions)
     motion_summary = motion_label(motions)
+    attention_section = ""
+    if article_attention_items:
+        attention_section = f"""
+  <details>
+    <summary>Floor attention notes</summary>
+    {open_item_list(article_attention_items)}
+  </details>"""
     return f"""
 <article class="article" id="article-{esc(article_id)}">
   <div class="article-title">
@@ -379,10 +431,7 @@ def article_section(
   </div>
   <p><strong>Warrant request:</strong> {esc(excerpt(article.get('warrant_text'), 500))}</p>
   <div class="trace"><strong>Article-specific traceability:</strong>{article_trace(article_sources, motions)}</div>
-  <details>
-    <summary>Preparation notes and unresolved items</summary>
-    {open_item_list(article_open_items)}
-  </details>
+{attention_section}
 </article>
 """
 
@@ -462,6 +511,7 @@ def generate_report(meeting_dir: Path) -> Path:
             fincom_by_article.get(text(article.get("article"))),
             motions_by_article.get(text(article.get("article")), []),
             actions_by_article.get(text(article.get("article")), []),
+            article_outcome_count > 0,
         )
         for article in articles
     )
