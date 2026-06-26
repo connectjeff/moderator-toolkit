@@ -1,0 +1,442 @@
+{
+  "article_count_with_motions": 6,
+  "by_article": {
+    "11": [
+      {
+        "article_ids": [
+          "11"
+        ],
+        "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+        "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+        "kind": "amendment",
+        "local_path": "sources/article-11-motion-b-amendment-1-42631eac.pdf",
+        "motion_text": "",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-11-motion-b-amendment-1-dd9ed2af",
+        "status": "blank_template",
+        "text_path": "working/extracted-text/article-11-motion-b-amendment-1.txt",
+        "title": "Article 11 Motion B Amendment 1",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19697/Article-11-Motion-B-Amendment-1"
+      },
+      {
+        "article_ids": [
+          "11"
+        ],
+        "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+        "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+        "kind": "amendment",
+        "local_path": "sources/article-11-motion-d-amendment-1-poliandri-a5a67f02.pdf",
+        "motion_text": "",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-11-motion-d-amendment-1-poliandri-f3ef35f0",
+        "status": "blank_template",
+        "text_path": "working/extracted-text/article-11-motion-d-amendment-1-poliandri.txt",
+        "title": "Article 11 Motion D Amendment 1 Poliandri",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19699/-Article-11-Motion-D-Amendment-1-Poliandri"
+      }
+    ],
+    "13": [
+      {
+        "article_ids": [
+          "13"
+        ],
+        "excerpt": "Move that the Town vote to amend the By-Laws by changing in its entirety the table entitled Classification and Pay Plan that is incorporated by reference into Article 24, Section 3, Paragraph 3.10 with the new Classification and Pay Plan as follows: FINANCE COMMITTEE PUBLIC HEARING AND DISCUSSION Mr. Errickson presented this Article and explained that these are minor changes. In Grade 2, there are three job titles that are being modified. In grade 3, there were minor adjustments to better reflect actual duties. Finally, in grade 4, there was an adjustment to the Director of the Council on Aging and Human Services title (essentially reverting to the previous title). There also is a new position for \u201cSubstitute Library Assistant\u201d in the part time pay plan (Grade 2). A committee member observed that for some of the technology based positions, the grade and upper range appears over-stated. This is a recurring question. Mr. Errickson indicated that it will be reviewed with the IT Director, but that the chart reflects rather broad ranges and that employees are at various points within the ranges. A member sought information about FTEs/Headcounts over time. That question was beyond the sc",
+        "floor_impact": "Likely article motion text; compare with warrant and FinCom motion before floor action.",
+        "kind": "motion",
+        "local_path": "sources/article-13-revised-main-motion-f241e003.pdf",
+        "motion_text": "Move that the Town vote to amend the By-Laws by changing in its entirety the table entitled Classification and Pay Plan that is incorporated by reference into Article 24, Section 3, Paragraph 3.10 with the new Classification and Pay Plan as follows: FINANCE COMMITTEE PUBLIC HEARING AND DISCUSSION Mr. Errickson presented this Article and explained that these are minor changes. In Grade 2, there are three job titles that are being modified. In grade 3, there were minor adjustments to better reflect actual duties. Finally, in grade 4, there was an adjustment to the Director of the Council on Aging and Human Services title (essentially reverting to the previous title). There also is a new position for \u201cSubstitute Library Assistant\u201d in the part time pay plan (Grade 2). A committee member observed that for some of the technology based positions, the grade and upper range appears over-stated. This is a recurring question. Mr. Errickson indicated that it will be reviewed with the IT Director, but that the chart reflects rather broad ranges and that employees are at various points within the ranges. A member sought information about FTEs/Headcounts over time. That question was beyond the scope of the general Pay Plan, and would be more appropriately answered by an analysis by the Payroll Department, which would be forwarded the question. \u201cRedlines\u201d \u2013 Strike-through = Deleted Italic = New/Revised The committee voted 13-0-0 to recommend Favorable Action on the subject matter of Article 13. ~~ END OF ARTICLE ~~",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-13-revised-main-motion-2f73759a",
+        "status": "parsed",
+        "text_path": "working/extracted-text/article-13-revised-main-motion.txt",
+        "title": "Article 13 Revised Main Motion",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19634/Article-13-Revised-Main-Motion"
+      }
+    ],
+    "15": [
+      {
+        "article_ids": [
+          "15"
+        ],
+        "excerpt": "I move that Article 15, Community Preservation Act (CPA) Administrative Funds be moved to first order of business on Thursday, May 1 st , to allow the Community Preservation Committee Chairperson to attend in person. Thank you, David Krentzman CPC, Vice-Chair, Town Meeting Member Precinct 10",
+        "floor_impact": "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply.",
+        "kind": "procedural_motion",
+        "local_path": "sources/procedural-motion-move-article-15-to-may-1st-49b9a8ad.pdf",
+        "motion_text": "I move that Article 15, Community Preservation Act (CPA) Administrative Funds be moved to first order of business on Thursday, May 1 st , to allow the Community Preservation Committee Chairperson to attend in person. Thank you, David Krentzman CPC, Vice-Chair, Town Meeting Member Precinct 10",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "procedural-motion-move-article-15-to-may-1st-4d84d248",
+        "status": "parsed",
+        "text_path": "working/extracted-text/procedural-motion-move-article-15-to-may-1st.txt",
+        "title": "Procedural Motion: Move Article 15 to May 1st",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19621/Procedural-Motion-Move-Article-15-to-May-1st"
+      }
+    ],
+    "25": [
+      {
+        "article_ids": [
+          "7",
+          "25"
+        ],
+        "excerpt": "Move that Article 25 be heard immediately before Article 7.",
+        "floor_impact": "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply.",
+        "kind": "procedural_motion",
+        "local_path": "sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf",
+        "motion_text": "Move that Article 25 be heard immediately before Article 7.",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "procedural-motion-move-article-25-before-article-7-19fa385b",
+        "status": "parsed",
+        "text_path": "working/extracted-text/procedural-motion-move-article-25-before-article-7.txt",
+        "title": "Procedural Motion: Move Article 25 before Article 7",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7"
+      },
+      {
+        "article_ids": [
+          "25"
+        ],
+        "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+        "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+        "kind": "motion",
+        "local_path": "sources/article-25-ip-motion-sidney-pct-8-7119a73c.pdf",
+        "motion_text": "",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-25-ip-motion-sidney-pct-8-61b98aac",
+        "status": "blank_template",
+        "text_path": "working/extracted-text/article-25-ip-motion-sidney-pct-8.txt",
+        "title": "Article 25 IP Motion - Sidney Pct 8",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19693/Article-25-IP-Motion---Sidney-Pct-8"
+      }
+    ],
+    "3": [
+      {
+        "article_ids": [
+          "3"
+        ],
+        "excerpt": "Move that MotionA under Article 3 be amended as follows: \u2022 Replace the revenue source value for Free Cash from $2,962,707 to $3,462,707 \u2022 Delete the revenue source line for Overlay Surplus in the amount of $500,000 So that the amended MotionA under Article 3 reads as follows. \u2022 Amend the revenue source descriptions as follows, insert \u201cand Capital\u201d after \u201cOperational\u201d and add \u201c(Tax Levy)\u201d after Operational Override Fiscal Year 2026, so it reads \u201cOperational and Capital Override Fiscal Year 2026 (Tax Levy)\u201d Article3,MotionA:DepartmentBudgets MotionA:RequiresMajorityVote Move that the Town vote to appropriate the Grand Total Budget Amount shown below for the purpose of operating the departments, committees and boards of the Town, said funds are to be expended under the direction of the appropriate official or committees: School Committee; Directorsof Libraries;Multi-memberboardorcommittee;DepartmentHead;Collector/Treasurer; Comptroller;FinanceCommittee;TownAdministrator;orSuperintendentof PublicSchools. Education Natick PublicSchools Salaries &Expenses $95,491,904 Total NatickPublicSchools: $95,491,904 SouthMiddlesexRegionalVocationalTechnicalSchools (KeefeTechSchool) Expense (Assessm",
+        "floor_impact": "May amend the main motion; moderator should review scope and order of consideration.",
+        "kind": "amendment",
+        "local_path": "sources/article-3-motion-a-as-amended-by-amendment-1-5700907d.pdf",
+        "motion_text": "Move that MotionA under Article 3 be amended as follows: \u2022 Replace the revenue source value for Free Cash from $2,962,707 to $3,462,707 \u2022 Delete the revenue source line for Overlay Surplus in the amount of $500,000 So that the amended MotionA under Article 3 reads as follows. \u2022 Amend the revenue source descriptions as follows, insert \u201cand Capital\u201d after \u201cOperational\u201d and add \u201c(Tax Levy)\u201d after Operational Override Fiscal Year 2026, so it reads \u201cOperational and Capital Override Fiscal Year 2026 (Tax Levy)\u201d Article3,MotionA:DepartmentBudgets MotionA:RequiresMajorityVote Move that the Town vote to appropriate the Grand Total Budget Amount shown below for the purpose of operating the departments, committees and boards of the Town, said funds are to be expended under the direction of the appropriate official or committees: School Committee; Directorsof Libraries;Multi-memberboardorcommittee;DepartmentHead;Collector/Treasurer; Comptroller;FinanceCommittee;TownAdministrator;orSuperintendentof PublicSchools. Education Natick PublicSchools Salaries &Expenses $95,491,904 Total NatickPublicSchools: $95,491,904 SouthMiddlesexRegionalVocationalTechnicalSchools (KeefeTechSchool) Expense (Assessment) $1,522,373 TotalSouthMiddlesexRegionalVocationalTechnicalSchools: $1,522,373 (KeefeTechSchool) Morse Institute Library Salaries $2,318,375 Expenses $430,325 Total Morse InstituteLibrary: $2,748,700 Bacon Free Library Salaries $210,837 Expenses $38,799 Total BaconFree Library: $249,636 TotalBudgetAmountforEducation: $100,012,613 Motion continued on nextpage\u2192 Article 3, Motion A: Department Budgets Administrative Support Select Board Salaries $1,438,512 Expenses $886,174 Total Select Board: $2,324,686 Town Report Expenses $4,100 Total Town Report: $4,100 Finance Salaries $1,661,100 Expenses $419,837 Total Finance: $2,080,937 Community & Economic Development Salaries $1,073,822 Expenses $86,500 Total Community & Economic Development: $1,160,322 Weights & Measurers Salaries $34,922 Expenses $990 Total Weights & Measurers: $35,912 Information Technology Salaries $535,306 Expenses $1,540,154 Total Information Technology: $2,075,460 Town Clerk Salaries $354,756 Expenses $53,896 Total Town Clerk: $408,652 Board of Registrars Salaries $40,600 Expenses $84,694 Total Board of Registrars: $125,294 Legal Expenses $671,400 Total Legal: $671,400 Total Budget Amount for Administrative Support: $8,886,763 Motion continued on next page Article3,MotionA:DepartmentBudgets Committees&Commissions Committees& Commissions Expenses $24,328 Total Committees& Commissions: $24,328 AffordableHousing Trust Expenses $80,000 Total AffordableHousing Trust: $80,000 TotalBudgetAmountforCommittees &Commissions: $104,328 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets PublicSafety EmergencyManagement Salaries $5,000 Expenses $40,820 TotalEmergency Management: $45,820 ParkingEnforcement Salaries $105,800 Expenses $82,700 Total Parking Enforcement: $188,500 Police Salaries $8,463,414 Expenses $373,718 TotalPolice: $8,837,132 Fire Salaries $10,872,665 Expenses $375,588 TotalFire: $11,248,253 TotalBudgetAmountforPublicSafety: $20,319,705 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets Health & CommunityServices CommunityServices Salaries $1,733,361 Expenses $495,613 TotalCommunity Services: $2,228,974 Board ofHealth Salaries $654,630 Expenses $78,050 Total Boardof Health: $732,680 TotalBudgetAmountforHealth&CommunityServices: $2,961,654 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets PublicWorks PublicWorks Salaries $5,016,241 Expenses $3,657,370 MunicipalEnergy $1,830,750 Snow &Ice $550,000 Total PublicWorks: $11,054,362 TotalBudgetAmountforPublicWorks: $11,054,362 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets SharedServices EmployeeFringe OtherPersonnelServices $22,688,052 Merit/Performance $421,506 TotalEmployeeFringe: $23,109,558 Property &LiabilityInsurance Expenses $1,226,075 TotalProperty&LiabilityInsurance: $1,226,075 ContributoryRetirement Pension Assessment $14,854,240 TotalContributory Retirement: $14,854,240 Non-ContributoryRetirement Pensions $20,000 Total Non-Contributory Retirement: $20,000 DebtService Expenses $14,406,527 TotalDebt Service: $14,406,527 ReserveFund- Finance Committee Expenses $200,000 TotalReserveFund- Finance Committee: $200,000 FacilitiesManagement Salaries $3,820,494 Expenses $922,380 TotalFacilities Management: $4,742,874 TotalBudgetAmountforSharedServices: $58,559,274 GrandTotalBudgetAmountforMotionA: $201,898,699 Andthattheaboveamount$201,898,699beraisedfromthefollowingsources: Tax Levy for Fiscal Year 2026 $148,811,273 Operational and Capital Override Fiscal Year 2026 (Tax Levy) $7,000,000 State Aid $17,989,215 Local Receipts $20,484,523 FreeCash $3,462,707 Golf Course Indirects $88,562 WaterSewerIndirects $3,894,683 OtherAvailableFunds $167,736 Article 3 Motion A Summary Table DepartmentBudgets Education $100,012,613 AdministrativeSupport $8,886,763 Committees & Commissions $104,328 Public Safety $20,319,705 Health & CommunityServices $2,961,654 Public Works $11,054,362 Shared Services $58,559,274 TotalBudgetAmountforMotionA $201,898,699 FundingSources Tax Levy for Fiscal Year2026 $148,811,273 Operational and Capital Override Fiscal Year2026 (Tax Levy) $7,000,000 StateAid $17,989,215 Local Receipts $20,484,523 FreeCash $3,462,707 Golf Course Indirects $88,562 Water SewerIndirects $3,894,683 Other AvailableFunds $167,736 Total Amount to beraised $201,898,699 Article3,MotionB:EnterpriseFunds MotionB:RequiresMajorityVote Move that the Town vote to appropriate the Total Budget Amount for the Water and Sewer Enterprise Fund and The Sassamon Trace Golf Course Enterprise Fund shown below for the purposeof operatingtheEnterpriseFundsshown undertheassociatedcategoriesandapprove the Water Sewer Enterprise Fund and Sassamon Trace Golf Course Enterprise Fund indirect costs,said fundsaretobe expendedunderthedirectionof eachDepartmentHeadorDirector. Water &SewerFund Water&SanitarySewerOperations Salaries $2,833,670 Expenses $9,369,965 TotalWater&SanitarySewerOperations: $12,203,635 UtilityBilling Salaries Expenses $126,457 $69,000 TotalUtilityBilling: $195,457 FringeBenefits Expenses $1,148,472 TotalFringeBenefits: $1,148,472 Water&SewerDebtService Principal Interest $2,306,067 $1,117,947 TotalWater&SewerDebtService: $3,424,014 Water&SewerReserveFund Expenses $200,000 TotalWater&SewerReserveFund: $200,000 TotalBudgetAmountforWater&SewerFund: $17,171,578 Andthattheaboveamount$17,171,578 be raised fromthefollowingsouces: Water Sewer User Fees $17,171,578 Article3,MotionB: EnterpriseFunds- Water&SewerIndirectCosts Water& SewerIndirectCosts DepartmentAllocations Public WorksAdministration $268,521 Engineering $514,898 EquipmentMaintenance $720,104 Highway, Sanitation,Recycling $338,199 Facilities $146,947 Public Safety $232,966 Finance $371,627 TownAdministration $297,718 CommunityDevelopment $150,969 InformationTechnology $195,340 Procurement $69,390 Human Resources $11,535 Legal Services $101,235 Property&LiabilityInsurance $459,778 Utilities $88,190 Vehicle Fuel $171,268 Sub-Total: $4,138,685 WaterSewerStaffPerformingGeneralFundFunctions GIS Services $(68,491) W/S Admin. Asst. - DPW $(40,988) W/S Admin. Asst. - Collector $(46,107) Snow andRemoval $(73,491) SoftwareServicing $(14,925) Sub-Total: ($244,002) TotalWaterandSewerIndirectCosts: $3,894,683 Andthatthesum of$3,894,683 appropriatedintheGeneralFund be raised fromthe followingsource: Water Sewer User Fees $3,894,638 Article3,MotionB:EnterpriseFunds Sassamon Trace GolfEnterprise Sassamon TraceGolfOperations Salaries $453,121 Expenses $296,911 TotalSassamonTraceGolfOperations: $750,032 SassamonTraceGolfFringeBenefits Other PersonnelServices $79,986 TotalSassamon TraceGolfFringeBenefits: $79,986 SassamonTraceGolfDebtService Principal $50,000 Interest $9,687 Lease Payment $99,583 TotalSassamon TraceGolfDebtService: $159,270 Sassamon Trace GolfReserveFund Expenses $20,000 TotalSassamonTraceGolfReserveFund: $20,000 TotalBudgetAmountforSassamon TraceGolfEnterprise: $1,009,288 Andthattheaboveamount$1,009,288 be raised fromthefollowingsources: Golf User Fees $1,009,288 Article3,MotionB: EnterpriseFunds- Sassamon TraceGolfIndirectCosts SassamonTraceGolfIndirectCosts DepartmentAllocations Public WorksAdministration $1,344 EquipmentMaintenance $3,591 Highway,Sanitation,Recycling $9,019 CommunityServices $24,137 Land Facilities andNaturalResources $4,039 Public Safety $4,660 Finance $12,376 TownAdministration $3,971 Procurement $398 Human Resources $1,923 Legal Services $1,688 Property &LiabilityInsurance $12,261 Utilities $6,300 Vehicle Fuel $2,855 TotalSassamon TraceGolfIndirectCosts: $88,562 Andthatthesum of$88,562 appropriatedintheGeneralFund be raised fromthe followingsource: Golf User Fees $88,562 Article 3 Motion B Summary Table Funds Water & Sewer EnterpriseFund $17,171,578 Water & SewerIndirects $3,894,683 Sassamon Trace Golf EnterpriseFund $1,009,288 Sassamon Trace GolfIndirects $88,562 TotalBudgetAmountforMotionB $22,164,111 FundingSources Water & Sewer User Fees $21,066,261 Golf UserFees $1,097,850 Total Amount to beraised $22,164,111 Article 3 \u2013 Enterprise Funds \u2013 Sassamon Trace Golf Enterprise Fund \u2013 FY 2025 Omnibus Budget Motion C (Requires a Majority V ote) Move that the Town vote to increase the appropriation voted by the 2024 Spring Annual Town Meeting under Article 3 by the sum of $65,000 to supplement the Sassamon Golf Enterprise budget as voted under Article 3 Motion B of the 2024 Spring Annual Town Meeting by adding $65,000 to Sassamon Trace Golf Operations Expenses. With the above budget supplement to be raised from the following source: Golf Retained Earnings for Fiscal Y ear 2025 - $65,000",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-3-motion-a-as-amended-by-amendment-1-1b5aa701",
+        "status": "parsed",
+        "text_path": "working/extracted-text/article-3-motion-a-as-amended-by-amendment-1.txt",
+        "title": "Article 3 Motion A as Amended by Amendment 1",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19580/Article-3-Motion-A-as-Amended-by-Amendment-1"
+      },
+      {
+        "article_ids": [
+          "3"
+        ],
+        "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+        "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+        "kind": "amendment",
+        "local_path": "sources/article-3-motion-a-amendment-1-2679cde7.pdf",
+        "motion_text": "",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "article-3-motion-a-amendment-1-3a74882d",
+        "status": "blank_template",
+        "text_path": "working/extracted-text/article-3-motion-a-amendment-1.txt",
+        "title": "Article 3 Motion A Amendment 1",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19579/Article-3-Motion-A-Amendment-1"
+      }
+    ],
+    "7": [
+      {
+        "article_ids": [
+          "7",
+          "25"
+        ],
+        "excerpt": "Move that Article 25 be heard immediately before Article 7.",
+        "floor_impact": "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply.",
+        "kind": "procedural_motion",
+        "local_path": "sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf",
+        "motion_text": "Move that Article 25 be heard immediately before Article 7.",
+        "offered_by": "",
+        "open_items": [
+          "Confirm parsed motion text against the official PDF.",
+          "Determine precedence, scope, and vote threshold before floor use."
+        ],
+        "source_id": "procedural-motion-move-article-25-before-article-7-19fa385b",
+        "status": "parsed",
+        "text_path": "working/extracted-text/procedural-motion-move-article-25-before-article-7.txt",
+        "title": "Procedural Motion: Move Article 25 before Article 7",
+        "url": "https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7"
+      }
+    ]
+  },
+  "meeting_id": "SATM 2025",
+  "meeting_level_motions": [
+    {
+      "article_ids": [],
+      "excerpt": "Move to waive reading the text of all 2025 Spring Annual Town Meeting Warrant Articles; and move to waive reading the text of motions, excluding amounts to be appropriated and sources of said amounts to be appropriated, when motions are provided in the text of the Recommendations of the Natick Finance Committee publications.",
+      "floor_impact": "Likely article motion text; compare with warrant and FinCom motion before floor action.",
+      "kind": "motion",
+      "local_path": "sources/motion-reading-of-articles-and-motions-db3deec0.pdf",
+      "motion_text": "Move to waive reading the text of all 2025 Spring Annual Town Meeting Warrant Articles; and move to waive reading the text of motions, excluding amounts to be appropriated and sources of said amounts to be appropriated, when motions are provided in the text of the Recommendations of the Natick Finance Committee publications.",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "motion-reading-of-articles-and-motions-98418b94",
+      "status": "parsed",
+      "text_path": "working/extracted-text/motion-reading-of-articles-and-motions.txt",
+      "title": "Motion: Reading of Articles and Motions",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19586/Motion-Reading-of-Articles-and-Motions"
+    },
+    {
+      "article_ids": [],
+      "excerpt": "TOWN MEETING RESOLUTION HONORING FRANK FOSS WHEREAS, Frank and Charlene Foss moved to Natick in 1978 and raised their two sons Frank Jr. and Jeffrey who both graduated from Natick High School; and WHEREAS, Frank Foss has been a volunteer and participant in local government for thirty-four years beginning when he won a seat on Town Meeting in 1990; and WHEREAS, Frank continued as a Town Meeting member while he served for twelve years on the Finance Committee including as Chair for four years; and WHEREAS, during his tenure on the Finance Committee, Frank served as their representative on many committees including the Municipal Complex Building Committee, the 2 nd Ambulance Study Committee and the Downtown Parking Study Committee; and WHEREAS, in 2007 Frank ran for Moderator; the election was a tie, and he was appointed for one year by the Select Board. He ran again in 2008 and won and continued to serve until March 2025; and WHEREAS, Frank spent many hours working with the administration preparing and presiding over Town Meeting for the next 18 years. He was very instrumental in encouraging and implementing electronic voting; he started the annual new Town Meeting member orientation",
+      "floor_impact": "Needs moderator review.",
+      "kind": "document",
+      "local_path": "sources/resolution-honoring-frank-foss-087183e1.pdf",
+      "motion_text": "TOWN MEETING RESOLUTION HONORING FRANK FOSS WHEREAS, Frank and Charlene Foss moved to Natick in 1978 and raised their two sons Frank Jr. and Jeffrey who both graduated from Natick High School; and WHEREAS, Frank Foss has been a volunteer and participant in local government for thirty-four years beginning when he won a seat on Town Meeting in 1990; and WHEREAS, Frank continued as a Town Meeting member while he served for twelve years on the Finance Committee including as Chair for four years; and WHEREAS, during his tenure on the Finance Committee, Frank served as their representative on many committees including the Municipal Complex Building Committee, the 2 nd Ambulance Study Committee and the Downtown Parking Study Committee; and WHEREAS, in 2007 Frank ran for Moderator; the election was a tie, and he was appointed for one year by the Select Board. He ran again in 2008 and won and continued to serve until March 2025; and WHEREAS, Frank spent many hours working with the administration preparing and presiding over Town Meeting for the next 18 years. He was very instrumental in encouraging and implementing electronic voting; he started the annual new Town Meeting member orientation program; hosted a Pegasus show before every session of Town Meeting to inform the citizenry of the issues before the meeting; and he was absolutely critical in setting up the process and procedures that allowed and facilitated on-line Town Meeting during the pandemic. WHEREAS, Frank always tried to honor the processes and purpose of Town Meeting through thoughtful appointments to the Finance and other committees assuring that different voices and opinions were represented; and WHEREAS, Frank\u2019s service to Natick will continue as an elected Town Meeting member and a Constable; Now, therefore be it resolved that Town Meeting hereby honors and thanks Frank Foss for his many years of past and future service to the Town.",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "resolution-honoring-frank-foss-c1ed891d",
+      "status": "parsed",
+      "text_path": "working/extracted-text/resolution-honoring-frank-foss.txt",
+      "title": "Resolution Honoring Frank Foss",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19581/Resolution-Honoring-Frank-Foss"
+    }
+  ],
+  "motion_count": 10,
+  "motions": [
+    {
+      "article_ids": [],
+      "excerpt": "Move to waive reading the text of all 2025 Spring Annual Town Meeting Warrant Articles; and move to waive reading the text of motions, excluding amounts to be appropriated and sources of said amounts to be appropriated, when motions are provided in the text of the Recommendations of the Natick Finance Committee publications.",
+      "floor_impact": "Likely article motion text; compare with warrant and FinCom motion before floor action.",
+      "kind": "motion",
+      "local_path": "sources/motion-reading-of-articles-and-motions-db3deec0.pdf",
+      "motion_text": "Move to waive reading the text of all 2025 Spring Annual Town Meeting Warrant Articles; and move to waive reading the text of motions, excluding amounts to be appropriated and sources of said amounts to be appropriated, when motions are provided in the text of the Recommendations of the Natick Finance Committee publications.",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "motion-reading-of-articles-and-motions-98418b94",
+      "status": "parsed",
+      "text_path": "working/extracted-text/motion-reading-of-articles-and-motions.txt",
+      "title": "Motion: Reading of Articles and Motions",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19586/Motion-Reading-of-Articles-and-Motions"
+    },
+    {
+      "article_ids": [
+        "15"
+      ],
+      "excerpt": "I move that Article 15, Community Preservation Act (CPA) Administrative Funds be moved to first order of business on Thursday, May 1 st , to allow the Community Preservation Committee Chairperson to attend in person. Thank you, David Krentzman CPC, Vice-Chair, Town Meeting Member Precinct 10",
+      "floor_impact": "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply.",
+      "kind": "procedural_motion",
+      "local_path": "sources/procedural-motion-move-article-15-to-may-1st-49b9a8ad.pdf",
+      "motion_text": "I move that Article 15, Community Preservation Act (CPA) Administrative Funds be moved to first order of business on Thursday, May 1 st , to allow the Community Preservation Committee Chairperson to attend in person. Thank you, David Krentzman CPC, Vice-Chair, Town Meeting Member Precinct 10",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "procedural-motion-move-article-15-to-may-1st-4d84d248",
+      "status": "parsed",
+      "text_path": "working/extracted-text/procedural-motion-move-article-15-to-may-1st.txt",
+      "title": "Procedural Motion: Move Article 15 to May 1st",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19621/Procedural-Motion-Move-Article-15-to-May-1st"
+    },
+    {
+      "article_ids": [
+        "7",
+        "25"
+      ],
+      "excerpt": "Move that Article 25 be heard immediately before Article 7.",
+      "floor_impact": "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply.",
+      "kind": "procedural_motion",
+      "local_path": "sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf",
+      "motion_text": "Move that Article 25 be heard immediately before Article 7.",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "procedural-motion-move-article-25-before-article-7-19fa385b",
+      "status": "parsed",
+      "text_path": "working/extracted-text/procedural-motion-move-article-25-before-article-7.txt",
+      "title": "Procedural Motion: Move Article 25 before Article 7",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7"
+    },
+    {
+      "article_ids": [],
+      "excerpt": "TOWN MEETING RESOLUTION HONORING FRANK FOSS WHEREAS, Frank and Charlene Foss moved to Natick in 1978 and raised their two sons Frank Jr. and Jeffrey who both graduated from Natick High School; and WHEREAS, Frank Foss has been a volunteer and participant in local government for thirty-four years beginning when he won a seat on Town Meeting in 1990; and WHEREAS, Frank continued as a Town Meeting member while he served for twelve years on the Finance Committee including as Chair for four years; and WHEREAS, during his tenure on the Finance Committee, Frank served as their representative on many committees including the Municipal Complex Building Committee, the 2 nd Ambulance Study Committee and the Downtown Parking Study Committee; and WHEREAS, in 2007 Frank ran for Moderator; the election was a tie, and he was appointed for one year by the Select Board. He ran again in 2008 and won and continued to serve until March 2025; and WHEREAS, Frank spent many hours working with the administration preparing and presiding over Town Meeting for the next 18 years. He was very instrumental in encouraging and implementing electronic voting; he started the annual new Town Meeting member orientation",
+      "floor_impact": "Needs moderator review.",
+      "kind": "document",
+      "local_path": "sources/resolution-honoring-frank-foss-087183e1.pdf",
+      "motion_text": "TOWN MEETING RESOLUTION HONORING FRANK FOSS WHEREAS, Frank and Charlene Foss moved to Natick in 1978 and raised their two sons Frank Jr. and Jeffrey who both graduated from Natick High School; and WHEREAS, Frank Foss has been a volunteer and participant in local government for thirty-four years beginning when he won a seat on Town Meeting in 1990; and WHEREAS, Frank continued as a Town Meeting member while he served for twelve years on the Finance Committee including as Chair for four years; and WHEREAS, during his tenure on the Finance Committee, Frank served as their representative on many committees including the Municipal Complex Building Committee, the 2 nd Ambulance Study Committee and the Downtown Parking Study Committee; and WHEREAS, in 2007 Frank ran for Moderator; the election was a tie, and he was appointed for one year by the Select Board. He ran again in 2008 and won and continued to serve until March 2025; and WHEREAS, Frank spent many hours working with the administration preparing and presiding over Town Meeting for the next 18 years. He was very instrumental in encouraging and implementing electronic voting; he started the annual new Town Meeting member orientation program; hosted a Pegasus show before every session of Town Meeting to inform the citizenry of the issues before the meeting; and he was absolutely critical in setting up the process and procedures that allowed and facilitated on-line Town Meeting during the pandemic. WHEREAS, Frank always tried to honor the processes and purpose of Town Meeting through thoughtful appointments to the Finance and other committees assuring that different voices and opinions were represented; and WHEREAS, Frank\u2019s service to Natick will continue as an elected Town Meeting member and a Constable; Now, therefore be it resolved that Town Meeting hereby honors and thanks Frank Foss for his many years of past and future service to the Town.",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "resolution-honoring-frank-foss-c1ed891d",
+      "status": "parsed",
+      "text_path": "working/extracted-text/resolution-honoring-frank-foss.txt",
+      "title": "Resolution Honoring Frank Foss",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19581/Resolution-Honoring-Frank-Foss"
+    },
+    {
+      "article_ids": [
+        "3"
+      ],
+      "excerpt": "Move that MotionA under Article 3 be amended as follows: \u2022 Replace the revenue source value for Free Cash from $2,962,707 to $3,462,707 \u2022 Delete the revenue source line for Overlay Surplus in the amount of $500,000 So that the amended MotionA under Article 3 reads as follows. \u2022 Amend the revenue source descriptions as follows, insert \u201cand Capital\u201d after \u201cOperational\u201d and add \u201c(Tax Levy)\u201d after Operational Override Fiscal Year 2026, so it reads \u201cOperational and Capital Override Fiscal Year 2026 (Tax Levy)\u201d Article3,MotionA:DepartmentBudgets MotionA:RequiresMajorityVote Move that the Town vote to appropriate the Grand Total Budget Amount shown below for the purpose of operating the departments, committees and boards of the Town, said funds are to be expended under the direction of the appropriate official or committees: School Committee; Directorsof Libraries;Multi-memberboardorcommittee;DepartmentHead;Collector/Treasurer; Comptroller;FinanceCommittee;TownAdministrator;orSuperintendentof PublicSchools. Education Natick PublicSchools Salaries &Expenses $95,491,904 Total NatickPublicSchools: $95,491,904 SouthMiddlesexRegionalVocationalTechnicalSchools (KeefeTechSchool) Expense (Assessm",
+      "floor_impact": "May amend the main motion; moderator should review scope and order of consideration.",
+      "kind": "amendment",
+      "local_path": "sources/article-3-motion-a-as-amended-by-amendment-1-5700907d.pdf",
+      "motion_text": "Move that MotionA under Article 3 be amended as follows: \u2022 Replace the revenue source value for Free Cash from $2,962,707 to $3,462,707 \u2022 Delete the revenue source line for Overlay Surplus in the amount of $500,000 So that the amended MotionA under Article 3 reads as follows. \u2022 Amend the revenue source descriptions as follows, insert \u201cand Capital\u201d after \u201cOperational\u201d and add \u201c(Tax Levy)\u201d after Operational Override Fiscal Year 2026, so it reads \u201cOperational and Capital Override Fiscal Year 2026 (Tax Levy)\u201d Article3,MotionA:DepartmentBudgets MotionA:RequiresMajorityVote Move that the Town vote to appropriate the Grand Total Budget Amount shown below for the purpose of operating the departments, committees and boards of the Town, said funds are to be expended under the direction of the appropriate official or committees: School Committee; Directorsof Libraries;Multi-memberboardorcommittee;DepartmentHead;Collector/Treasurer; Comptroller;FinanceCommittee;TownAdministrator;orSuperintendentof PublicSchools. Education Natick PublicSchools Salaries &Expenses $95,491,904 Total NatickPublicSchools: $95,491,904 SouthMiddlesexRegionalVocationalTechnicalSchools (KeefeTechSchool) Expense (Assessment) $1,522,373 TotalSouthMiddlesexRegionalVocationalTechnicalSchools: $1,522,373 (KeefeTechSchool) Morse Institute Library Salaries $2,318,375 Expenses $430,325 Total Morse InstituteLibrary: $2,748,700 Bacon Free Library Salaries $210,837 Expenses $38,799 Total BaconFree Library: $249,636 TotalBudgetAmountforEducation: $100,012,613 Motion continued on nextpage\u2192 Article 3, Motion A: Department Budgets Administrative Support Select Board Salaries $1,438,512 Expenses $886,174 Total Select Board: $2,324,686 Town Report Expenses $4,100 Total Town Report: $4,100 Finance Salaries $1,661,100 Expenses $419,837 Total Finance: $2,080,937 Community & Economic Development Salaries $1,073,822 Expenses $86,500 Total Community & Economic Development: $1,160,322 Weights & Measurers Salaries $34,922 Expenses $990 Total Weights & Measurers: $35,912 Information Technology Salaries $535,306 Expenses $1,540,154 Total Information Technology: $2,075,460 Town Clerk Salaries $354,756 Expenses $53,896 Total Town Clerk: $408,652 Board of Registrars Salaries $40,600 Expenses $84,694 Total Board of Registrars: $125,294 Legal Expenses $671,400 Total Legal: $671,400 Total Budget Amount for Administrative Support: $8,886,763 Motion continued on next page Article3,MotionA:DepartmentBudgets Committees&Commissions Committees& Commissions Expenses $24,328 Total Committees& Commissions: $24,328 AffordableHousing Trust Expenses $80,000 Total AffordableHousing Trust: $80,000 TotalBudgetAmountforCommittees &Commissions: $104,328 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets PublicSafety EmergencyManagement Salaries $5,000 Expenses $40,820 TotalEmergency Management: $45,820 ParkingEnforcement Salaries $105,800 Expenses $82,700 Total Parking Enforcement: $188,500 Police Salaries $8,463,414 Expenses $373,718 TotalPolice: $8,837,132 Fire Salaries $10,872,665 Expenses $375,588 TotalFire: $11,248,253 TotalBudgetAmountforPublicSafety: $20,319,705 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets Health & CommunityServices CommunityServices Salaries $1,733,361 Expenses $495,613 TotalCommunity Services: $2,228,974 Board ofHealth Salaries $654,630 Expenses $78,050 Total Boardof Health: $732,680 TotalBudgetAmountforHealth&CommunityServices: $2,961,654 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets PublicWorks PublicWorks Salaries $5,016,241 Expenses $3,657,370 MunicipalEnergy $1,830,750 Snow &Ice $550,000 Total PublicWorks: $11,054,362 TotalBudgetAmountforPublicWorks: $11,054,362 Motion continued on nextpage\u2192 Article3,MotionA:DepartmentBudgets SharedServices EmployeeFringe OtherPersonnelServices $22,688,052 Merit/Performance $421,506 TotalEmployeeFringe: $23,109,558 Property &LiabilityInsurance Expenses $1,226,075 TotalProperty&LiabilityInsurance: $1,226,075 ContributoryRetirement Pension Assessment $14,854,240 TotalContributory Retirement: $14,854,240 Non-ContributoryRetirement Pensions $20,000 Total Non-Contributory Retirement: $20,000 DebtService Expenses $14,406,527 TotalDebt Service: $14,406,527 ReserveFund- Finance Committee Expenses $200,000 TotalReserveFund- Finance Committee: $200,000 FacilitiesManagement Salaries $3,820,494 Expenses $922,380 TotalFacilities Management: $4,742,874 TotalBudgetAmountforSharedServices: $58,559,274 GrandTotalBudgetAmountforMotionA: $201,898,699 Andthattheaboveamount$201,898,699beraisedfromthefollowingsources: Tax Levy for Fiscal Year 2026 $148,811,273 Operational and Capital Override Fiscal Year 2026 (Tax Levy) $7,000,000 State Aid $17,989,215 Local Receipts $20,484,523 FreeCash $3,462,707 Golf Course Indirects $88,562 WaterSewerIndirects $3,894,683 OtherAvailableFunds $167,736 Article 3 Motion A Summary Table DepartmentBudgets Education $100,012,613 AdministrativeSupport $8,886,763 Committees & Commissions $104,328 Public Safety $20,319,705 Health & CommunityServices $2,961,654 Public Works $11,054,362 Shared Services $58,559,274 TotalBudgetAmountforMotionA $201,898,699 FundingSources Tax Levy for Fiscal Year2026 $148,811,273 Operational and Capital Override Fiscal Year2026 (Tax Levy) $7,000,000 StateAid $17,989,215 Local Receipts $20,484,523 FreeCash $3,462,707 Golf Course Indirects $88,562 Water SewerIndirects $3,894,683 Other AvailableFunds $167,736 Total Amount to beraised $201,898,699 Article3,MotionB:EnterpriseFunds MotionB:RequiresMajorityVote Move that the Town vote to appropriate the Total Budget Amount for the Water and Sewer Enterprise Fund and The Sassamon Trace Golf Course Enterprise Fund shown below for the purposeof operatingtheEnterpriseFundsshown undertheassociatedcategoriesandapprove the Water Sewer Enterprise Fund and Sassamon Trace Golf Course Enterprise Fund indirect costs,said fundsaretobe expendedunderthedirectionof eachDepartmentHeadorDirector. Water &SewerFund Water&SanitarySewerOperations Salaries $2,833,670 Expenses $9,369,965 TotalWater&SanitarySewerOperations: $12,203,635 UtilityBilling Salaries Expenses $126,457 $69,000 TotalUtilityBilling: $195,457 FringeBenefits Expenses $1,148,472 TotalFringeBenefits: $1,148,472 Water&SewerDebtService Principal Interest $2,306,067 $1,117,947 TotalWater&SewerDebtService: $3,424,014 Water&SewerReserveFund Expenses $200,000 TotalWater&SewerReserveFund: $200,000 TotalBudgetAmountforWater&SewerFund: $17,171,578 Andthattheaboveamount$17,171,578 be raised fromthefollowingsouces: Water Sewer User Fees $17,171,578 Article3,MotionB: EnterpriseFunds- Water&SewerIndirectCosts Water& SewerIndirectCosts DepartmentAllocations Public WorksAdministration $268,521 Engineering $514,898 EquipmentMaintenance $720,104 Highway, Sanitation,Recycling $338,199 Facilities $146,947 Public Safety $232,966 Finance $371,627 TownAdministration $297,718 CommunityDevelopment $150,969 InformationTechnology $195,340 Procurement $69,390 Human Resources $11,535 Legal Services $101,235 Property&LiabilityInsurance $459,778 Utilities $88,190 Vehicle Fuel $171,268 Sub-Total: $4,138,685 WaterSewerStaffPerformingGeneralFundFunctions GIS Services $(68,491) W/S Admin. Asst. - DPW $(40,988) W/S Admin. Asst. - Collector $(46,107) Snow andRemoval $(73,491) SoftwareServicing $(14,925) Sub-Total: ($244,002) TotalWaterandSewerIndirectCosts: $3,894,683 Andthatthesum of$3,894,683 appropriatedintheGeneralFund be raised fromthe followingsource: Water Sewer User Fees $3,894,638 Article3,MotionB:EnterpriseFunds Sassamon Trace GolfEnterprise Sassamon TraceGolfOperations Salaries $453,121 Expenses $296,911 TotalSassamonTraceGolfOperations: $750,032 SassamonTraceGolfFringeBenefits Other PersonnelServices $79,986 TotalSassamon TraceGolfFringeBenefits: $79,986 SassamonTraceGolfDebtService Principal $50,000 Interest $9,687 Lease Payment $99,583 TotalSassamon TraceGolfDebtService: $159,270 Sassamon Trace GolfReserveFund Expenses $20,000 TotalSassamonTraceGolfReserveFund: $20,000 TotalBudgetAmountforSassamon TraceGolfEnterprise: $1,009,288 Andthattheaboveamount$1,009,288 be raised fromthefollowingsources: Golf User Fees $1,009,288 Article3,MotionB: EnterpriseFunds- Sassamon TraceGolfIndirectCosts SassamonTraceGolfIndirectCosts DepartmentAllocations Public WorksAdministration $1,344 EquipmentMaintenance $3,591 Highway,Sanitation,Recycling $9,019 CommunityServices $24,137 Land Facilities andNaturalResources $4,039 Public Safety $4,660 Finance $12,376 TownAdministration $3,971 Procurement $398 Human Resources $1,923 Legal Services $1,688 Property &LiabilityInsurance $12,261 Utilities $6,300 Vehicle Fuel $2,855 TotalSassamon TraceGolfIndirectCosts: $88,562 Andthatthesum of$88,562 appropriatedintheGeneralFund be raised fromthe followingsource: Golf User Fees $88,562 Article 3 Motion B Summary Table Funds Water & Sewer EnterpriseFund $17,171,578 Water & SewerIndirects $3,894,683 Sassamon Trace Golf EnterpriseFund $1,009,288 Sassamon Trace GolfIndirects $88,562 TotalBudgetAmountforMotionB $22,164,111 FundingSources Water & Sewer User Fees $21,066,261 Golf UserFees $1,097,850 Total Amount to beraised $22,164,111 Article 3 \u2013 Enterprise Funds \u2013 Sassamon Trace Golf Enterprise Fund \u2013 FY 2025 Omnibus Budget Motion C (Requires a Majority V ote) Move that the Town vote to increase the appropriation voted by the 2024 Spring Annual Town Meeting under Article 3 by the sum of $65,000 to supplement the Sassamon Golf Enterprise budget as voted under Article 3 Motion B of the 2024 Spring Annual Town Meeting by adding $65,000 to Sassamon Trace Golf Operations Expenses. With the above budget supplement to be raised from the following source: Golf Retained Earnings for Fiscal Y ear 2025 - $65,000",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-3-motion-a-as-amended-by-amendment-1-1b5aa701",
+      "status": "parsed",
+      "text_path": "working/extracted-text/article-3-motion-a-as-amended-by-amendment-1.txt",
+      "title": "Article 3 Motion A as Amended by Amendment 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19580/Article-3-Motion-A-as-Amended-by-Amendment-1"
+    },
+    {
+      "article_ids": [
+        "3"
+      ],
+      "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+      "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+      "kind": "amendment",
+      "local_path": "sources/article-3-motion-a-amendment-1-2679cde7.pdf",
+      "motion_text": "",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-3-motion-a-amendment-1-3a74882d",
+      "status": "blank_template",
+      "text_path": "working/extracted-text/article-3-motion-a-amendment-1.txt",
+      "title": "Article 3 Motion A Amendment 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19579/Article-3-Motion-A-Amendment-1"
+    },
+    {
+      "article_ids": [
+        "11"
+      ],
+      "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+      "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+      "kind": "amendment",
+      "local_path": "sources/article-11-motion-b-amendment-1-42631eac.pdf",
+      "motion_text": "",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-11-motion-b-amendment-1-dd9ed2af",
+      "status": "blank_template",
+      "text_path": "working/extracted-text/article-11-motion-b-amendment-1.txt",
+      "title": "Article 11 Motion B Amendment 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19697/Article-11-Motion-B-Amendment-1"
+    },
+    {
+      "article_ids": [
+        "11"
+      ],
+      "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+      "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+      "kind": "amendment",
+      "local_path": "sources/article-11-motion-d-amendment-1-poliandri-a5a67f02.pdf",
+      "motion_text": "",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-11-motion-d-amendment-1-poliandri-f3ef35f0",
+      "status": "blank_template",
+      "text_path": "working/extracted-text/article-11-motion-d-amendment-1-poliandri.txt",
+      "title": "Article 11 Motion D Amendment 1 Poliandri",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19699/-Article-11-Motion-D-Amendment-1-Poliandri"
+    },
+    {
+      "article_ids": [
+        "13"
+      ],
+      "excerpt": "Move that the Town vote to amend the By-Laws by changing in its entirety the table entitled Classification and Pay Plan that is incorporated by reference into Article 24, Section 3, Paragraph 3.10 with the new Classification and Pay Plan as follows: FINANCE COMMITTEE PUBLIC HEARING AND DISCUSSION Mr. Errickson presented this Article and explained that these are minor changes. In Grade 2, there are three job titles that are being modified. In grade 3, there were minor adjustments to better reflect actual duties. Finally, in grade 4, there was an adjustment to the Director of the Council on Aging and Human Services title (essentially reverting to the previous title). There also is a new position for \u201cSubstitute Library Assistant\u201d in the part time pay plan (Grade 2). A committee member observed that for some of the technology based positions, the grade and upper range appears over-stated. This is a recurring question. Mr. Errickson indicated that it will be reviewed with the IT Director, but that the chart reflects rather broad ranges and that employees are at various points within the ranges. A member sought information about FTEs/Headcounts over time. That question was beyond the sc",
+      "floor_impact": "Likely article motion text; compare with warrant and FinCom motion before floor action.",
+      "kind": "motion",
+      "local_path": "sources/article-13-revised-main-motion-f241e003.pdf",
+      "motion_text": "Move that the Town vote to amend the By-Laws by changing in its entirety the table entitled Classification and Pay Plan that is incorporated by reference into Article 24, Section 3, Paragraph 3.10 with the new Classification and Pay Plan as follows: FINANCE COMMITTEE PUBLIC HEARING AND DISCUSSION Mr. Errickson presented this Article and explained that these are minor changes. In Grade 2, there are three job titles that are being modified. In grade 3, there were minor adjustments to better reflect actual duties. Finally, in grade 4, there was an adjustment to the Director of the Council on Aging and Human Services title (essentially reverting to the previous title). There also is a new position for \u201cSubstitute Library Assistant\u201d in the part time pay plan (Grade 2). A committee member observed that for some of the technology based positions, the grade and upper range appears over-stated. This is a recurring question. Mr. Errickson indicated that it will be reviewed with the IT Director, but that the chart reflects rather broad ranges and that employees are at various points within the ranges. A member sought information about FTEs/Headcounts over time. That question was beyond the scope of the general Pay Plan, and would be more appropriately answered by an analysis by the Payroll Department, which would be forwarded the question. \u201cRedlines\u201d \u2013 Strike-through = Deleted Italic = New/Revised The committee voted 13-0-0 to recommend Favorable Action on the subject matter of Article 13. ~~ END OF ARTICLE ~~",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-13-revised-main-motion-2f73759a",
+      "status": "parsed",
+      "text_path": "working/extracted-text/article-13-revised-main-motion.txt",
+      "title": "Article 13 Revised Main Motion",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19634/Article-13-Revised-Main-Motion"
+    },
+    {
+      "article_ids": [
+        "25"
+      ],
+      "excerpt": "--- Page 1 --- NATICK TOWN MEETING MOTION FORM I_____________________________________ of Precinct , Natick hereby move to the Main Motion under Article # of the current town meeting Warrant as follows: Move that the Town vote to Signature ________________________ Seconded Page of Date: Vote Declared By: Vote: Revised 04/02/2019",
+      "floor_impact": "No substantive motion text extracted; verify whether the official link points to the intended motion.",
+      "kind": "motion",
+      "local_path": "sources/article-25-ip-motion-sidney-pct-8-7119a73c.pdf",
+      "motion_text": "",
+      "offered_by": "",
+      "open_items": [
+        "Confirm parsed motion text against the official PDF.",
+        "Determine precedence, scope, and vote threshold before floor use."
+      ],
+      "source_id": "article-25-ip-motion-sidney-pct-8-61b98aac",
+      "status": "blank_template",
+      "text_path": "working/extracted-text/article-25-ip-motion-sidney-pct-8.txt",
+      "title": "Article 25 IP Motion - Sidney Pct 8",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19693/Article-25-IP-Motion---Sidney-Pct-8"
+    }
+  ],
+  "open_items": [
+    "Parser is intentionally conservative and does not decide procedural validity.",
+    "Review blank-template and supporting-material records before relying on them."
+  ]
+}

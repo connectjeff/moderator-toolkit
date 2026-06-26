@@ -13,5 +13,7 @@
 ## Source Review Items
 
 - Review the FATM 2025 Finance Committee recommendation source. The official Natick link currently resolves to a Spring Annual Town Meeting 2026 recommendation book, so FATM recommendation fields are intentionally not merged into briefs.
+- Confirm whether an official SATM 2025 consent agenda source exists. No consent agenda document was found on the official meeting page or parsed from the official Finance Committee recommendation book.
+- Determine whether the SATM 2025 `Voting Results (Unofficial)` spreadsheet has an official equivalent before using it for final-action summaries.
 - Review motion/action records flagged as `blank_template` or `no_extractable_text` in each meeting's `working/` JSON outputs.
 - Add OCR or manual transcription workflow for official PDFs that cannot be parsed reliably from embedded text.

@@ -182,8 +182,10 @@ def parse_fincom(text: str, meeting_id: str) -> dict[str, object]:
     if consent_marker in source_window:
         source_window = source_window.split(consent_marker, 1)[1]
     additional_marker = "Additional Materials"
-    if additional_marker in source_window:
-        source_window = source_window.split(additional_marker, 1)[0]
+    first_article_body = source_window.find(ARTICLE_LANGUAGE_LABEL)
+    additional_position = source_window.rfind(additional_marker)
+    if additional_position > first_article_body >= 0:
+        source_window = source_window[:additional_position]
     articles = []
     lines = source_window.splitlines()
     candidates: list[tuple[int, str]] = []

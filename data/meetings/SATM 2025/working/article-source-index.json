@@ -1,0 +1,426 @@
+{
+  "article_count_from_source_titles": 9,
+  "articles": [
+    {
+      "article": "3",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-3-motion-a-amendment-1-3a74882d",
+          "local_path": "sources/article-3-motion-a-amendment-1-2679cde7.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 3 Motion A Amendment 1",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19579/Article-3-Motion-A-Amendment-1"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "article-3-motion-a-as-amended-by-amendment-1-1b5aa701",
+          "local_path": "sources/article-3-motion-a-as-amended-by-amendment-1-5700907d.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 3 Motion A as Amended by Amendment 1",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19580/Article-3-Motion-A-as-Amended-by-Amendment-1"
+        },
+        {
+          "category": "presentation",
+          "id": "article-3-budget-presentation-john-townsend-07f3a314",
+          "local_path": "sources/article-3-budget-presentation-john-townsend-16cec4c9.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 3 Budget Presentation John Townsend",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19577/Article-3-Budget-Presentation-John-Townsend"
+        },
+        {
+          "category": "presentation",
+          "id": "article-3-keefe-tech-jon-evans-95f3ccc3",
+          "local_path": "sources/article-3-keefe-tech-jon-evans-19d1727c.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 3 Keefe Tech Jon Evans",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19578/Article-3-Keefe-Tech-Jon-Evans"
+        },
+        {
+          "category": "presentation",
+          "id": "article-3-nps-melissa-spash-a5ee1fb3",
+          "local_path": "sources/article-3-nps-melissa-spash-5432e37c.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 3 NPS Melissa Spash",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19620/Article-3-NPS-Melissa-Spash"
+        }
+      ]
+    },
+    {
+      "article": "7",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "procedural-motion-move-article-25-before-article-7-19fa385b",
+          "local_path": "sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Procedural Motion: Move Article 25 before Article 7",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7"
+        }
+      ]
+    },
+    {
+      "article": "11",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-11-motion-b-amendment-1-dd9ed2af",
+          "local_path": "sources/article-11-motion-b-amendment-1-42631eac.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 11 Motion B Amendment 1",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19697/Article-11-Motion-B-Amendment-1"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "article-11-motion-d-amendment-1-poliandri-f3ef35f0",
+          "local_path": "sources/article-11-motion-d-amendment-1-poliandri-a5a67f02.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 11 Motion D Amendment 1 Poliandri",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19699/-Article-11-Motion-D-Amendment-1-Poliandri"
+        }
+      ]
+    },
+    {
+      "article": "13",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-13-revised-main-motion-2f73759a",
+          "local_path": "sources/article-13-revised-main-motion-f241e003.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 13 Revised Main Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19634/Article-13-Revised-Main-Motion"
+        }
+      ]
+    },
+    {
+      "article": "15",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "procedural-motion-move-article-15-to-may-1st-4d84d248",
+          "local_path": "sources/procedural-motion-move-article-15-to-may-1st-49b9a8ad.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Procedural Motion: Move Article 15 to May 1st",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19621/Procedural-Motion-Move-Article-15-to-May-1st"
+        }
+      ]
+    },
+    {
+      "article": "16",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "presentation",
+          "id": "articles-16-and-18-21-zoning-bylaws-amanda-loomis-dad9cdd5",
+          "local_path": "sources/articles-16-and-18-21-zoning-bylaws-amanda-loomis-0f19e0e4.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Articles 16 and 18-21 Zoning Bylaws Amanda Loomis",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19590/Articles-16-and-18-21-Zoning-Bylaws-Amanda-Loomis"
+        }
+      ]
+    },
+    {
+      "article": "17",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "presentation",
+          "id": "article-17-floodplain-overlay-bylaw-claire-rundelli-58eb5092",
+          "local_path": "sources/article-17-floodplain-overlay-bylaw-claire-rundelli-f91255f2.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 17 Floodplain Overlay Bylaw Claire Rundelli",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19589/Article-17-Floodplain-Overlay-Bylaw-Claire-Rundelli-"
+        }
+      ]
+    },
+    {
+      "article": "23",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title.",
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "minutes_or_actions",
+          "id": "article-23-cbrc-report-slides-satm-2025-49ba7595",
+          "local_path": "sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 23 CBRC report slides SATM 2025",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19707/Article-23-CBRC-report-slides-SATM-2025"
+        }
+      ]
+    },
+    {
+      "article": "25",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-25-ip-motion-sidney-pct-8-61b98aac",
+          "local_path": "sources/article-25-ip-motion-sidney-pct-8-7119a73c.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 25 IP Motion - Sidney Pct 8",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19693/Article-25-IP-Motion---Sidney-Pct-8"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "procedural-motion-move-article-25-before-article-7-19fa385b",
+          "local_path": "sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Procedural Motion: Move Article 25 before Article 7",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7"
+        },
+        {
+          "category": "presentation",
+          "id": "article-25-document-index-37697307",
+          "local_path": "sources/article-25-document-index-9932ec66.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 25 Document Index",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19716/Article-25-Document-Index"
+        },
+        {
+          "category": "presentation",
+          "id": "article-25-paul-griesmer-6ef56e31",
+          "local_path": "sources/article-25-paul-griesmer-7eb0a270.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 25 Paul Griesmer",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19717/Article-25-Paul-Griesmer"
+        },
+        {
+          "category": "related_document",
+          "id": "article-25-stabilization-funds-analysis-v5-0-fd79eadd",
+          "local_path": "sources/article-25-stabilization-funds-analysis-v5-0-21e81d49.pdf",
+          "official": true,
+          "status": "parsed",
+          "title": "Article 25 Stabilization Funds Analysis - v5.0",
+          "url": "https://www.natickma.gov/DocumentCenter/View/19636/Article-25-Stabilization-Funds-Analysis---v50"
+        }
+      ]
+    }
+  ],
+  "generated_from": "manifest.json",
+  "meeting_id": "SATM 2025",
+  "meeting_level_sources": [
+    {
+      "category": "warrant",
+      "id": "2025-satm-warrant-final-7b45c3e6",
+      "local_path": "sources/2025-satm-warrant-final-a474b32f.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM Warrant_Final",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19220/2025-SATM-Warrant_Final"
+    },
+    {
+      "category": "finance_committee",
+      "id": "2025-satm-fincom-recommendation-book-c8f6ca16",
+      "local_path": "sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM_FinCom_Recommendation Book",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19531/2025-SATM_FinCom_Recommendation-Book"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "crbc-2025-spring-report-a9feb059",
+      "local_path": "sources/crbc-2025-spring-report-2d872a42.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "CRBC 2025 Spring Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19614/CRBC-2025-Spring-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-satm-apr-22-session-1-1b9f91f9",
+      "local_path": "sources/2025-satm-apr-22-session-1-40770ff1.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM Apr 22 session 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20363/2025-SATM--Apr-22-session-1"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-satm-apr-29-session-2-e52be2a6",
+      "local_path": "sources/2025-satm-apr-29-session-2-97477ec7.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM Apr 29 session 2",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20362/2025-SATM-Apr-29-session-2"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-satm-may-1-session-3-046a5ed9",
+      "local_path": "sources/2025-satm-may-1-session-3-e0c1b777.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM May 1 session 3",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20360/2025-SATM-May-1-session-3"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-satm-may-6-session-4-5fe7f34c",
+      "local_path": "sources/2025-satm-may-6-session-4-0ec47c56.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM May 6 session 4",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20359/2025-SATM-May-6-session-4"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-satm-may-8-session-5-5c3aacf0",
+      "local_path": "sources/2025-satm-may-8-session-5-fe1169e8.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 SATM May 8 session 5",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20361/2025-SATM-May-8-session-5"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "town-meeting-member-voting-4-29-25-session-1-cd89229f",
+      "local_path": "sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Meeting Member Voting 4/29/25 Session 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "town-meeting-member-voting-5-01-25-session-2-f947a776",
+      "local_path": "sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Meeting Member Voting 5/01/25 Session 2",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20356/Town-Meeting-Member-Voting-50125-Session-2"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "town-meeting-member-voting-5-06-25-session-3-987f208c",
+      "local_path": "sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Meeting Member Voting 5/06/25 Session 3",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20355/Town-Meeting-Member-Voting-50625-Session-3"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "town-meeting-member-voting-5-08-25-session-4-aa08fccc",
+      "local_path": "sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Meeting Member Voting 5/08/25 Session 4",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "article-23-cbrc-report-slides-satm-2025-49ba7595",
+      "local_path": "sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Article 23 CBRC report slides SATM 2025",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19707/Article-23-CBRC-report-slides-SATM-2025"
+    },
+    {
+      "category": "finance_committee",
+      "id": "https-sites-google-com-natickma-org-fincom-32e7a5d7",
+      "local_path": "",
+      "official": false,
+      "status": "identified",
+      "title": "https://sites.google.com/natickma.org/fincom",
+      "url": "https://sites.google.com/natickma.org/fincom"
+    },
+    {
+      "category": "warrant",
+      "id": "coffee-with-a-purpose-review-of-warrant-articles-7c596714",
+      "local_path": "",
+      "official": false,
+      "status": "identified",
+      "title": "Coffee with a Purpose Review of Warrant Articles",
+      "url": "https://www.youtube.com/watch?v=Z7mz7TsZSq8"
+    }
+  ],
+  "open_items": [
+    "This index uses article numbers found in source titles only.",
+    "Parse the official warrant and motion documents to confirm article titles and complete article coverage."
+  ],
+  "uncategorized_article_sources": [
+    {
+      "category": "related_document",
+      "id": "town-moderator-letter-to-members-in-preparation-for-satm-2025-47537cdf",
+      "local_path": "sources/town-moderator-letter-to-members-in-preparation-for-satm-2025-4ff22876.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Moderator Letter to Members in preparation for SATM 2025",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19524/Town-Moderator-Letter-to-Members-in-preparation-for-SATM-2025"
+    },
+    {
+      "category": "related_document",
+      "id": "town-moderator-statement-on-the-250th-anniversary-of-the-american-revolutionary-war-0c0d9b11",
+      "local_path": "sources/town-moderator-statement-on-the-250th-anniversary-of-the-american-revolutionary-war-f33aba6a.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Town Moderator Statement on the 250th Anniversary of the American Revolutionary War",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19525/Town-Moderator-Statement-on-the-250th-Anniversary-of--the-American-Revolutionary-War"
+    },
+    {
+      "category": "related_document",
+      "id": "natick-town-meeting-general-by-law-re-statements-and-rules-a7de5d1d",
+      "local_path": "sources/natick-town-meeting-general-by-law-re-statements-and-rules-6503d71e.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Natick Town Meeting: General By-law Re-statements and Rules",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19585/Natick-Town-Meeting-General-By-law-Re-statements-and-Rules"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "motion-reading-of-articles-and-motions-98418b94",
+      "local_path": "sources/motion-reading-of-articles-and-motions-db3deec0.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Motion: Reading of Articles and Motions",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19586/Motion-Reading-of-Articles-and-Motions"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "resolution-honoring-frank-foss-c1ed891d",
+      "local_path": "sources/resolution-honoring-frank-foss-087183e1.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "Resolution Honoring Frank Foss",
+      "url": "https://www.natickma.gov/DocumentCenter/View/19581/Resolution-Honoring-Frank-Foss"
+    }
+  ]
+}

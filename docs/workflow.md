@@ -183,6 +183,11 @@ python3 tools/generate_article_briefs.py \
 - FATM 2025 parsed 21 official motion/amendment documents: 14 substantive parsed records, 5 records needing OCR/manual text review, and 2 blank motion-form templates.
 - FATM 2025 parsed 60 official final-action outcome records from session minutes, covering all 33 articles.
 - The official FATM 2025 FinCom recommendation book link currently resolves to a Spring Annual Town Meeting 2026 Finance Committee Recommendation Book. The manifest records checksums, the parser emits warnings, and FATM briefs do not merge those mismatched recommendations.
+- SATM 2025 parsed 25 warrant articles.
+- SATM 2025 parsed 25 Finance Committee article recommendation sections.
+- SATM 2025 parsed 10 official motion/amendment documents: 6 substantive parsed records and 4 blank motion-form templates requiring review.
+- SATM 2025 parsed 59 official final-action outcome records, covering 8 articles. The official meeting page also links to `Voting Results (Unofficial)`, which is not used as an official source.
+- SATM 2025 did not expose a parsed official consent agenda source in the archived meeting page or Finance Committee recommendation book.
 - Draft article briefs are conservative. They now include parsed FinCom recommendation fields where the source passes the meeting-header check, parsed motion/amendment details where text is available, and parsed final actions where official session minutes are available.
 - FATM draft article briefs now include parsed final-action rows from official session minutes.
 - Draft for/against bullets are heuristic extraction aids and require reviewer confirmation.

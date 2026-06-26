@@ -1,0 +1,354 @@
+--- Page 1 ---
+
+Article 3 Amended Motion A
+Move that MotionA under Article 3 be amended as follows:
+• Replace the revenue source value for Free Cash from $2,962,707 to
+$3,462,707
+• Delete the revenue source line for Overlay Surplus in the amount of
+$500,000
+So that the amended MotionA under Article 3 reads as follows.
+• Amend the revenue source descriptions as follows, insert “and 
+Capital” after “Operational” and add “(Tax Levy)” after 
+Operational Override Fiscal Year 2026, so it reads “Operational 
+and Capital Override Fiscal Year 2026 (Tax Levy)”
+
+--- Page 2 ---
+
+Article3,MotionA:DepartmentBudgets
+MotionA:RequiresMajorityVote
+Move that the Town vote to appropriate the Grand Total Budget Amount shown below for the  
+purpose of operating the departments, committees and boards of the Town, said funds are to be  
+expended under the direction of the appropriate official or committees: School Committee;  
+Directorsof Libraries;Multi-memberboardorcommittee;DepartmentHead;Collector/Treasurer;  
+Comptroller;FinanceCommittee;TownAdministrator;orSuperintendentof PublicSchools.
+Education
+Natick PublicSchools
+Salaries &Expenses $95,491,904
+Total NatickPublicSchools: $95,491,904
+SouthMiddlesexRegionalVocationalTechnicalSchools (KeefeTechSchool)
+Expense (Assessment) $1,522,373
+TotalSouthMiddlesexRegionalVocationalTechnicalSchools: $1,522,373
+(KeefeTechSchool)
+Morse Institute Library
+Salaries $2,318,375
+Expenses $430,325
+Total Morse InstituteLibrary: $2,748,700
+Bacon Free Library
+Salaries $210,837
+Expenses $38,799
+Total BaconFree Library: $249,636
+TotalBudgetAmountforEducation: $100,012,613
+Motion continued on nextpage→
+
+--- Page 3 ---
+
+Article 3, Motion A: Department Budgets
+Administrative Support
+Select Board
+Salaries $1,438,512
+Expenses $886,174
+Total Select Board: $2,324,686
+Town Report
+Expenses $4,100
+Total Town Report: $4,100
+Finance
+Salaries $1,661,100
+Expenses $419,837
+Total Finance: $2,080,937
+Community & Economic Development
+Salaries $1,073,822
+Expenses $86,500
+Total Community & Economic Development: $1,160,322
+Weights & Measurers
+Salaries $34,922
+Expenses $990
+Total Weights & Measurers: $35,912
+Information Technology
+Salaries $535,306
+Expenses $1,540,154
+Total Information Technology: $2,075,460
+Town Clerk
+Salaries $354,756
+Expenses $53,896
+Total Town Clerk: $408,652
+Board of Registrars
+Salaries $40,600
+Expenses $84,694
+Total Board of Registrars: $125,294
+Legal
+Expenses $671,400
+Total Legal: $671,400
+Total Budget Amount for Administrative Support: $8,886,763
+Motion continued on next page
+
+--- Page 4 ---
+
+Article3,MotionA:DepartmentBudgets
+Committees&Commissions
+Committees& Commissions
+Expenses $24,328
+Total Committees& Commissions: $24,328
+AffordableHousing Trust
+Expenses $80,000
+Total AffordableHousing Trust: $80,000
+TotalBudgetAmountforCommittees &Commissions: $104,328
+Motion continued on nextpage→
+
+--- Page 5 ---
+
+Article3,MotionA:DepartmentBudgets
+PublicSafety
+EmergencyManagement
+Salaries $5,000
+Expenses $40,820
+TotalEmergency Management: $45,820
+ParkingEnforcement
+Salaries $105,800
+Expenses $82,700
+Total Parking Enforcement: $188,500
+Police
+Salaries $8,463,414
+Expenses $373,718
+TotalPolice: $8,837,132
+Fire
+Salaries $10,872,665
+Expenses $375,588
+TotalFire: $11,248,253
+TotalBudgetAmountforPublicSafety: $20,319,705
+Motion continued on nextpage→
+
+--- Page 6 ---
+
+Article3,MotionA:DepartmentBudgets
+Health & CommunityServices
+CommunityServices
+Salaries $1,733,361
+Expenses $495,613
+TotalCommunity Services: $2,228,974
+Board ofHealth
+Salaries $654,630
+Expenses $78,050
+Total Boardof Health: $732,680
+TotalBudgetAmountforHealth&CommunityServices: $2,961,654
+Motion continued on nextpage→
+
+--- Page 7 ---
+
+Article3,MotionA:DepartmentBudgets
+PublicWorks
+PublicWorks
+Salaries $5,016,241
+Expenses $3,657,370
+MunicipalEnergy $1,830,750
+Snow &Ice $550,000
+Total PublicWorks: $11,054,362
+TotalBudgetAmountforPublicWorks: $11,054,362
+Motion continued on nextpage→
+
+--- Page 8 ---
+
+Article3,MotionA:DepartmentBudgets
+SharedServices
+EmployeeFringe
+OtherPersonnelServices $22,688,052
+Merit/Performance $421,506
+TotalEmployeeFringe: $23,109,558
+Property &LiabilityInsurance
+Expenses $1,226,075
+TotalProperty&LiabilityInsurance: $1,226,075
+ContributoryRetirement
+Pension Assessment $14,854,240
+TotalContributory Retirement: $14,854,240
+Non-ContributoryRetirement
+Pensions $20,000
+Total Non-Contributory Retirement: $20,000
+DebtService
+Expenses $14,406,527
+TotalDebt Service: $14,406,527
+ReserveFund- Finance Committee
+Expenses $200,000
+TotalReserveFund- Finance Committee: $200,000
+FacilitiesManagement
+Salaries $3,820,494
+Expenses $922,380
+TotalFacilities Management: $4,742,874
+TotalBudgetAmountforSharedServices: $58,559,274
+GrandTotalBudgetAmountforMotionA: $201,898,699
+Andthattheaboveamount$201,898,699beraisedfromthefollowingsources:
+Tax Levy for Fiscal Year 2026 $148,811,273
+Operational and Capital Override Fiscal Year 2026 (Tax Levy) $7,000,000
+State Aid $17,989,215
+Local Receipts $20,484,523
+FreeCash $3,462,707
+Golf Course Indirects $88,562
+WaterSewerIndirects $3,894,683
+OtherAvailableFunds $167,736
+
+--- Page 9 ---
+
+Article 3 Motion A Summary Table
+DepartmentBudgets
+Education $100,012,613
+AdministrativeSupport $8,886,763
+Committees & Commissions $104,328
+Public Safety $20,319,705
+Health & CommunityServices $2,961,654
+Public Works $11,054,362
+Shared Services $58,559,274
+TotalBudgetAmountforMotionA $201,898,699
+FundingSources
+Tax Levy for Fiscal Year2026 $148,811,273
+Operational and Capital Override Fiscal Year2026 
+(Tax Levy)
+$7,000,000
+StateAid $17,989,215
+Local Receipts $20,484,523
+FreeCash $3,462,707
+Golf Course Indirects $88,562
+Water SewerIndirects $3,894,683
+Other AvailableFunds $167,736
+Total Amount to beraised $201,898,699
+
+--- Page 10 ---
+
+Article3,MotionB:EnterpriseFunds
+MotionB:RequiresMajorityVote
+Move that the Town vote to appropriate the Total Budget Amount for the Water and Sewer  
+Enterprise Fund and The Sassamon Trace Golf Course Enterprise Fund shown below for the  
+purposeof operatingtheEnterpriseFundsshown undertheassociatedcategoriesandapprove  
+the Water Sewer Enterprise Fund and Sassamon Trace Golf Course Enterprise Fund indirect  
+costs,said fundsaretobe expendedunderthedirectionof eachDepartmentHeadorDirector.
+Water &SewerFund
+Water&SanitarySewerOperations
+Salaries $2,833,670
+Expenses $9,369,965
+TotalWater&SanitarySewerOperations: $12,203,635
+UtilityBilling
+Salaries  
+Expenses
+$126,457
+$69,000
+TotalUtilityBilling: $195,457
+FringeBenefits
+Expenses $1,148,472
+TotalFringeBenefits: $1,148,472
+Water&SewerDebtService
+Principal  
+Interest
+$2,306,067
+$1,117,947
+TotalWater&SewerDebtService: $3,424,014
+Water&SewerReserveFund
+Expenses $200,000
+TotalWater&SewerReserveFund: $200,000
+TotalBudgetAmountforWater&SewerFund: $17,171,578
+Andthattheaboveamount$17,171,578 be raised fromthefollowingsouces:  
+Water Sewer User Fees $17,171,578
+
+--- Page 11 ---
+
+Article3,MotionB: EnterpriseFunds- Water&SewerIndirectCosts
+Water& SewerIndirectCosts
+DepartmentAllocations
+Public WorksAdministration $268,521
+Engineering $514,898
+EquipmentMaintenance $720,104
+Highway, Sanitation,Recycling $338,199
+Facilities $146,947
+Public Safety $232,966
+Finance $371,627
+TownAdministration $297,718
+CommunityDevelopment $150,969
+InformationTechnology $195,340
+Procurement $69,390
+Human Resources $11,535
+Legal Services $101,235
+Property&LiabilityInsurance $459,778
+Utilities $88,190
+Vehicle Fuel $171,268
+Sub-Total: $4,138,685
+WaterSewerStaffPerformingGeneralFundFunctions
+GIS Services $(68,491)
+W/S Admin. Asst. - DPW $(40,988)
+W/S Admin. Asst. - Collector $(46,107)
+Snow andRemoval $(73,491)
+SoftwareServicing $(14,925)
+Sub-Total: ($244,002)
+TotalWaterandSewerIndirectCosts: $3,894,683
+Andthatthesum of$3,894,683 appropriatedintheGeneralFund be raised fromthe  
+followingsource:
+Water Sewer User Fees $3,894,638
+
+--- Page 12 ---
+
+Article3,MotionB:EnterpriseFunds
+Sassamon Trace GolfEnterprise
+Sassamon TraceGolfOperations
+Salaries $453,121
+Expenses $296,911
+TotalSassamonTraceGolfOperations: $750,032
+SassamonTraceGolfFringeBenefits
+Other PersonnelServices $79,986
+TotalSassamon TraceGolfFringeBenefits: $79,986
+SassamonTraceGolfDebtService
+Principal $50,000
+Interest $9,687
+Lease Payment $99,583
+TotalSassamon TraceGolfDebtService: $159,270
+Sassamon Trace GolfReserveFund
+Expenses $20,000
+TotalSassamonTraceGolfReserveFund: $20,000
+TotalBudgetAmountforSassamon TraceGolfEnterprise: $1,009,288
+Andthattheaboveamount$1,009,288 be raised fromthefollowingsources:  
+Golf User Fees $1,009,288
+
+--- Page 13 ---
+
+Article3,MotionB: EnterpriseFunds- Sassamon TraceGolfIndirectCosts
+SassamonTraceGolfIndirectCosts
+DepartmentAllocations
+Public WorksAdministration $1,344
+EquipmentMaintenance $3,591
+Highway,Sanitation,Recycling $9,019
+CommunityServices $24,137
+Land Facilities andNaturalResources $4,039
+Public Safety $4,660
+Finance $12,376
+TownAdministration $3,971
+Procurement $398
+Human Resources $1,923
+Legal Services $1,688
+Property &LiabilityInsurance $12,261
+Utilities $6,300
+Vehicle Fuel $2,855
+TotalSassamon TraceGolfIndirectCosts: $88,562
+Andthatthesum of$88,562 appropriatedintheGeneralFund be raised fromthe  
+followingsource:
+Golf User Fees $88,562
+
+--- Page 14 ---
+
+Article 3 Motion B Summary Table
+Funds
+Water & Sewer EnterpriseFund $17,171,578
+Water & SewerIndirects $3,894,683
+Sassamon Trace Golf EnterpriseFund $1,009,288
+Sassamon Trace GolfIndirects $88,562
+TotalBudgetAmountforMotionB $22,164,111
+FundingSources
+Water & Sewer User Fees $21,066,261
+Golf UserFees $1,097,850
+Total Amount to beraised $22,164,111
+
+--- Page 15 ---
+
+Article 3 – Enterprise Funds – Sassamon Trace Golf Enterprise Fund
+– FY 2025 Omnibus Budget
+Motion C (Requires a Majority V ote)
+Move that the Town vote to increase the appropriation voted by the 2024  
+Spring Annual Town Meeting under Article 3 by the sum of $65,000 to  
+supplement the Sassamon Golf Enterprise budget as voted under Article 3  
+Motion B of the 2024 Spring Annual Town Meeting by adding $65,000 to  
+Sassamon Trace Golf Operations Expenses.
+With the above budget supplement to be raised from the following source:  
+Golf Retained Earnings for Fiscal Y ear 2025 - $65,000
