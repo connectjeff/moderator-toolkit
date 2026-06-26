@@ -21,6 +21,7 @@ Natick source manifests should start from:
 - 2026 Spring Annual Town Meeting: https://www.natickma.gov/2347/2026-Spring-Annual-Town-Meeting
 - 2025 Fall Annual Town Meeting: https://www.natickma.gov/2287/2025-Fall-Annual-Town-Meeting
 - 2025 Spring Annual Town Meeting: https://www.natickma.gov/2228/2025-Spring-Annual-Town-Meeting
+- Natick Finance Committee: https://sites.google.com/natickma.org/fincom
 - Massachusetts General Laws: https://malegislature.gov/Laws/GeneralLaws
 
 ## Handling Non-Official Sources

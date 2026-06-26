@@ -368,7 +368,7 @@
       "category": "finance_committee",
       "id": "https-sites-google-com-natickma-org-fincom-32e7a5d7",
       "local_path": "",
-      "official": false,
+      "official": true,
       "status": "identified",
       "title": "https://sites.google.com/natickma.org/fincom",
       "url": "https://sites.google.com/natickma.org/fincom"

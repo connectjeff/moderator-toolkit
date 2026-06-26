@@ -12,20 +12,19 @@ Status: `draft`
 | --- | --- | --- | --- | --- |
 | 2026-satm-warrant-approved-3-2-2026-docx-1-1-a836d09e | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/21455/2026-SATM-Warrant-Approved-322026docx-1-1 |
 | fincom-recommendation-book-satm26-05931d83 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/21665/FinCom_Recommendation_Book_SATM26 |
-| natick-atm-spring-2026-042826-report-d621316b | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report |
-| natick-atm-spring-2026-043026-report-35cb2005 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report |
-| article-18-amendment-foss-27be3901 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss |
-| article-18-amendment-jeanne-ostroff-0d7233fd | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff |
-| article-18-procedural-motion-ostroff-a186275d | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff |
+| natick-atm-spring-2026-042826-report-d621316b | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report |
+| natick-atm-spring-2026-043026-report-35cb2005 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report |
+| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | True | identified | https://sites.google.com/natickma.org/fincom |
+| article-18-amendment-foss-27be3901 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss |
+| article-18-amendment-jeanne-ostroff-0d7233fd | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff |
+| article-18-procedural-motion-ostroff-a186275d | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff |
 | article-18-presentation-ostroff-5bb727fe | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/21991/Article-18-Presentation---Ostroff |
 
 ## Sources Needing Verification
 
 These sources are listed separately and should not support article summaries until a reviewer confirms their official status.
 
-| Source ID | Type | Status | URL |
-| --- | --- | --- | --- |
-| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
+None identified.
 
 ## Accepted Unofficial Sources
 

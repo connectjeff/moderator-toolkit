@@ -10,9 +10,9 @@
         {
           "category": "motion_or_amendment",
           "id": "article-3-procedural-motion-coffey-ac9c126b",
-          "local_path": "",
+          "local_path": "sources/article-3-procedural-motion-coffey-d12a8b1c.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 3 Procedural Motion Coffey",
           "url": "https://www.natickma.gov/DocumentCenter/View/22000/Article-3-Procedural-Motion-Coffey"
         }
@@ -25,9 +25,9 @@
         {
           "category": "motion_or_amendment",
           "id": "article-12-motion-bruce-evans-b2d6382d",
-          "local_path": "",
+          "local_path": "sources/article-12-motion-bruce-evans-0f99cd12.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 12 Motion Bruce Evans",
           "url": "https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans"
         },
@@ -51,9 +51,9 @@
         {
           "category": "motion_or_amendment",
           "id": "article-13-motion-bruce-evans-95e86b01",
-          "local_path": "",
+          "local_path": "sources/article-13-motion-bruce-evans-424c04d8.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 13 Motion Bruce Evans",
           "url": "https://www.natickma.gov/DocumentCenter/View/21978/Article-13-Motion-Bruce-Evans"
         }
@@ -68,9 +68,9 @@
         {
           "category": "motion_or_amendment",
           "id": "article-17-motion-bruce-evans-787697c8",
-          "local_path": "",
+          "local_path": "sources/article-17-motion-bruce-evans-ba95c252.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 17 Motion Bruce Evans",
           "url": "https://www.natickma.gov/DocumentCenter/View/21979/Article-17-Motion-Bruce-Evans"
         }
@@ -83,27 +83,27 @@
         {
           "category": "motion_or_amendment",
           "id": "article-18-amendment-foss-27be3901",
-          "local_path": "",
+          "local_path": "sources/article-18-amendment-foss-1863abe9.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 18 Amendment Foss",
           "url": "https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss"
         },
         {
           "category": "motion_or_amendment",
           "id": "article-18-amendment-jeanne-ostroff-0d7233fd",
-          "local_path": "",
+          "local_path": "sources/article-18-amendment-jeanne-ostroff-b0191398.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 18 Amendment Jeanne Ostroff",
           "url": "https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff"
         },
         {
           "category": "motion_or_amendment",
           "id": "article-18-procedural-motion-ostroff-a186275d",
-          "local_path": "",
+          "local_path": "sources/article-18-procedural-motion-ostroff-30009c58.pdf",
           "official": true,
-          "status": "identified",
+          "status": "parsed",
           "title": "Article 18 Procedural Motion Ostroff",
           "url": "https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff"
         },
@@ -143,18 +143,18 @@
     {
       "category": "minutes_or_actions",
       "id": "natick-atm-spring-2026-042826-report-d621316b",
-      "local_path": "",
+      "local_path": "sources/natick-atm-spring-2026-042826-report-c54d58e9.pdf",
       "official": true,
-      "status": "identified",
+      "status": "parsed",
       "title": "Natick ATM Spring 2026 042826 Report",
       "url": "https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report"
     },
     {
       "category": "minutes_or_actions",
       "id": "natick-atm-spring-2026-043026-report-35cb2005",
-      "local_path": "",
+      "local_path": "sources/natick-atm-spring-2026-043026-report-9916f2a8.pdf",
       "official": true,
-      "status": "identified",
+      "status": "parsed",
       "title": "Natick ATM Spring 2026 043026 Report",
       "url": "https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report"
     },
@@ -162,7 +162,7 @@
       "category": "finance_committee",
       "id": "https-sites-google-com-natickma-org-fincom-32e7a5d7",
       "local_path": "",
-      "official": false,
+      "official": true,
       "status": "identified",
       "title": "https://sites.google.com/natickma.org/fincom",
       "url": "https://sites.google.com/natickma.org/fincom"
@@ -239,18 +239,18 @@
     {
       "category": "motion_or_amendment",
       "id": "consideration-of-use-of-consent-agenda-at-satm-2026-638f9448",
-      "local_path": "",
+      "local_path": "sources/consideration-of-use-of-consent-agenda-at-satm-2026-28d6d6a5.pdf",
       "official": true,
-      "status": "identified",
+      "status": "parsed",
       "title": "Consideration of Use of Consent Agenda at SATM 2026",
       "url": "https://www.natickma.gov/DocumentCenter/View/21808/Consideration-of-Use-of-Consent-Agenda-at-SATM-2026"
     },
     {
       "category": "motion_or_amendment",
       "id": "satm-2026-consent-agenda-motion-84fae260",
-      "local_path": "",
+      "local_path": "sources/satm-2026-consent-agenda-motion-805ded3b.pdf",
       "official": true,
-      "status": "identified",
+      "status": "parsed",
       "title": "SATM 2026 CONSENT AGENDA MOTION",
       "url": "https://www.natickma.gov/DocumentCenter/View/21855/SATM-2026-CONSENT-AGENDA-MOTION"
     },

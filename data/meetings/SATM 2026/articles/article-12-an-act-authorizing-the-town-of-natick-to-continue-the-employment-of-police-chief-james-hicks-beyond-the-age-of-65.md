@@ -12,18 +12,17 @@ Status: `draft`
 | --- | --- | --- | --- | --- |
 | 2026-satm-warrant-approved-3-2-2026-docx-1-1-a836d09e | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/21455/2026-SATM-Warrant-Approved-322026docx-1-1 |
 | fincom-recommendation-book-satm26-05931d83 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/21665/FinCom_Recommendation_Book_SATM26 |
-| natick-atm-spring-2026-042826-report-d621316b | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report |
-| natick-atm-spring-2026-043026-report-35cb2005 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report |
-| article-12-motion-bruce-evans-b2d6382d | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans |
+| natick-atm-spring-2026-042826-report-d621316b | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report |
+| natick-atm-spring-2026-043026-report-35cb2005 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report |
+| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | True | identified | https://sites.google.com/natickma.org/fincom |
+| article-12-motion-bruce-evans-b2d6382d | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans |
 | select-board-articles-12-and-13-final-april-20-fcb4221f | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/21939/Select-Board-Articles-12-and-13-FINAL-April-20 |
 
 ## Sources Needing Verification
 
 These sources are listed separately and should not support article summaries until a reviewer confirms their official status.
 
-| Source ID | Type | Status | URL |
-| --- | --- | --- | --- |
-| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
+None identified.
 
 ## Accepted Unofficial Sources
 

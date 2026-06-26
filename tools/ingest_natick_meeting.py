@@ -211,6 +211,8 @@ def category_for_link(title: str, section: str, url: str) -> str:
 def is_official_natick_source(url: str, official_page_url: str) -> bool:
     parsed = urllib.parse.urlparse(url)
     official_page = urllib.parse.urlparse(official_page_url)
+    if parsed.netloc == "sites.google.com" and parsed.path.startswith("/natickma.org/"):
+        return True
     if parsed.netloc == official_page.netloc:
         return True
     if parsed.netloc.endswith("natickma.gov"):

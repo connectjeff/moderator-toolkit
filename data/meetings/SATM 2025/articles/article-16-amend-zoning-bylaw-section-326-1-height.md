@@ -23,6 +23,7 @@ Status: `draft`
 | town-meeting-member-voting-5-06-25-session-3-987f208c | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20355/Town-Meeting-Member-Voting-50625-Session-3 |
 | town-meeting-member-voting-5-08-25-session-4-aa08fccc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4 |
 | article-23-cbrc-report-slides-satm-2025-49ba7595 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/19707/Article-23-CBRC-report-slides-SATM-2025 |
+| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | True | identified | https://sites.google.com/natickma.org/fincom |
 | articles-16-and-18-21-zoning-bylaws-amanda-loomis-dad9cdd5 | presentation | True | parsed | https://www.natickma.gov/DocumentCenter/View/19590/Articles-16-and-18-21-Zoning-Bylaws-Amanda-Loomis |
 
 ## Sources Needing Verification
@@ -31,7 +32,6 @@ These sources are listed separately and should not support article summaries unt
 
 | Source ID | Type | Status | URL |
 | --- | --- | --- | --- |
-| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
 ## Accepted Unofficial Sources

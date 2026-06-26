@@ -21,6 +21,7 @@ Status: `draft`
 | 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
 | 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
 | 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | True | identified | https://sites.google.com/natickma.org/fincom |
 | fatm-2025-mckenzie-article-33-procedural-motion-ca82e72a | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20615/FATM-2025-McKenzie-Article-33-Procedural-Motion |
 | fatm-2025-mckenzie-article-33-substitute-motion-b-c5cf7f88 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20648/FATM-2025-McKenzie-Article-33-Substitute-Motion-B |
 | fatm-2025-article-33-presentation-3fdbd751 | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/20687/FATM-2025-Article-33-Presentation |
@@ -35,7 +36,6 @@ These sources are listed separately and should not support article summaries unt
 | Source ID | Type | Status | URL |
 | --- | --- | --- | --- |
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
-| https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
 ## Accepted Unofficial Sources
 
