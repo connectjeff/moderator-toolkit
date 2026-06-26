@@ -47,6 +47,7 @@ See [current workflow](docs/workflow.md).
 ## Current Test Meetings
 
 - [SATM 2026](data/meetings/SATM%202026/README.md)
+- [SATM 2025](data/meetings/SATM%202025/README.md)
 - [FATM 2025](data/meetings/FATM%202025/README.md)
 
 ## Development Roadmap
