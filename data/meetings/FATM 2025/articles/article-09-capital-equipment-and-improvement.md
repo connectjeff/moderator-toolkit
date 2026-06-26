@@ -31,6 +31,12 @@ These sources are listed separately and should not support article summaries unt
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 9 asks Town Meeting to act on `Capital Equipment and Improvement`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -85,14 +91,6 @@ Action Notes:
 - Page 20 October 21, 2 0 2 5 M otion B under Article 9 passed by a 2/3rds vote (111/3/1) . Source: https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1
 
 
-## Consent Agenda Assessment
-
-Recommendation: `needs review`
-
-Reason: The warrant article has been parsed, but Finance Committee recommendation, motions, and official consent agenda materials have not yet been merged.
-
-Cautions: Do not place on a consent agenda solely from this draft brief.
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -107,7 +105,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

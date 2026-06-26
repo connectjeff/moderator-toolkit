@@ -103,23 +103,6 @@ def recommendation_unanimity(quantum: str, recommendation: str) -> str:
     return "not unanimous"
 
 
-def parse_consent_articles(text: str) -> list[str]:
-    match = re.search(
-        r"Move that the Town vote to take Articles\s+(.*?)\s+out of order and that they be .Passed by Consent.",
-        text,
-        re.IGNORECASE | re.DOTALL,
-    )
-    if not match:
-        return []
-    article_text = compact(match.group(1)).replace(" and ", ", ")
-    articles = []
-    for part in article_text.split(","):
-        part = part.strip()
-        if re.fullmatch(r"[0-9]+[A-Z]?", part, re.IGNORECASE):
-            articles.append(part.upper())
-    return articles
-
-
 def parse_article_section(article_id: str, body: str) -> dict[str, object]:
     title, sponsor = extract_title_and_sponsor(body)
     recommendation = extract_line_value(body, "RECOMMENDATION")
@@ -178,9 +161,6 @@ def meeting_warnings(meeting_id: str, text: str) -> list[str]:
 def parse_fincom(text: str, meeting_id: str) -> dict[str, object]:
     normalized = normalize_text(text)
     source_window = normalized
-    consent_marker = "[end of consent agenda motion]"
-    if consent_marker in source_window:
-        source_window = source_window.split(consent_marker, 1)[1]
     additional_marker = "Additional Materials"
     first_article_body = source_window.find(ARTICLE_LANGUAGE_LABEL)
     additional_position = source_window.rfind(additional_marker)
@@ -207,7 +187,6 @@ def parse_fincom(text: str, meeting_id: str) -> dict[str, object]:
     return {
         "meeting_id": meeting_id,
         "article_count": len(articles),
-        "consent_agenda_articles": parse_consent_articles(normalized),
         "articles": articles,
         "warnings": meeting_warnings(meeting_id, normalized),
         "open_items": [
@@ -231,8 +210,6 @@ def main() -> int:
     output_path.write_text(json.dumps(parsed, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"Wrote {output_path}")
     print(f"Articles parsed: {parsed['article_count']}")
-    if parsed["consent_agenda_articles"]:
-        print("Consent agenda articles:", ", ".join(parsed["consent_agenda_articles"]))
     for warning in parsed["warnings"]:
         print(f"warning: {warning}")
     return 0

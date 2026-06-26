@@ -50,50 +50,6 @@ def sentence_summary(article: dict[str, object]) -> str:
     return f"Article {article['article']} concerns `{title}`, sponsored by {sponsor}. The warrant text needs reviewer confirmation."
 
 
-def consent_assessment(
-    article_id: str,
-    article_sources: list[dict[str, object]],
-    fincom: dict[str, object] | None,
-) -> tuple[str, str, str]:
-    if fincom and article_id in set(fincom.get("consent_agenda_articles", [])):
-        return (
-            "good candidate",
-            "The article appears in the official consent agenda motion parsed from the Finance Committee recommendation book.",
-            "Confirm against the final moderator consent agenda motion and remove if any Town Meeting member objects.",
-        )
-    has_motion = any(source["category"] == "motion_or_amendment" for source in article_sources)
-    has_presentation = any(source["category"] == "presentation" for source in article_sources)
-    if fincom:
-        if has_motion:
-            return (
-                "not recommended",
-                "The article was not listed in the parsed official consent agenda and has article-specific motion or amendment materials identified.",
-                "Review all motions and amendments before floor action.",
-            )
-        return (
-            "not recommended",
-            "The article was not listed in the parsed official consent agenda from the Finance Committee recommendation book.",
-            "This is a conservative recommendation pending final moderator review.",
-        )
-    if has_motion:
-        return (
-            "needs review",
-            "Article-specific motions or amendments are already identified, so consent suitability should wait for motion and FinCom review.",
-            "Check whether the official consent agenda motion includes or excludes this article.",
-        )
-    if has_presentation:
-        return (
-            "needs review",
-            "A sponsor presentation is identified, which may indicate floor discussion or complexity.",
-            "Review the presentation and Finance Committee discussion before treating this as consent-ready.",
-        )
-    return (
-        "needs review",
-        "The warrant article has been parsed, but Finance Committee recommendation, motions, and official consent agenda materials have not yet been merged.",
-        "Do not place on a consent agenda solely from this draft brief.",
-    )
-
-
 def excerpt(value: str, limit: int = 900) -> str:
     value = re.sub(r"\s+", " ", value).strip()
     if len(value) <= limit:
@@ -315,8 +271,6 @@ def brief_markdown(
 ) -> str:
     all_sources = meeting_sources + article_sources
     article_id = str(article["article"])
-    usable_fincom = fincom if not fincom_warnings else None
-    consent_status, consent_reason, consent_caution = consent_assessment(article_id, article_sources, usable_fincom)
     return f"""# Article {article['article']}: {article['title']}
 
 Meeting: `{meeting_id}`
@@ -368,14 +322,6 @@ Action Notes:
 
 {action_details(article_actions)}
 
-## Consent Agenda Assessment
-
-Recommendation: `{consent_status}`
-
-Reason: {consent_reason}
-
-Cautions: {consent_caution}
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -390,7 +336,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

@@ -32,6 +32,12 @@ These sources are listed separately and should not support article summaries unt
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 31 asks Town Meeting to act on `ByLaw Changes Articles 81, 22 and a New Bylaw Article`, sponsored by Charter and ByLaw Review Committee. The official warrant text should be reviewed before this summary is finalized.
@@ -98,14 +104,6 @@ Action Notes:
 - The motion passed by a majority hand vote. Source: https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4
 
 
-## Consent Agenda Assessment
-
-Recommendation: `needs review`
-
-Reason: Article-specific motions or amendments are already identified, so consent suitability should wait for motion and FinCom review.
-
-Cautions: Check whether the official consent agenda motion includes or excludes this article.
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -120,7 +118,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

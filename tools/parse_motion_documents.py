@@ -53,8 +53,6 @@ def article_ids_from_title(title: str) -> list[str]:
 
 def motion_kind(title: str, text: str) -> str:
     lowered = f"{title} {text[:500]}".casefold()
-    if "consent agenda" in lowered:
-        return "consent_agenda"
     if "procedural motion" in lowered:
         return "procedural_motion"
     if "substitute motion" in lowered:
@@ -135,8 +133,6 @@ def floor_impact(kind: str, status: str) -> str:
         return "No substantive motion text extracted; verify whether the official link points to the intended motion."
     if status == "no_extractable_text":
         return "PDF text extraction produced no substantive text; OCR or manual review is needed."
-    if kind == "consent_agenda":
-        return "Potentially controls consent agenda handling or article order."
     if kind == "procedural_motion":
         return "Procedural effect; moderator should review timing, order, and whether debate or vote thresholds apply."
     if kind == "substitute_motion":

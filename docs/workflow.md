@@ -96,7 +96,6 @@ The parser extracts:
 - Date voted.
 - Motion vote threshold.
 - Discussion text.
-- Published consent agenda article list.
 
 If the FinCom book header does not match the meeting ID, generated briefs will show a source warning and will not merge the mismatched recommendation records.
 
@@ -128,7 +127,7 @@ python3 tools/parse_motion_documents.py \
   --output "data/meetings/SATM 2026/working/motions.json"
 ```
 
-The parser classifies motion records as `motion`, `procedural_motion`, `substitute_motion`, `amendment`, `consent_agenda`, `memo`, `handout`, or `document`. It also flags `blank_template` and `no_extractable_text` records for moderator review.
+The parser classifies motion records as `motion`, `procedural_motion`, `substitute_motion`, `amendment`, `memo`, `handout`, or `document`. Archived consent agenda motions are kept as meeting source material, but the toolkit does not assemble or recommend consent agendas.
 
 ## 8. Parse Final Actions From Official Minutes
 
@@ -176,7 +175,6 @@ python3 tools/generate_article_briefs.py \
 
 - SATM 2026 parsed 18 warrant articles.
 - SATM 2026 parsed 18 Finance Committee article recommendation sections.
-- SATM 2026 parsed the official consent agenda list as Articles 1, 2, 4, 5, 6, 7, 8, 10, 11, 14, and 15.
 - SATM 2026 parsed 9 official motion/amendment documents: 4 substantive parsed records and 5 blank motion-form templates requiring review.
 - SATM 2026 archived and extracted 2 official voting-system reports, but no official session-minutes prose was available in the manifest for final-action parsing.
 - FATM 2025 parsed 33 warrant articles.
@@ -188,7 +186,6 @@ python3 tools/generate_article_briefs.py \
 - SATM 2025 parsed 10 official motion/amendment documents: 6 substantive parsed records and 4 blank motion-form templates requiring review.
 - SATM 2025 parsed 59 official final-action outcome records, covering 8 articles.
 - SATM 2025 also parsed 25 accepted unofficial vote-result records from the Finance Committee Google workspace spreadsheet linked on the official meeting page. The source remains marked `official: false` and `accepted_unofficial: true`.
-- SATM 2025 did not use a consent agenda.
 - Draft article briefs are conservative. They now include parsed FinCom recommendation fields where the source passes the meeting-header check, parsed motion/amendment details where text is available, and parsed final actions where official session minutes are available.
 - FATM draft article briefs now include parsed final-action rows from official session minutes.
 - Draft for/against bullets are heuristic extraction aids and require reviewer confirmation.

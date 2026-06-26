@@ -31,6 +31,12 @@ These sources are listed separately and should not support article summaries unt
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 3 asks Town Meeting to act on `Rescind Authorized, Unissued Debt`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -85,14 +91,6 @@ Action Notes:
 - To see what action the Town will take to amend or to change: 1) Section 1 Rules of Procedure of Article 3 Procedure at Town Meetings of the Town By -Laws to change the title and authorship reference to “ Town Meeting Time, A Handbook of Parliamentary Law, 4th Edition ” (the 4th Edition) or to a more or the most recent edition of Town Meeting Time updated by the Massachusetts Moderators Association; 2) Section 1 Rules of Procedure of Article 3 Procedure at Town Meetings to specify whether references to Town Meeting Time shall automatically refer to the most recent edition of Town Meeting Time or to provide that such versions, if any, subsequent to the 4th Edition, must be specifically named and or adopted by Town Meeting vote; 3) Other sections or Articles in the Town Bylaws provided such amendments or changes are directly related or responsive to changes in the 4th Edition that are i) identified, ii) noticed, iii) highlighted and/or contained within a 4th Edition chapter or section that is listed in either a) the “ Town Meeting Time 4th Edition Appendix C: Mapping of 3rd Edition to 4th Edition Sections ” or b) the “ Editorial Notes on Town Meeting Time 4th Edition ” as such documents are published by the Massachusetts Moderators Association with a copy of each document placed on file with the Town Clerk of Natick; (For convenience only, copies of documents referred to in a) and b) above may also be found at https://massmoderators.org/tmt4/ under https://drive.google.com/file/d/1qm1aekuPTpyyCXs_c5EkyIk79UrKaQ1j/view and https://drive.google.com/file/d/13ZOaF7J0SVqogsdywFpODwXBdkXfTGUM/view as long as such links are maintained by the Massachusetts Moderators Association. Source: https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1
 
 
-## Consent Agenda Assessment
-
-Recommendation: `needs review`
-
-Reason: The warrant article has been parsed, but Finance Committee recommendation, motions, and official consent agenda materials have not yet been merged.
-
-Cautions: Do not place on a consent agenda solely from this draft brief.
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -107,7 +105,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

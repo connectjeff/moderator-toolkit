@@ -32,6 +32,12 @@ These sources are listed separately and should not support article summaries unt
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 22 asks Town Meeting to act on `Amend Zoning Bylaws: Section 200 – Definition: Limited Site Plan Review`, sponsored by Planning Board. The official warrant text should be reviewed before this summary is finalized.
@@ -86,14 +92,6 @@ Action Notes:
 - Motion B: Amending By-Law Article 22 Town Counsel No action moved by Todd Gillenwater, seconded by Rich Sidney that the town vote to amend Article 22 of the By-Laws by adding a new section 9 as Follows; “ Section 9: Special Zoning Advisory Counsel a. Source: https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4
 
 
-## Consent Agenda Assessment
-
-Recommendation: `needs review`
-
-Reason: A sponsor presentation is identified, which may indicate floor discussion or complexity.
-
-Cautions: Review the presentation and Finance Committee discussion before treating this as consent-ready.
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -108,7 +106,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

@@ -32,22 +32,10 @@ Next:
 - Replace heuristic for/against bullets with stronger structured summaries grounded in the official discussion text.
 - Resolve the current FATM 2025 FinCom source mismatch on the official website before merging FATM recommendation fields.
 
-## Priority 4: Consent Agenda Candidate Analysis
-
-- Done for SATM 2026: Parse the published consent agenda article list from the Finance Committee recommendation book.
-- Started: Suggest `good candidate` when an article appears in the official parsed consent agenda list.
-- Started: Suggest `not recommended` when a parsed FinCom book exists and the article is excluded from the official consent agenda list.
-
-Next:
-
-- Build consent agenda criteria from Town Meeting Time, Natick rules, and past Natick practice.
-- Improve candidate status beyond the official list: `good candidate`, `possible candidate`, `not recommended`, or `needs review`.
-- Explain the reason in moderator-facing terms, including known controversy, amendments, financial impact, vote threshold, or procedural complexity.
-
-## Priority 5: Motion And Amendment Integration
+## Priority 4: Motion And Amendment Integration
 
 - Done: Archive and extract official motion and amendment documents for SATM 2026 and FATM 2025.
-- Done: Parse motion document records and classify procedural motions, substitute motions, amendments, consent agenda materials, handouts, and memos.
+- Done: Parse motion document records and classify procedural motions, substitute motions, amendments, handouts, memos, and other archived motion materials.
 - Done: Flag blank motion-form templates and PDFs with no extractable text.
 - Started: Merge parsed motion details and floor-impact notes into article briefs.
 
@@ -58,25 +46,25 @@ Next:
 - Compare motion text to warrant language and FinCom motion text.
 - Detect motion dependencies such as "if Article 12 passes/fails."
 
-## Priority 6: Past Meeting Review
+## Priority 5: Past Meeting Review
 
 - Done for FATM 2025: Summarize final actions and votes by article from official session minutes.
 - Started: Compare warrant intent, motion text, Finance Committee recommendation, and final Town Meeting action.
-- Track reconsideration, referral, indefinite postponement, amendments, and consent agenda handling.
+- Track reconsideration, referral, indefinite postponement, amendments, and other final-action handling.
 
 Next:
 
 - Build a reliable parser for raw voting-system reports so SATM 2026 can get final-action rows even without prose minutes.
-- Add a past-meeting dashboard showing action status, vote counts, consent handling, referrals, and articles without parsed final outcomes.
+- Add a past-meeting dashboard showing action status, vote counts, referrals, and articles without parsed final outcomes.
 - Distinguish final main-motion result from intermediate procedural outcomes in a compact article status field.
 
-## Priority 7: User Interface
+## Priority 6: User Interface
 
-- Provide a meeting dashboard with article status, source coverage, consent agenda suggestions, and floor-readiness notes.
+- Provide a meeting dashboard with article status, source coverage, and floor-readiness notes.
 - Add filters for unresolved issues, motions received, Finance Committee positions, and likely procedural complexity.
 - Export moderator packets as Markdown, PDF, or Word.
 
-## Priority 8: Multi-Town Configuration
+## Priority 7: Multi-Town Configuration
 
 - Add town profiles for charter, bylaws, rules, source URLs, article numbering conventions, vote thresholds, and committee names.
 - Keep Natick as the regression test profile while allowing another moderator to configure their own town.

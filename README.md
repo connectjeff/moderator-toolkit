@@ -16,7 +16,6 @@ For each warrant article, the toolkit should produce a moderator-facing brief th
 - Plain-language summary of the article and what Town Meeting is being asked to do.
 - Related motions, substitute motions, procedural motions, amendments, and sponsor materials.
 - Finance Committee recommendation, vote status, discussion highlights, and summarized arguments for and against when an official recommendation book is available.
-- Consent agenda suitability with reasons, cautions, and any known procedural risks.
 - Notes for floor management, including likely amendments, vote thresholds, conflicts, special rules, and questions the moderator may need to resolve.
 
 ## Source Standard

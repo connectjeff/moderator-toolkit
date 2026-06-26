@@ -1,6 +1,6 @@
 # Official Source Policy
 
-The toolkit should use official sources for article analysis, motion tracking, and consent agenda recommendations.
+The toolkit should use official sources for article analysis, motion tracking, and meeting review.
 
 ## Authoritative Source Types
 

@@ -31,6 +31,12 @@ These sources are listed separately and should not support article summaries unt
 | unofficial-vote-count-6036b702 | minutes_or_actions | identified | https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 32 asks Town Meeting to act on `Changes in Town Meeting Time and Town ByLaws`, sponsored by Charter and ByLaw Review Committee. The official warrant text should be reviewed before this summary is finalized.
@@ -89,14 +95,6 @@ Action Notes:
 - The consent agenda passed by a majority vote (106/2/4). Source: https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1
 
 
-## Consent Agenda Assessment
-
-Recommendation: `needs review`
-
-Reason: The warrant article has been parsed, but Finance Committee recommendation, motions, and official consent agenda materials have not yet been merged.
-
-Cautions: Do not place on a consent agenda solely from this draft brief.
-
 ## Floor Management Notes
 
 Vote threshold: Needs review.
@@ -111,7 +109,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

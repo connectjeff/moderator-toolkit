@@ -24,6 +24,12 @@ These sources are listed separately and should not support article summaries unt
 | --- | --- | --- | --- |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 17 asks Town Meeting to act on `Natural and Synthetic Turf Field Study Group Report`, sponsored by Select Board. The official warrant text should be reviewed before this summary is finalized.
@@ -77,20 +83,12 @@ Draft Arguments Against (reviewer-confirm):
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
-| No parsed official final action |  |  |  |  |
+| No parsed final action |  |  |  |  |
 
 Action Notes:
 
-No parsed official final action is available yet. Review archived minutes/action reports manually if needed.
+No parsed final action is available yet. Review archived minutes/action reports manually if needed.
 
-
-## Consent Agenda Assessment
-
-Recommendation: `not recommended`
-
-Reason: The article was not listed in the parsed official consent agenda and has article-specific motion or amendment materials identified.
-
-Cautions: Review all motions and amendments before floor action.
 
 ## Floor Management Notes
 
@@ -106,7 +104,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:

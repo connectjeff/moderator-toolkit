@@ -34,14 +34,6 @@ Arguments For:
 
 Arguments Against:
 
-## Consent Agenda Assessment
-
-Recommendation: `good candidate | possible candidate | not recommended | needs review`
-
-Reason:
-
-Cautions:
-
 ## Floor Management Notes
 
 Vote threshold:

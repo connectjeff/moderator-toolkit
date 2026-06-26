@@ -23,6 +23,12 @@ These sources are listed separately and should not support article summaries unt
 | --- | --- | --- | --- |
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+None identified.
+
 ## Moderator Summary
 
 Article 5 asks Town Meeting to act on `Unpaid Bills`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -65,20 +71,12 @@ Needs reviewer summary from the official discussion text.
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
-| No parsed official final action |  |  |  |  |
+| No parsed final action |  |  |  |  |
 
 Action Notes:
 
-No parsed official final action is available yet. Review archived minutes/action reports manually if needed.
+No parsed final action is available yet. Review archived minutes/action reports manually if needed.
 
-
-## Consent Agenda Assessment
-
-Recommendation: `good candidate`
-
-Reason: The article appears in the official consent agenda motion parsed from the Finance Committee recommendation book.
-
-Cautions: Confirm against the final moderator consent agenda motion and remove if any Town Meeting member objects.
 
 ## Floor Management Notes
 
@@ -94,7 +92,6 @@ Open items:
 
 - Confirm extracted warrant text against the official PDF.
 - Merge parsed motion text and FinCom recommendation details.
-- Replace conservative consent assessment with criteria-based recommendation.
 
 Reviewer:
 Reviewed date:
