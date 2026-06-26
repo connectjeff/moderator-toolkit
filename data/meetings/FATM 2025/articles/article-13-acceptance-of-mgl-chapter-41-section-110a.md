@@ -11,16 +11,16 @@ Status: `draft`
 | Source ID | Type | Official | Status | URL |
 | --- | --- | --- | --- | --- |
 | 2025-fatm-warrant-approved-4f2fda15 | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved |
-| 2025-fatm-fincom-recommendation-book-d0d35dc2 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book |
-| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
-| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
-| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
-| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
-| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
-| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
-| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
-| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
-| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| 2025-fatm-fincom-recommendation-book-google-drive-b778d2e6 | finance_committee | True | parsed | https://drive.google.com/file/d/1m5RvS4PLIla7Ye1hJ20jNWCdoF6vJqi0/view?usp=drivesdk |
+| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
+| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
+| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
+| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
+| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
+| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
+| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
+| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
+| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
 
 ## Sources Needing Verification
 
@@ -57,26 +57,27 @@ No parsed article-specific motion text is available yet.
 
 ## Finance Committee
 
-Recommendation: Not merged.
-Vote: Not merged.
-Unanimous: Not merged.
-
-Source Warning:
-
-- Expected meeting token `Fall` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
-- Expected meeting token `2025` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
+Recommendation: Favorable
+Vote: 8-0-4
+Unanimous: favorable without opposition
+Date voted: 9/11/2025
+Motion vote threshold: Requires a Majority Vote
 
 Discussion Highlights:
 
-The Finance Committee source file has a meeting mismatch warning, so recommendation content was not merged into this brief.
+Text of M.G.L. Chapter 41 Section 110A Section 110A: Office hours on Saturday Section 110A. Any public office in any city or town may remain closed on any or all Saturdays as may be determined from time to time, in a city by the city council, subject to the provisions of the city charter, or, in a town, by vote of the town at a special or regular town meeting, and the provisions of section nine of chapter four shall apply in the case of such closing of any such office on any Saturday to the same extent as if such Saturday were a legal holiday. Discussion and Questions: Andrew Ghobrial, Town Clerk, presented the article. He explained that this law, if adopted by the town, would allow the Clerk’s Office to close on Saturdays as we see fit. It would not impact the ability to hold a public hearing or a meeting on Saturday if it so chose. Once it is accepted, it would allow the Clerk's...
 
-Arguments For:
+Draft Arguments For (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- Motions & Debate: Motion made and seconded to recommend Favorable Action.
+- The Motion to recommend Favorable Action passed 8-0-4.
+- The committee voted 8-0-4 to recommend Favorable Action on the subject matter of Article 13.
 
-Arguments Against:
+Draft Arguments Against (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- It would not impact the ability to hold a public hearing or a meeting on Saturday if it so chose.
+- He noted three elections since he started - and during those three Saturdays, they saw hardly any traffic in the Clerk’s office.
+- Members encouraged additional forms of notice which might better serve the users.
 
 ## Final Action
 

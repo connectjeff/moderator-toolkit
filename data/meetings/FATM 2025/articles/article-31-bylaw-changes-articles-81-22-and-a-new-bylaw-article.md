@@ -11,17 +11,17 @@ Status: `draft`
 | Source ID | Type | Official | Status | URL |
 | --- | --- | --- | --- | --- |
 | 2025-fatm-warrant-approved-4f2fda15 | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved |
-| 2025-fatm-fincom-recommendation-book-d0d35dc2 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book |
-| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
-| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
-| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
-| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
-| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
-| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
-| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
-| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
-| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
-| article-31-motion-b-sb-memo-to-town-meeting-45196d67 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20681/Article-31-Motion-B-SB-Memo-to-Town-Meeting |
+| 2025-fatm-fincom-recommendation-book-google-drive-b778d2e6 | finance_committee | True | parsed | https://drive.google.com/file/d/1m5RvS4PLIla7Ye1hJ20jNWCdoF6vJqi0/view?usp=drivesdk |
+| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
+| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
+| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
+| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
+| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
+| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
+| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
+| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
+| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| article-31-motion-b-sb-memo-to-town-meeting-45196d67 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20681/Article-31-Motion-B-SB-Memo-to-Town-Meeting |
 
 ## Sources Needing Verification
 
@@ -68,26 +68,27 @@ SELECT BOARD SelectBoard@natickma.org ◆ (508) 647-6410 13 East Central St. Nat
 
 ## Finance Committee
 
-Recommendation: Not merged.
-Vote: Not merged.
-Unanimous: Not merged.
-
-Source Warning:
-
-- Expected meeting token `Fall` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
-- Expected meeting token `2025` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
+Recommendation: A: Favorable
+Vote: A: 13-0-0
+Unanimous: unanimously favorable
+Date voted: 9/16/2025
+Motion vote threshold: Requires a Majority Vote
 
 Discussion Highlights:
 
-The Finance Committee source file has a meeting mismatch warning, so recommendation content was not merged into this brief.
+Motion A: Mr. Griesmer, Chair of the CBRC explained that last spring they were in front of the committee with a motion related to propane storage, but it had some issues that they had to fix so now they are bringing it back. This change would regulate the placement of such tanks underground by the Board of Health (BOH), which has an interest in regulating these to protect ground water etc. This change adds propane to the definition of “fuel” in the by-law that regulates underground fuel tanks to ensure that the BOH can regulate them. However, they don’t want to have propane tanks subject to the same regulations as oil and gasoline storage, so it is put in one section of the by-law but exempt from the rest of the by-law. A member asked what is being protected; is it about protecting against contamination from the fuel? Mr. Griesmer said that it is about protecting against...
 
-Arguments For:
+Draft Arguments For (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- With something this important, we need to provide a standing resource to the town who can assist anyone who wants assistance with this including the Planning Board, the Finance Committee, and Town Meeting.
+- Current counsel has multi-disciplinary legal staff, and it seems simpler to ask for additional legal support from within existing counsel.
+- The intent of this bylaw change is to compel the hiring of additional zoning 164 specialty counsel, and to direct the administration to budget the additional appropriation needed.
 
-Arguments Against:
+Draft Arguments Against (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- A member asked what is being protected; is it about protecting against contamination from the fuel?
+- Griesmer said that it is about protecting against contamination in part but the purpose language doesn’t preclude the by-law accomplishing other goals.
+- Another member explained that water that can unnaturally pond because of these underground tanks, which can lead to contamination even if the contamination is not from the propane in the tank itself.
 
 ## Final Action
 

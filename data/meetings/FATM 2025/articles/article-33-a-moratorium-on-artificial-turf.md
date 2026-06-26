@@ -11,18 +11,18 @@ Status: `draft`
 | Source ID | Type | Official | Status | URL |
 | --- | --- | --- | --- | --- |
 | 2025-fatm-warrant-approved-4f2fda15 | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved |
-| 2025-fatm-fincom-recommendation-book-d0d35dc2 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book |
-| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
-| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
-| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
-| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
-| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
-| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
-| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
-| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
-| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
-| fatm-2025-mckenzie-article-33-procedural-motion-ca82e72a | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20615/FATM-2025-McKenzie-Article-33-Procedural-Motion |
-| fatm-2025-mckenzie-article-33-substitute-motion-b-c5cf7f88 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20648/FATM-2025-McKenzie-Article-33-Substitute-Motion-B |
+| 2025-fatm-fincom-recommendation-book-google-drive-b778d2e6 | finance_committee | True | parsed | https://drive.google.com/file/d/1m5RvS4PLIla7Ye1hJ20jNWCdoF6vJqi0/view?usp=drivesdk |
+| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
+| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
+| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
+| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
+| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
+| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
+| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
+| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
+| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| fatm-2025-mckenzie-article-33-procedural-motion-ca82e72a | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20615/FATM-2025-McKenzie-Article-33-Procedural-Motion |
+| fatm-2025-mckenzie-article-33-substitute-motion-b-c5cf7f88 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20648/FATM-2025-McKenzie-Article-33-Substitute-Motion-B |
 | fatm-2025-article-33-presentation-3fdbd751 | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/20687/FATM-2025-Article-33-Presentation |
 | article-33-faqs-part-2-from-sponsor-bc2d61f0 | related_document | True | identified | https://www.natickma.gov/DocumentCenter/View/20690/Article-33-FAQs-Part-2-from-Sponsor |
 | article-33-faqs-from-sponsor-5e73c643 | related_document | True | identified | https://www.natickma.gov/DocumentCenter/View/20685/Article-33-FAQs-from-Sponsor |
@@ -86,26 +86,26 @@ Move that the Town vote to adopt an advisory for all town departments to abide b
 
 ## Finance Committee
 
-Recommendation: Not merged.
-Vote: Not merged.
-Unanimous: Not merged.
-
-Source Warning:
-
-- Expected meeting token `Fall` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
-- Expected meeting token `2025` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
+Recommendation: A: No Action
+Vote: A: 10-0-0
+Unanimous: not unanimous
+Date voted: 9/18/2025
+Motion vote threshold: Requires a Majority Vote
 
 Discussion Highlights:
 
-The Finance Committee source file has a meeting mismatch warning, so recommendation content was not merged into this brief.
+Motion A: The Moderator, in consultation with Town Counsel, determined that Motion A is out of scope, and can not be taken up by Town Meeting under this Article’s language. Motion B: Dr. Donna McKenzie, citizen sponsor, presented this article, along with co- sponsors Dr. Roger Luckman, Tien Lum, and Ed Devereaux. They made several points in favor of this advisory resolution:  Some studies have shown negative health impacts related to the microplastics that are used in artificial turf.  These microplastics also create serious environmental concerns, including PFAS contamination of water supplies.  Artificial turf may be more expensive than natural grass when you factor in installation and replacement costs.  This would not prevent the building of a turf field, but rather would allow a “thoughtful pause” so the community as a whole can take a deep look at this issue before deciding...
 
-Arguments For:
+Draft Arguments For (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- However, one member argued that an advisory moratorium was unnecessary because we can have this conversation regardless, as the discussion that evening reflected.
+- The committee voted 6-4-0 on a motion to recommend favorable action on the subject matter of Article 33, Motion B.
 
-Arguments Against:
+Draft Arguments Against (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- Motion A: The Moderator, in consultation with Town Counsel, determined that Motion A is out of scope, and can not be taken up by Town Meeting under this Article’s language.
+-  These microplastics also create serious environmental concerns, including PFAS contamination of water supplies.
+-  This would not prevent the building of a turf field, but rather would allow a “thoughtful pause” so the community as a whole can take a deep look at this issue before deciding how to move forward.
 
 ## Final Action
 

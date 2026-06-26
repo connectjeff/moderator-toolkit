@@ -11,20 +11,20 @@ Status: `draft`
 | Source ID | Type | Official | Status | URL |
 | --- | --- | --- | --- | --- |
 | 2025-fatm-warrant-approved-4f2fda15 | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved |
-| 2025-fatm-fincom-recommendation-book-d0d35dc2 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book |
-| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
-| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
-| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
-| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
-| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
-| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
-| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
-| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
-| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
-| fatm-2025-krentzman-article-28-procedural-motion-5cfdea57 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20614/FATM-2025-Krentzman-Article-28-Procedural-Motion |
-| fatm-2025-leese-article-28-motion-g-67bb6e85 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20630/FATM-2025-Leese-Article-28-Motion-G |
-| fatm-2025-metro-west-collaborative-development-article-28-motion-g-handout-de6cb6c9 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20702/FATM-2025-Metro-West-Collaborative-Development-Article-28-Motion-G-Handout |
-| fatm-2025-scott-article-28-motion-g-referral-601e737f | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20701/FATM-2025-Scott-Article-28-Motion-G-Referral |
+| 2025-fatm-fincom-recommendation-book-google-drive-b778d2e6 | finance_committee | True | parsed | https://drive.google.com/file/d/1m5RvS4PLIla7Ye1hJ20jNWCdoF6vJqi0/view?usp=drivesdk |
+| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
+| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
+| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
+| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
+| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
+| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
+| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
+| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
+| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| fatm-2025-krentzman-article-28-procedural-motion-5cfdea57 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20614/FATM-2025-Krentzman-Article-28-Procedural-Motion |
+| fatm-2025-leese-article-28-motion-g-67bb6e85 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20630/FATM-2025-Leese-Article-28-Motion-G |
+| fatm-2025-metro-west-collaborative-development-article-28-motion-g-handout-de6cb6c9 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20702/FATM-2025-Metro-West-Collaborative-Development-Article-28-Motion-G-Handout |
+| fatm-2025-scott-article-28-motion-g-referral-601e737f | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20701/FATM-2025-Scott-Article-28-Motion-G-Referral |
 | fatm-2025-loomis-article-28-presentation-1afb2bcc | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/20703/FATM-2025-Loomis-Article-28-Presentation |
 
 ## Sources Needing Verification
@@ -111,26 +111,27 @@ Excerpt:
 
 ## Finance Committee
 
-Recommendation: Not merged.
-Vote: Not merged.
-Unanimous: Not merged.
-
-Source Warning:
-
-- Expected meeting token `Fall` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
-- Expected meeting token `2025` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
+Recommendation: A, B, C, D, E, F: Favorable
+Vote: A, B, C, E, F: 10-0-0
+Unanimous: unanimously favorable
+Date voted: 9/18/2025
+Motion vote threshold: Each Requires a Majority Vote
 
 Discussion Highlights:
 
-The Finance Committee source file has a meeting mismatch warning, so recommendation content was not merged into this brief.
+David Krentzmen, Vice Chair of the Community Preservation Committee (CPC) presented these motions alongside Amanda Loomis, Director of Community and Economic Development. The Sponsor explained the CPC’s process. It starts with a letter of interest, then a review to see if it meets the criteria for spending CPA money on it. If it does, it goes through a lengthy application process, after which it is voted on by CPC members. Seven projects were presented, each individually having public hearings, discussion, and debate before the CPC. The CPC is simply recommenders – it is ultimately up to Town Meeting whether to fund each project. They feel very confident in the decisions they have made as a committee that these projects are worthwhile for the town. Motion A - Bacon Free Library Mr. Krentzmen explained that this is for the Bacon Free Library historic fence restoration. The idea is to...
 
-Arguments For:
+Draft Arguments For (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- Coffey, moved that we recommend favorable action on the subject matter of Article 28, Motion A subject to the same language described above.
+- Monahan, moved that we recommend favorable action on the subject matter of Article 28, Motion B.
+- Munnich, moved that we recommend favorable action on the subject matter of Article 28, Motion C.
 
-Arguments Against:
+Draft Arguments Against (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- A member asked how projects internal to town administration (as opposed to agreements with outside entities) differ in their management.
+- Town administration explained that this is for a completely new, separate structure - and that the two existing structures were coming to the end of their life, but those will be a capital project, not a CPA request.
+- A member of the public noted that she doesn’t like this use of CPA funds.
 
 ## Final Action
 

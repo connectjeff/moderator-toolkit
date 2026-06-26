@@ -178,9 +178,9 @@ python3 tools/generate_article_briefs.py \
 - SATM 2026 parsed 9 official motion/amendment documents: 4 substantive parsed records and 5 blank motion-form templates requiring review.
 - SATM 2026 archived and extracted 2 official voting-system reports, but no official session-minutes prose was available in the manifest for final-action parsing.
 - FATM 2025 parsed 33 warrant articles.
+- FATM 2025 parsed 33 Finance Committee article recommendation sections from the Google Drive alternate source. The original Natick page link downloaded a Spring Annual Town Meeting 2026 recommendation book and remains recorded in the manifest as `source_mismatch`.
 - FATM 2025 parsed 21 official motion/amendment documents: 14 substantive parsed records, 5 records needing OCR/manual text review, and 2 blank motion-form templates.
 - FATM 2025 parsed 60 official final-action outcome records from session minutes, covering all 33 articles.
-- The official FATM 2025 FinCom recommendation book link currently resolves to a Spring Annual Town Meeting 2026 Finance Committee Recommendation Book. The manifest records checksums, the parser emits warnings, and FATM briefs do not merge those mismatched recommendations.
 - SATM 2025 parsed 25 warrant articles.
 - SATM 2025 parsed 25 Finance Committee article recommendation sections.
 - SATM 2025 parsed 10 official motion/amendment documents: 6 substantive parsed records and 4 blank motion-form templates requiring review.

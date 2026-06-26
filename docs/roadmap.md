@@ -30,7 +30,6 @@ Next:
 
 - Compare parsed article-specific motion documents to the FinCom motion text.
 - Replace heuristic for/against bullets with stronger structured summaries grounded in the official discussion text.
-- Resolve the current FATM 2025 FinCom source mismatch on the official website before merging FATM recommendation fields.
 
 ## Priority 4: Motion And Amendment Integration
 

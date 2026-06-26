@@ -11,19 +11,19 @@ Status: `draft`
 | Source ID | Type | Official | Status | URL |
 | --- | --- | --- | --- | --- |
 | 2025-fatm-warrant-approved-4f2fda15 | warrant | True | parsed | https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved |
-| 2025-fatm-fincom-recommendation-book-d0d35dc2 | finance_committee | True | parsed | https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book |
-| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
-| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
-| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
-| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
-| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
-| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
-| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
-| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
-| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | identified | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
-| corrected-2025-fatm-article-24-motions-b2a88e40 | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20621/Corrected-2025-FATM-Article-24-Motions |
-| fatm-2025-evans-article-24-motion-a-b8c5525f | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20611/FATM-2025-Evans-Article-24-Motion-A |
-| fatm-2025-evans-article-24-motion-b-8fe4977e | motion_or_amendment | True | identified | https://www.natickma.gov/DocumentCenter/View/20612/FATM-2025-Evans-Article-24-Motion-B |
+| 2025-fatm-fincom-recommendation-book-google-drive-b778d2e6 | finance_committee | True | parsed | https://drive.google.com/file/d/1m5RvS4PLIla7Ye1hJ20jNWCdoF6vJqi0/view?usp=drivesdk |
+| final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025 |
+| natick-atm-fall-2025-102125-report-ba97ff20 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report |
+| natick-atm-fall-2025-102325-report-945ec3c8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report |
+| natick-atm-fall-2025-102825-report-3da841bc | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report |
+| natick-atm-fall-2025-103025-report-5c0c9ce8 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report |
+| 2025-fatm-october-21-session-1-e033e23f | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1 |
+| 2025-fatm-october-23-session-2-394f3a00 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2 |
+| 2025-fatm-october-28-session-3-e00f08a9 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3 |
+| 2025-fatm-october-30-session-4-65061719 | minutes_or_actions | True | parsed | https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4 |
+| corrected-2025-fatm-article-24-motions-b2a88e40 | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20621/Corrected-2025-FATM-Article-24-Motions |
+| fatm-2025-evans-article-24-motion-a-b8c5525f | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20611/FATM-2025-Evans-Article-24-Motion-A |
+| fatm-2025-evans-article-24-motion-b-8fe4977e | motion_or_amendment | True | parsed | https://www.natickma.gov/DocumentCenter/View/20612/FATM-2025-Evans-Article-24-Motion-B |
 | 2025-fatm-articles-20-through-25-presentation-8adaa1b4 | presentation | True | identified | https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation |
 
 ## Sources Needing Verification
@@ -97,26 +97,27 @@ Excerpt:
 
 ## Finance Committee
 
-Recommendation: Not merged.
-Vote: Not merged.
-Unanimous: Not merged.
-
-Source Warning:
-
-- Expected meeting token `Fall` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
-- Expected meeting token `2025` for FATM 2025 was not found in the FinCom book header: Town of Natick Spring Annual Town Meeting 2026 Finance Committee Recommendation Book Tuesday, April 28, 2026 at 7:30 PM Kennedy Middle School Auditorium, 165 Mill Street Scan this code with your mobile device to access a digital version of these materials. Finance Committee 2026 Spring Annual Town Meeting
+Recommendation: A & B: No Recommendation
+Vote: A & B: 6-5-0
+Unanimous: not unanimous
+Date voted: 10/7/2025
+Motion vote threshold: Needs review
 
 Discussion Highlights:
 
-The Finance Committee source file has a meeting mismatch warning, so recommendation content was not merged into this brief.
+Amanda Loomis, Director of Community & Economic Development and Terri Evans, Planning Board chair, presented this article. Ms. Loomis explained that this project area is now called the “West Central Corridor" as a better description. This primarily deals with the area along 135 in West Natick just south of the railroad tracks. This area is currently broken up into multiple zoning districts. The Planning Board first tried to better understand what was going on in the corridor. Once that was completed, the Board proposed creating several subdistricts that allows each parcel to be treated individually based on its actual use. This is important here because of the varied topography in that area. Additionally, Ms. Loomis explained that there was a significant amount of input from property owners in the area - and they had recently sent out 1,200 legal mailers. The input from property...
 
-Arguments For:
+Draft Arguments For (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- This is important here because of the varied topography in that area.
+- Then, the Planning Board would review that and get a peer review consultant if necessary.
+- Members also moved and seconded a recommendation for Favorable Action on Motions A and B.
 
-Arguments Against:
+Draft Arguments Against (reviewer-confirm):
 
-Needs a corrected official Finance Committee recommendation source.
+- In her experience, applicants generally provide adequate parking, because it is difficult to lease a space without it.
+- Loomis said that they have not – although they go under the assumption that the children would be dispersed throughout the schools and grade levels without a major impact.
+- Members supporting Referral argued that the lack of notice to people who attended the summer 2024 meeting meant that there should be a further meeting to give people opportunities to attend and be engaged.
 
 ## Final Action
 

@@ -12,6 +12,5 @@
 
 ## Source Review Items
 
-- Review the FATM 2025 Finance Committee recommendation source. The official Natick link currently resolves to a Spring Annual Town Meeting 2026 recommendation book, so FATM recommendation fields are intentionally not merged into briefs.
 - Review motion/action records flagged as `blank_template` or `no_extractable_text` in each meeting's `working/` JSON outputs.
 - Add OCR or manual transcription workflow for official PDFs that cannot be parsed reliably from embedded text.
