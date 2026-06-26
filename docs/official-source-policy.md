@@ -27,6 +27,17 @@ Natick source manifests should start from:
 
 Non-official sources may be useful for discovery, but they must not be used as factual support in article briefs unless independently verified against an official source. If a claim cannot be tied to an official source, mark it as unresolved rather than summarizing it as fact.
 
+### Accepted Unofficial Vote Results
+
+Unofficial vote-result files may be included for Natick testing when all of the following are true:
+
+- The source is linked from the official Natick Town Meeting page.
+- The file is hosted in the Finance Committee Google workspace or another town-controlled workspace.
+- The manifest marks the source as `official: false` and `accepted_unofficial: true`.
+- Generated briefs label the source as accepted unofficial and do not describe it as an official final action.
+
+These sources may support retrospective vote-result context, but they should not override official minutes, official action reports, or Town Clerk records.
+
 ## Provenance Requirements
 
 Every generated brief should include:

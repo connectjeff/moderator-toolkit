@@ -55,7 +55,7 @@ def article_ids_from_title(title: str) -> list[str]:
 
 
 def source_summary(source: dict[str, object]) -> dict[str, object]:
-    return {
+    summary = {
         "id": source["id"],
         "title": source["title"],
         "category": source["category"],
@@ -64,6 +64,10 @@ def source_summary(source: dict[str, object]) -> dict[str, object]:
         "status": source["status"],
         "local_path": source.get("local_path", ""),
     }
+    if source.get("accepted_unofficial"):
+        summary["accepted_unofficial"] = True
+        summary["acceptance_basis"] = source.get("acceptance_basis", "")
+    return summary
 
 
 def build_index(manifest: dict[str, object]) -> dict[str, object]:

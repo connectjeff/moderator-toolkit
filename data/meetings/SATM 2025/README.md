@@ -22,8 +22,9 @@ Official meeting page: https://www.natickma.gov/2228/2025-Spring-Annual-Town-Mee
 - Finance Committee recommendation sections parsed: 25.
 - Official motion/amendment documents parsed: 10, with 6 substantive records and 4 blank-template records requiring review.
 - Official action records parsed: 59, covering 8 articles.
+- Accepted unofficial vote-result records parsed: 25, covering all warrant articles.
 - No official consent agenda source was parsed from the Finance Committee recommendation book or meeting page.
-- The page links to `Voting Results (Unofficial)`, but that source is not treated as an official source for article briefs.
+- The page links to `Voting Results (Unofficial)`. This source is marked `official: false` and `accepted_unofficial: true` because it is linked from the official meeting page and accepted under the project policy for Finance Committee Google workspace files.
 
 ## Workspace
 

@@ -33,6 +33,14 @@ These sources are listed separately and should not support article summaries unt
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+| Source ID | Type | Status | Basis | URL |
+| --- | --- | --- | --- | --- |
+| voting-results-unofficial-6516060a | minutes_or_actions | archived | Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace. | https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 |
+
 ## Moderator Summary
 
 Article 14 asks Town Meeting to act on `Increase Amount to be Credited Under Senior/Veteran’s Work Program, Ch.59, 5K`, sponsored by Board of Assessors/Council on Aging. The official warrant text should be reviewed before this summary is finalized.
@@ -75,11 +83,11 @@ Needs reviewer summary from the official discussion text.
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
-| No parsed official final action |  |  |  |  |
+| vote count only | Vote result | Needs review | 109-5-3 | Voting Results (Unofficial) (accepted unofficial) |
 
 Action Notes:
 
-No parsed official final action is available yet. Review archived minutes/action reports manually if needed.
+- Unofficial TM vote: 109-5-3 Source: https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 Accepted unofficial source: Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.
 
 
 ## Consent Agenda Assessment

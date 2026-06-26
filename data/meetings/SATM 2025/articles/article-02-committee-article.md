@@ -33,6 +33,14 @@ These sources are listed separately and should not support article summaries unt
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+| Source ID | Type | Status | Basis | URL |
+| --- | --- | --- | --- | --- |
+| voting-results-unofficial-6516060a | minutes_or_actions | archived | Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace. | https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 |
+
 ## Moderator Summary
 
 Article 2 asks Town Meeting to act on `Committee Article`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -75,6 +83,7 @@ Needs reviewer summary from the official discussion text.
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
+| vote count only | Vote result | Needs review | 119-5-3 | Voting Results (Unofficial) (accepted unofficial) |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
@@ -85,6 +94,7 @@ Needs reviewer summary from the official discussion text.
 
 Action Notes:
 
+- Unofficial TM vote: 119-5-3 Source: https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 Accepted unofficial source: Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.
 - - No Action Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - - No Action Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - - No Action Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1

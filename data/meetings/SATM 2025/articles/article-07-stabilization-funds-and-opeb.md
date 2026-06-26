@@ -34,6 +34,14 @@ These sources are listed separately and should not support article summaries unt
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+| Source ID | Type | Status | Basis | URL |
+| --- | --- | --- | --- | --- |
+| voting-results-unofficial-6516060a | minutes_or_actions | archived | Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace. | https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 |
+
 ## Moderator Summary
 
 Article 7 asks Town Meeting to act on `Stabilization Funds and OPEB`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -87,6 +95,7 @@ Needs reviewer summary from the official discussion text.
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
+| vote count only | Vote result | Needs review | 114-2-0 | Voting Results (Unofficial) (accepted unofficial) |
 | postpone motion | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | postpone motion | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | postpone motion | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
@@ -96,6 +105,7 @@ Needs reviewer summary from the official discussion text.
 
 Action Notes:
 
+- Unofficial TM vote: 114-2-0 Source: https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 Accepted unofficial source: Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.
 - Postpone consideration of Article 15 to the first-order-of-business on Move that Article 25 be heard immediately before Article 7 Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - Postpone consideration of Article 15 to the first-order-of-business on Move that Article 25 be heard immediately before Article 7 Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - Postpone consideration of Article 15 to the first-order-of-business on Move that Article 25 be heard immediately before Article 7 Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1

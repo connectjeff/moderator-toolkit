@@ -202,7 +202,7 @@ def source_rows(sources: list[dict[str, object]]) -> str:
 
 
 def verification_rows(sources: list[dict[str, object]]) -> str:
-    verification_sources = [source for source in sources if not source["official"]]
+    verification_sources = [source for source in sources if not source["official"] and not source.get("accepted_unofficial")]
     if not verification_sources:
         return "None identified.\n"
     rows = [
@@ -211,6 +211,20 @@ def verification_rows(sources: list[dict[str, object]]) -> str:
     ]
     for source in verification_sources:
         rows.append(f"| {source['id']} | {source['category']} | {source['status']} | {source['url']} |")
+    return "\n".join(rows) + "\n"
+
+
+def accepted_unofficial_rows(sources: list[dict[str, object]]) -> str:
+    accepted_sources = [source for source in sources if source.get("accepted_unofficial")]
+    if not accepted_sources:
+        return "None identified.\n"
+    rows = [
+        "| Source ID | Type | Status | Basis | URL |",
+        "| --- | --- | --- | --- | --- |",
+    ]
+    for source in accepted_sources:
+        basis = str(source.get("acceptance_basis") or "Accepted under project source policy.")
+        rows.append(f"| {source['id']} | {source['category']} | {source['status']} | {basis} | {source['url']} |")
     return "\n".join(rows) + "\n"
 
 
@@ -261,22 +275,29 @@ Excerpt:
 
 def action_rows(article_actions: list[dict[str, object]]) -> str:
     if not article_actions:
-        return "| No parsed official final action |  |  |  |  |\n"
+        return "| No parsed final action |  |  |  |  |\n"
     rows = []
     for action in article_actions:
+        provenance = action.get("source_provenance")
+        source_title = str(action.get("source_title") or action.get("source_id"))
+        if provenance == "accepted_unofficial":
+            source_title = f"{source_title} (accepted unofficial)"
         rows.append(
-            f"| {action.get('status') or 'Needs review'} | {action.get('motion_label') or 'Main/unspecified'} | {action.get('vote_threshold') or 'Needs review'} | {action.get('vote_count') or 'Needs review'} | {action.get('source_title') or action.get('source_id')} |"
+            f"| {action.get('status') or 'Needs review'} | {action.get('motion_label') or 'Main/unspecified'} | {action.get('vote_threshold') or 'Needs review'} | {action.get('vote_count') or 'Needs review'} | {source_title} |"
         )
     return "\n".join(rows) + "\n"
 
 
 def action_details(article_actions: list[dict[str, object]]) -> str:
     if not article_actions:
-        return "No parsed official final action is available yet. Review archived minutes/action reports manually if needed.\n"
+        return "No parsed final action is available yet. Review archived minutes/action reports manually if needed.\n"
     lines = []
     for action in article_actions:
+        note = ""
+        if action.get("source_provenance") == "accepted_unofficial":
+            note = f" Accepted unofficial source: {action.get('source_note') or 'review provenance before final use.'}"
         lines.append(
-            f"- {action.get('summary') or 'Needs review'} Source: {action.get('source_url')}"
+            f"- {action.get('summary') or 'Needs review'} Source: {action.get('source_url')}{note}"
         )
     return "\n".join(lines) + "\n"
 
@@ -314,6 +335,11 @@ Status: `draft`
 These sources are listed separately and should not support article summaries until a reviewer confirms their official status.
 
 {verification_rows(all_sources)}
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+{accepted_unofficial_rows(all_sources)}
 ## Moderator Summary
 
 {sentence_summary(article)}

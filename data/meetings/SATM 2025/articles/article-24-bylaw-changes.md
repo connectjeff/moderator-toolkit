@@ -33,6 +33,14 @@ These sources are listed separately and should not support article summaries unt
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+| Source ID | Type | Status | Basis | URL |
+| --- | --- | --- | --- | --- |
+| voting-results-unofficial-6516060a | minutes_or_actions | archived | Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace. | https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 |
+
 ## Moderator Summary
 
 Article 24 asks Town Meeting to act on `Bylaw Changes`, sponsored by Charter and Bylaw Review Committee. The official warrant text should be reviewed before this summary is finalized.
@@ -79,6 +87,7 @@ Draft Arguments Against (reviewer-confirm):
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
+| referred | Vote result | Needs review | A: 100-5-1 B: 105-3-0 C: 109-0-0 D: 105-4-1 E: 108-2-1 F: 102-7-3 | Voting Results (Unofficial) (accepted unofficial) |
 | postpone motion | Motion C | Needs review | Needs review | Town Meeting Member Voting 5/08/25 Session 4 |
 | refer motion | Motion D | Needs review | Needs review | Town Meeting Member Voting 5/08/25 Session 4 |
 | postpone motion | Motion C | Needs review | Needs review | Town Meeting Member Voting 5/08/25 Session 4 |
@@ -95,6 +104,7 @@ Draft Arguments Against (reviewer-confirm):
 
 Action Notes:
 
+- Unofficial TM vote: A: 100-5-1 B: 105-3-0 C: 109-0-0 D: 105-4-1 E: 108-2-1 F: 102-7-3; result note: A-D: Favorable E & F: Refer Source: https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 Accepted unofficial source: Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.
 - Motion C Postponement: Article 24 – Motion D Move the Question Source: https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4
 - Motion D Refer to Sponsor: Article 24: Bylaw Changes – Motion E Refer to Sponsor: Article 24: Bylaw Changes – Motion F Indefinite Postponement: Source: https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4
 - Motion C Postponement: Article 24 – Motion D Move the Question Source: https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4

@@ -33,6 +33,14 @@ These sources are listed separately and should not support article summaries unt
 | https-sites-google-com-natickma-org-fincom-32e7a5d7 | finance_committee | identified | https://sites.google.com/natickma.org/fincom |
 | coffee-with-a-purpose-review-of-warrant-articles-7c596714 | warrant | identified | https://www.youtube.com/watch?v=Z7mz7TsZSq8 |
 
+## Accepted Unofficial Sources
+
+These sources are not official final-action records, but are accepted under the project source policy when explicitly labeled.
+
+| Source ID | Type | Status | Basis | URL |
+| --- | --- | --- | --- | --- |
+| voting-results-unofficial-6516060a | minutes_or_actions | archived | Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace. | https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 |
+
 ## Moderator Summary
 
 Article 4 asks Town Meeting to act on `Rescind Authorized, Unissued Debt`, sponsored by Town Administrator. The official warrant text should be reviewed before this summary is finalized.
@@ -75,6 +83,7 @@ Draft Arguments Against (reviewer-confirm):
 
 | Status | Motion | Vote Threshold | Vote Count | Source |
 | --- | --- | --- | --- | --- |
+| vote count only | Vote result | Needs review | 100-4-1 | Voting Results (Unofficial) (accepted unofficial) |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
 | no action | Main/unspecified | Needs review | Needs review | Town Meeting Member Voting 4/29/25 Session 1 |
@@ -85,6 +94,7 @@ Draft Arguments Against (reviewer-confirm):
 
 Action Notes:
 
+- Unofficial TM vote: 100-4-1 Source: https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531 Accepted unofficial source: Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.
 - Authorized, Unissued Debt - No Action Precinct First Name Last Name Keypad 1 3 2 4 5 6 7 8 9 10 11 P01 Andrea T. Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - Authorized, Unissued Debt - No Action Precinct First Name Last Name Keypad 1 3 2 4 5 6 7 8 9 10 11 Natick Annual Town Meeting - Spring 2025 Tuesday, April 29, 2025 P02 Lynne Montross 29 P No Yes No Yes Yes Yes Yes Yes Yes Yes P02 Richard T. Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1
 - Authorized, Unissued Debt - No Action Precinct First Name Last Name Keypad 1 3 2 4 5 6 7 8 9 10 11 Natick Annual Town Meeting - Spring 2025 Tuesday, April 29, 2025 P04 Jeffrey P. Source: https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1

@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Parse official Town Meeting action/minutes documents into article outcomes."""
+"""Parse Town Meeting action/minutes documents into article outcomes."""
 
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 from pathlib import Path
@@ -109,6 +110,31 @@ def motion_label(text: str) -> str:
     return ""
 
 
+def source_is_usable_action_source(source: dict[str, object]) -> bool:
+    return bool(source.get("official") or source.get("accepted_unofficial"))
+
+
+def source_provenance(source: dict[str, object]) -> str:
+    if source.get("official"):
+        return "official"
+    if source.get("accepted_unofficial"):
+        return "accepted_unofficial"
+    return "unverified"
+
+
+def status_from_vote_result(result: str) -> str:
+    lowered = result.casefold()
+    if "failed" in lowered:
+        return "failed"
+    if "refer" in lowered:
+        return "referred"
+    if "favorable" in lowered:
+        return "passed"
+    if result.strip():
+        return "needs review"
+    return "vote count only"
+
+
 def article_ids_from_sentence(sentence: str, current_article: str | None) -> list[str]:
     ids = {match.group(1).upper() for match in re.finditer(r"\bArticle\s+([0-9]+[A-Z]?)\b", sentence, re.IGNORECASE)}
     if not ids and current_article:
@@ -198,6 +224,9 @@ def parse_article_outcomes(text: str, source: dict[str, object]) -> list[dict[st
 
 def parse_source(source: dict[str, object], meeting_dir: Path) -> tuple[list[dict[str, object]], dict[str, object]]:
     title = str(source.get("title", ""))
+    local_path = str(source.get("local_path") or "")
+    if local_path.casefold().endswith(".csv"):
+        return parse_csv_vote_source(source, meeting_dir)
     if "session" not in title.casefold():
         return [], {
             "source_id": source["id"],
@@ -226,13 +255,63 @@ def parse_source(source: dict[str, object], meeting_dir: Path) -> tuple[list[dic
     }
 
 
+def parse_csv_vote_source(source: dict[str, object], meeting_dir: Path) -> tuple[list[dict[str, object]], dict[str, object]]:
+    local_path = source.get("local_path")
+    if not local_path:
+        return [], {
+            "source_id": source["id"],
+            "title": source["title"],
+            "status": "not_archived",
+            "outcome_count": 0,
+        }
+    source_path = meeting_dir / str(local_path)
+    with source_path.open(newline="", encoding="utf-8-sig") as csv_file:
+        rows = list(csv.DictReader(csv_file))
+
+    outcomes = []
+    for row in rows:
+        article_id = compact(row.get("Article #", ""))
+        if not re.fullmatch(r"[0-9]+[A-Z]?", article_id, re.IGNORECASE):
+            continue
+        vote_count_text = compact(row.get("TM Vote (UNOFFICIAL)", ""))
+        result_text = compact(row.get("", ""))
+        summary = f"Unofficial TM vote: {vote_count_text}"
+        if result_text:
+            summary = f"{summary}; result note: {result_text}"
+        outcomes.append(
+            {
+                "article": article_id.upper(),
+                "status": status_from_vote_result(result_text),
+                "motion_label": "Vote result",
+                "vote_threshold": "",
+                "vote_count": vote_count_text,
+                "summary": summary,
+                "source_id": source["id"],
+                "source_title": source["title"],
+                "source_url": source["url"],
+                "source_text_path": local_path,
+                "source_provenance": source_provenance(source),
+                "source_note": source.get("acceptance_basis") or source.get("notes", ""),
+            }
+        )
+
+    return outcomes, {
+        "source_id": source["id"],
+        "title": source["title"],
+        "status": "parsed" if outcomes else "no_article_outcomes_found",
+        "outcome_count": len(outcomes),
+        "text_path": local_path,
+        "source_provenance": source_provenance(source),
+    }
+
+
 def parse_actions(manifest_path: Path) -> dict[str, object]:
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     meeting_dir = manifest_path.parent
     outcomes: list[dict[str, object]] = []
     source_summaries = []
     for source in manifest["sources"]:
-        if source.get("category") != "minutes_or_actions" or not source.get("official"):
+        if source.get("category") != "minutes_or_actions" or not source_is_usable_action_source(source):
             continue
         parsed_outcomes, summary = parse_source(source, meeting_dir)
         outcomes.extend(parsed_outcomes)
@@ -250,7 +329,8 @@ def parse_actions(manifest_path: Path) -> dict[str, object]:
         "by_article": by_article,
         "source_summaries": source_summaries,
         "open_items": [
-            "Outcome parsing is conservative and should be reviewed against official minutes/action PDFs.",
+            "Outcome parsing is conservative and should be reviewed against source materials.",
+            "Accepted unofficial vote-result sources must be labeled and should not be described as official final actions.",
             "Raw voting-system reports are archived but may not produce article outcomes without prose result text.",
         ],
     }

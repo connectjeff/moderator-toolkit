@@ -237,6 +237,17 @@
   "meeting_id": "SATM 2025",
   "meeting_level_sources": [
     {
+      "acceptance_basis": "Linked from the official Natick SATM 2025 meeting page and accepted by project policy when hosted in the Finance Committee Google workspace.",
+      "accepted_unofficial": true,
+      "category": "minutes_or_actions",
+      "id": "voting-results-unofficial-6516060a",
+      "local_path": "sources/voting-results-unofficial-6516060a.csv",
+      "official": false,
+      "status": "archived",
+      "title": "Voting Results (Unofficial)",
+      "url": "https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531"
+    },
+    {
       "category": "warrant",
       "id": "2025-satm-warrant-final-7b45c3e6",
       "local_path": "sources/2025-satm-warrant-final-a474b32f.pdf",
