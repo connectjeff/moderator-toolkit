@@ -83,6 +83,23 @@ p { margin: 8px 0; }
 .stat strong { display: block; font-size: 1.8rem; line-height: 1; }
 .stat span { color: var(--muted); }
 .panel { padding: 16px; margin-bottom: 14px; }
+.news-preview {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  max-width: 980px;
+}
+.news-preview .dek {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 4px 0 12px;
+}
+.news-preview p {
+  font-size: 1.02rem;
+  margin: 10px 0;
+}
 .article { padding: 16px; margin-bottom: 16px; }
 .article-title {
   display: flex;
@@ -174,6 +191,7 @@ footer {
       <span><a href="https://www.natickma.gov/2228/2025-Spring-Annual-Town-Meeting">Official meeting page</a></span>
     </div>
     <nav class="nav" aria-label="Report sections">
+      <a href="#preview">Preview</a>
       <a href="#overview">Overview</a>
       <a href="#prep">Preparation</a>
       <a href="#articles">Articles</a>
@@ -182,6 +200,16 @@ footer {
     </nav>
   </header>
   <main>
+    <section id="preview">
+      <h2>AI-Generated Meeting Preview</h2>
+      <div class="news-preview">
+        <p class="dek">A local-news style preview generated from parsed warrant articles, Finance Committee recommendations, motions, actions, and source indexes in this meeting folder.</p>
+        <p>Natick Town Meeting members will take up a 25-article warrant at SATM 2025, with business spanning budgets and town finances, zoning and land use, and community preservation and public facilities. Fiscal matters are a central part of the warrant, including Article 3, Omnibus Budget, Article 4, Rescind Authorized, Unissued Debt, and Article 5, Unpaid Bills.</p>
+<p>The warrant also includes zoning and land use, led by Article 16, Amend Zoning Bylaw: Section 326.1 Height, Article 17, Amend Zoning Bylaws: Flood Plain District, and Article 18, Amend Zoning Bylaws: Accessory Dwelling (ADU), Gross Floor Area. The warrant also includes community preservation and public facilities, led by Article 10, School Bus Transportation Subsidy and Article 15, Community Preservation Act (CPA) Administrative Funds.</p>
+<p>Several articles may draw extra attention because the Finance Committee did not simply recommend favorable action, including Article 2, Committee Article, with a Finance Committee recommendation of No Action (12-0-0), Article 4, Rescind Authorized, Unissued Debt, with a Finance Committee recommendation of No Action (12-0-0), Article 8, Transfer of Unexpended Bond Proceeds, with a Finance Committee recommendation of No Action (13-0-0), and Article 10, School Bus Transportation Subsidy, with a Finance Committee recommendation of No Action (11-2-1). Moderators should also expect article-specific motion or amendment issues on Article 3, Article 7, Article 11, Article 15, and Article 25. The report includes parsed final-action records for 25 articles, making it useful for reviewing how the meeting unfolded as well as for preparation.</p>
+      </div>
+    </section>
+
     <section id="overview">
       <h2>Overview</h2>
       <div class="grid">

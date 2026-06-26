@@ -187,6 +187,7 @@ python3 tools/generate_meeting_reports.py "data/meetings/SATM 2026"
 
 Each report is written to `data/meetings/<MEETING>/report.html` and includes:
 
+- AI-generated local-news style meeting preview based on parsed local artifacts.
 - Meeting overview and source-coverage counts.
 - Moderator preparation table by article.
 - Article-level links to briefs, Finance Committee recommendation status, motions, final action status, and source traceability.

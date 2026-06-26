@@ -91,6 +91,23 @@ p { margin: 8px 0; }
 .stat strong { display: block; font-size: 1.8rem; line-height: 1; }
 .stat span { color: var(--muted); }
 .panel { padding: 16px; margin-bottom: 14px; }
+.news-preview {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+  max-width: 980px;
+}
+.news-preview .dek {
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 4px 0 12px;
+}
+.news-preview p {
+  font-size: 1.02rem;
+  margin: 10px 0;
+}
 .article { padding: 16px; margin-bottom: 16px; }
 .article-title {
   display: flex;
@@ -287,6 +304,207 @@ def count_problem_sources(sources: list[dict[str, object]]) -> int:
         if text(source.get("status")) in problem_statuses
         or (not source.get("official") and not source.get("accepted_unofficial"))
     )
+
+
+def article_phrase(article: dict[str, object]) -> str:
+    title = clean_title(text(article.get("title"), "an article"))
+    return f"Article {text(article.get('article'))}, {title}"
+
+
+def clean_title(value: str) -> str:
+    cleaned = re.sub(r"\s+", " ", value).strip()
+    cleaned = cleaned.replace("By law", "Bylaw").replace("Appointment s", "Appointments")
+    return cleaned
+
+
+def article_count_phrase(count: int) -> str:
+    article = "an" if str(count).startswith(("8", "11", "18")) else "a"
+    return f"{article} {count}-article warrant"
+
+
+def human_join(items: list[str], limit: int = 4) -> str:
+    visible = items[:limit]
+    if not visible:
+        return ""
+    if len(visible) == 1:
+        return visible[0]
+    if len(visible) == 2:
+        return f"{visible[0]} and {visible[1]}"
+    return ", ".join(visible[:-1]) + f", and {visible[-1]}"
+
+
+def article_subject_text(article: dict[str, object]) -> str:
+    value = f"{article.get('title', '')} {article.get('warrant_text', '')}"
+    value = re.split(r"\bY\s*ou are directed\b|\bYou are directed\b", value, maxsplit=1)[0]
+    value = re.split(r"\bCertified copies of the Warrant\b", value, maxsplit=1)[0]
+    return value.casefold()
+
+
+def topic_buckets(articles: list[dict[str, object]]) -> dict[str, list[str]]:
+    patterns = {
+        "budgets and town finances": (
+            "budget",
+            "capital",
+            "stabilization",
+            "opeb",
+            "unpaid bills",
+            "collective bargaining",
+            "revolving",
+            "appropriation",
+            "debt",
+            "peg access",
+        ),
+        "zoning and land use": (
+            "zoning",
+            "flood",
+            "accessory dwelling",
+            "site plan",
+            "street acceptance",
+            "earth products",
+            "signage",
+            "district",
+        ),
+        "community preservation and public facilities": (
+            "community preservation",
+            "school",
+            "memorial elementary",
+            "open space",
+            "historic",
+            "recreation",
+        ),
+        "governance, bylaws, and committees": (
+            "bylaw",
+            "charter",
+            "committee",
+            "town meeting time",
+            "hybrid town meeting",
+            "personnel board",
+            "classification",
+            "select board",
+        ),
+        "reports, resolutions, and civic matters": (
+            "report",
+            "resolution",
+            "resolve",
+            "constitution",
+            "turf",
+            "moratorium",
+            "employment",
+            "police chief",
+        ),
+    }
+    buckets: dict[str, list[str]] = {name: [] for name in patterns}
+    for article in articles:
+        haystack = article_subject_text(article)
+        for name, words in patterns.items():
+            if any(word in haystack for word in words):
+                buckets[name].append(article_phrase(article))
+                break
+    return {name: values for name, values in buckets.items() if values}
+
+
+def nonroutine_fincom_items(
+    articles: list[dict[str, object]],
+    fincom_by_article: dict[str, dict[str, object]],
+) -> list[str]:
+    items = []
+    article_titles = {text(article.get("article")): text(article.get("title")) for article in articles}
+    for article_id, fincom in fincom_by_article.items():
+        recommendation = text(fincom.get("recommendation"))
+        lowered = recommendation.casefold()
+        if recommendation and not lowered.startswith("favorable") and lowered not in {"all favorable"}:
+            title = clean_title(article_titles.get(article_id, text(fincom.get("title"), "Untitled")))
+            vote = text(fincom.get("quantum_of_vote"))
+            label = f"Article {article_id}, {title}, with a Finance Committee recommendation of {recommendation}"
+            if vote:
+                label += f" ({vote})"
+            items.append(label)
+    return sorted(items, key=lambda value: article_sort_key_from_phrase(value))
+
+
+def article_sort_key_from_phrase(value: str) -> tuple[int, str]:
+    match = re.search(r"Article\s+([0-9]+)([A-Za-z]?)", value)
+    if not match:
+        return (9999, value)
+    return (int(match.group(1)), match.group(2).casefold())
+
+
+def motion_attention_count(motions_by_article: dict[str, list[dict[str, object]]]) -> tuple[int, list[str]]:
+    article_ids = []
+    count = 0
+    for article_id, motions in motions_by_article.items():
+        noteworthy = [
+            motion
+            for motion in motions
+            if text(motion.get("kind")) in {"procedural_motion", "substitute_motion", "amendment"}
+            or text(motion.get("status")) in {"blank_template", "no_extractable_text"}
+        ]
+        if noteworthy:
+            count += len(noteworthy)
+            article_ids.append(f"Article {article_id}")
+    return count, sorted(article_ids, key=article_sort_key_from_phrase)
+
+
+def meeting_preview(
+    meeting_id: str,
+    articles: list[dict[str, object]],
+    fincom_by_article: dict[str, dict[str, object]],
+    motions_by_article: dict[str, list[dict[str, object]]],
+    article_outcome_count: int,
+) -> str:
+    if not articles:
+        return "<p>No parsed warrant articles are available for a meeting preview.</p>"
+
+    article_count = len(articles)
+    buckets = topic_buckets(articles)
+    bucket_names = list(buckets)
+    lead_topics = human_join(bucket_names, 3)
+    lead = (
+        f"Natick Town Meeting members will take up {article_count_phrase(article_count)} at {meeting_id}, "
+        f"with business spanning {lead_topics or 'routine municipal business'}."
+    )
+
+    first_paragraph_parts = [lead]
+    if "budgets and town finances" in buckets:
+        first_paragraph_parts.append(
+            "Fiscal matters are a central part of the warrant, including "
+            f"{human_join(buckets['budgets and town finances'], 3)}."
+        )
+    first_paragraph = " ".join(first_paragraph_parts)
+
+    second_sentences = []
+    for topic, phrases in buckets.items():
+        if topic == "budgets and town finances":
+            continue
+        second_sentences.append(f"The warrant also includes {topic}, led by {human_join(phrases, 3)}.")
+        if len(second_sentences) == 2:
+            break
+    second_paragraph = " ".join(second_sentences)
+
+    fincom_items = nonroutine_fincom_items(articles, fincom_by_article)
+    motion_count, motion_articles = motion_attention_count(motions_by_article)
+    third_sentences = []
+    if fincom_items:
+        third_sentences.append(
+            "Several articles may draw extra attention because the Finance Committee did not simply recommend favorable action, including "
+            f"{human_join(fincom_items, 4)}."
+        )
+    if motion_count:
+        third_sentences.append(
+            f"Moderators should also expect article-specific motion or amendment issues on {human_join(motion_articles, 5)}."
+        )
+    if article_outcome_count:
+        third_sentences.append(
+            f"The report includes parsed final-action records for {article_outcome_count} articles, making it useful for reviewing how the meeting unfolded as well as for preparation."
+        )
+    third_paragraph = " ".join(third_sentences)
+
+    paragraphs = [first_paragraph]
+    if second_paragraph:
+        paragraphs.append(second_paragraph)
+    if third_paragraph:
+        paragraphs.append(third_paragraph)
+    return "\n".join(f"<p>{esc(paragraph)}</p>" for paragraph in paragraphs)
 
 
 def recommendation_label(fincom: dict[str, object] | None) -> str:
@@ -518,6 +736,7 @@ def generate_report(meeting_dir: Path) -> Path:
 
     meeting_id = text(manifest.get("meeting_id"), meeting_dir.name)
     official_page = text(manifest.get("official_page_url"))
+    preview = meeting_preview(meeting_id, articles, fincom_by_article, motions_by_article, article_outcome_count)
     report = f"""<!doctype html>
 <html lang="en">
 <head>
@@ -536,6 +755,7 @@ def generate_report(meeting_dir: Path) -> Path:
       <span>{link('Official meeting page', official_page)}</span>
     </div>
     <nav class="nav" aria-label="Report sections">
+      <a href="#preview">Preview</a>
       <a href="#overview">Overview</a>
       <a href="#prep">Preparation</a>
       <a href="#articles">Articles</a>
@@ -544,6 +764,14 @@ def generate_report(meeting_dir: Path) -> Path:
     </nav>
   </header>
   <main>
+    <section id="preview">
+      <h2>AI-Generated Meeting Preview</h2>
+      <div class="news-preview">
+        <p class="dek">A local-news style preview generated from parsed warrant articles, Finance Committee recommendations, motions, actions, and source indexes in this meeting folder.</p>
+        {preview}
+      </div>
+    </section>
+
     <section id="overview">
       <h2>Overview</h2>
       <div class="grid">
