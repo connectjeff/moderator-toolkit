@@ -1,0 +1,312 @@
+{
+  "article_count_from_source_titles": 5,
+  "articles": [
+    {
+      "article": "3",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-3-procedural-motion-coffey-ac9c126b",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 3 Procedural Motion Coffey",
+          "url": "https://www.natickma.gov/DocumentCenter/View/22000/Article-3-Procedural-Motion-Coffey"
+        }
+      ]
+    },
+    {
+      "article": "12",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-12-motion-bruce-evans-b2d6382d",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 12 Motion Bruce Evans",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans"
+        },
+        {
+          "category": "presentation",
+          "id": "select-board-articles-12-and-13-final-april-20-fcb4221f",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Select Board Articles 12 and 13 FINAL April 20",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21939/Select-Board-Articles-12-and-13-FINAL-April-20"
+        }
+      ]
+    },
+    {
+      "article": "13",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-13-motion-bruce-evans-95e86b01",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 13 Motion Bruce Evans",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21978/Article-13-Motion-Bruce-Evans"
+        }
+      ]
+    },
+    {
+      "article": "17",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-17-motion-bruce-evans-787697c8",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 17 Motion Bruce Evans",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21979/Article-17-Motion-Bruce-Evans"
+        }
+      ]
+    },
+    {
+      "article": "18",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-18-amendment-foss-27be3901",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 18 Amendment Foss",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "article-18-amendment-jeanne-ostroff-0d7233fd",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 18 Amendment Jeanne Ostroff",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "article-18-procedural-motion-ostroff-a186275d",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 18 Procedural Motion Ostroff",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff"
+        },
+        {
+          "category": "presentation",
+          "id": "article-18-presentation-ostroff-5bb727fe",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 18 Presentation - Ostroff",
+          "url": "https://www.natickma.gov/DocumentCenter/View/21991/Article-18-Presentation---Ostroff"
+        }
+      ]
+    }
+  ],
+  "generated_from": "manifest.json",
+  "meeting_id": "SATM 2026",
+  "meeting_level_sources": [
+    {
+      "category": "warrant",
+      "id": "2026-satm-warrant-approved-3-2-2026-docx-1-1-a836d09e",
+      "local_path": "sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2026 SATM Warrant Approved 3.2.2026.docx (1) (1)",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21455/2026-SATM-Warrant-Approved-322026docx-1-1"
+    },
+    {
+      "category": "finance_committee",
+      "id": "fincom-recommendation-book-satm26-05931d83",
+      "local_path": "sources/fincom-recommendation-book-satm26-feed5395.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "FinCom_Recommendation_Book_SATM26",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21665/FinCom_Recommendation_Book_SATM26"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-spring-2026-042826-report-d621316b",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Spring 2026 042826 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-spring-2026-043026-report-35cb2005",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Spring 2026 043026 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report"
+    },
+    {
+      "category": "finance_committee",
+      "id": "https-sites-google-com-natickma-org-fincom-32e7a5d7",
+      "local_path": "",
+      "official": false,
+      "status": "identified",
+      "title": "https://sites.google.com/natickma.org/fincom",
+      "url": "https://sites.google.com/natickma.org/fincom"
+    }
+  ],
+  "open_items": [
+    "This index uses article numbers found in source titles only.",
+    "Parse the official warrant and motion documents to confirm article titles and complete article coverage."
+  ],
+  "uncategorized_article_sources": [
+    {
+      "category": "related_document",
+      "id": "intent-to-call-2026-spring-annual-town-meeting-1529e9d7",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Intent to Call 2026 Spring Annual Town Meeting",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21091/Intent-to-Call-2026-Spring-Annual-Town-Meeting"
+    },
+    {
+      "category": "related_document",
+      "id": "satm-2026-moderator-letter-to-members-c46a3894",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "SATM 2026 Moderator Letter to Members",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21807/SATM-2026-Moderator-Letter-to-Members"
+    },
+    {
+      "category": "related_document",
+      "id": "fy-2027-town-administrator-amended-budget-final-6c227a83",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "FY 2027 Town Administrator Amended Budget Final",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21851/FY-2027-Town-Administrator-Amended-Budget-Final"
+    },
+    {
+      "category": "related_document",
+      "id": "general-by-law-re-statements-and-rules-satm-2026-3e034525",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "General By-law Re-statements and Rules (SATM 2026)",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21852/General-By-law-Re-statements-and-Rules-SATM-2026"
+    },
+    {
+      "category": "related_document",
+      "id": "natick-s-resolve-for-independence-86da5627",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick's Resolve for Independence",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21976/Naticks-Resolve-for-Independence"
+    },
+    {
+      "category": "related_document",
+      "id": "natick-town-moderator-statement-in-celebration-of-the-250th-anniversary-of-the-american-revolution-f1fd4916",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick Town Moderator Statement in Celebration of the 250th Anniversary of the American Revolution",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21853/Natick-Town-Moderator-Statement-in-Celebration-of-the-250th-Anniversary-of-the-American-Revolution"
+    },
+    {
+      "category": "related_document",
+      "id": "paul-connolly-satm-2007-resolution-f7b6fae3",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Paul Connolly SATM 2007 Resolution",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21854/Paul-Connolly-SATM-2007-Resolution"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "consideration-of-use-of-consent-agenda-at-satm-2026-638f9448",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Consideration of Use of Consent Agenda at SATM 2026",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21808/Consideration-of-Use-of-Consent-Agenda-at-SATM-2026"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "satm-2026-consent-agenda-motion-84fae260",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "SATM 2026 CONSENT AGENDA MOTION",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21855/SATM-2026-CONSENT-AGENDA-MOTION"
+    },
+    {
+      "category": "presentation",
+      "id": "2026-stm-natick-net-zero-updatefinal-277e146a",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "2026 STM - Natick Net Zero UpdateFINAL",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21901/2026-STM---Natick-Net-Zero-UpdateFINAL"
+    },
+    {
+      "category": "presentation",
+      "id": "fy-2027-budget-presentation-town-meeting-1d6d657f",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "FY 2027 Budget Presentation - Town Meeting",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21925/FY-2027-Budget-Presentation---Town-Meeting"
+    },
+    {
+      "category": "presentation",
+      "id": "nps-fy27-budget-townmeeting-32338589",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "NPS FY27 Budget TownMeeting",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21937/NPS-FY27-Budget-TownMeeting"
+    },
+    {
+      "category": "presentation",
+      "id": "keefe-tech-presentation-fy27-20d8e47e",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Keefe Tech Presentation FY27",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21993/Keefe-Tech-Presentation-FY27"
+    },
+    {
+      "category": "presentation",
+      "id": "natural-and-synthetic-turf-field-study-group-update-town-meeting-spring-2026-228f8001",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natural and Synthetic Turf Field Study Group Update_ Town Meeting Spring 2026",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21975/Natural-and-Synthetic-Turf-Field-Study-Group--Update_-Town-Meeting-Spring-2026"
+    },
+    {
+      "category": "presentation",
+      "id": "natick-hybrid-tm-committee-update-to-town-meeting-d02a9e2e",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick Hybrid TM Committee Update to Town Meeting",
+      "url": "https://www.natickma.gov/DocumentCenter/View/21938/Natick-Hybrid-TM-Committee-Update-to-Town-Meeting"
+    }
+  ]
+}

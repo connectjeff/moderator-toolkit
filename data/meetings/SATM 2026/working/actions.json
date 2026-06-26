@@ -1,0 +1,25 @@
+{
+  "article_count_with_outcomes": 0,
+  "by_article": {},
+  "meeting_id": "SATM 2026",
+  "open_items": [
+    "Outcome parsing is conservative and should be reviewed against official minutes/action PDFs.",
+    "Raw voting-system reports are archived but may not produce article outcomes without prose result text."
+  ],
+  "outcome_count": 0,
+  "outcomes": [],
+  "source_summaries": [
+    {
+      "outcome_count": 0,
+      "source_id": "natick-atm-spring-2026-042826-report-d621316b",
+      "status": "archived_not_action_minutes",
+      "title": "Natick ATM Spring 2026 042826 Report"
+    },
+    {
+      "outcome_count": 0,
+      "source_id": "natick-atm-spring-2026-043026-report-35cb2005",
+      "status": "archived_not_action_minutes",
+      "title": "Natick ATM Spring 2026 043026 Report"
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "article_count_from_source_titles": 14,
+  "articles": [
+    {
+      "article": "10",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-patel-article-10-procedural-motion-2c2bb02c",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Patel Article 10 Procedural Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20658/FATM-2025-Patel-Article-10-Procedural-Motion"
+        },
+        {
+          "category": "presentation",
+          "id": "fatm-2025-spash-article-10-presentation-4652bcf6",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Spash Article 10 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20656/FATM-2025-Spash-Article-10-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "11",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-sidney-article-11-substitute-motion-bc1c85f6",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Sidney Article 11 Substitute Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20653/FATM-2025-Sidney-Article-11-Substitute-Motion"
+        },
+        {
+          "category": "related_document",
+          "id": "article-11-memo-from-select-board-to-town-meeting-084457d2",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 11 Memo from Select Board to Town Meeting",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20651/Article-11-Memo-from-Select-Board-to-Town-Meeting"
+        }
+      ]
+    },
+    {
+      "article": "12",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-sidney-article-12-procedural-motion-05eb53b0",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Sidney Article 12 Procedural Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20654/FATM-2025-Sidney-Article-12-Procedural-Motion"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-sidney-article-12-substitute-motion-52d729bb",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Sidney Article 12 Substitute Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20655/FATM-2025-Sidney-Article-12-Substitute-Motion"
+        },
+        {
+          "category": "related_document",
+          "id": "article-12-memo-from-select-board-to-town-meeting-6e1c6b89",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 12 Memo from Select Board to Town Meeting",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20652/Article-12-Memo-from-Select-Board-to-Town-Meeting"
+        }
+      ]
+    },
+    {
+      "article": "20",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "corrected-2025-fatm-article-20-motions-dd1dbc0b",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Corrected 2025 FATM Article 20 Motions",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20620/Corrected-2025-FATM-Article-20-Motions"
+        },
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "21",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "21C",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title.",
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "related_document",
+          "id": "article-21c-community-preservation-committee-820f0838",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 21C -- Community Preservation Committee",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20731/Article-21C----Community-Preservation-Committee"
+        }
+      ]
+    },
+    {
+      "article": "22",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "23",
+      "open_items": [
+        "No article-specific motion or amendment source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "24",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "corrected-2025-fatm-article-24-motions-b2a88e40",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Corrected 2025 FATM Article 24 Motions",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20621/Corrected-2025-FATM-Article-24-Motions"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-evans-article-24-motion-a-b8c5525f",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Evans Article 24 Motion A",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20611/FATM-2025-Evans-Article-24-Motion-A"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-evans-article-24-motion-b-8fe4977e",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Evans Article 24 Motion B",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20612/FATM-2025-Evans-Article-24-Motion-B"
+        },
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "25",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-evans-article-25-a4707f01",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Evans Article 25",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20613/FATM-2025-Evans-Article-25"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-evans-article-25-substitute-motion-0b5a7b88",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Evans Article 25 Substitute Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20752/FATM-2025-Evans-Article-25-Substitute-Motion"
+        },
+        {
+          "category": "presentation",
+          "id": "2025-fatm-articles-20-through-25-presentation-8adaa1b4",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "2025 FATM Articles 20 through 25 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20664/2025-FATM-Articles-20-through-25-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "28",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-krentzman-article-28-procedural-motion-5cfdea57",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Krentzman Article 28 Procedural Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20614/FATM-2025-Krentzman-Article-28-Procedural-Motion"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-leese-article-28-motion-g-67bb6e85",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Leese Article 28 Motion G",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20630/FATM-2025-Leese-Article-28-Motion-G"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-metro-west-collaborative-development-article-28-motion-g-handout-de6cb6c9",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Metro West Collaborative Development Article 28 Motion G Handout",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20702/FATM-2025-Metro-West-Collaborative-Development-Article-28-Motion-G-Handout"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-scott-article-28-motion-g-referral-601e737f",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Scott Article 28 Motion G Referral",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20701/FATM-2025-Scott-Article-28-Motion-G-Referral"
+        },
+        {
+          "category": "presentation",
+          "id": "fatm-2025-loomis-article-28-presentation-1afb2bcc",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Loomis Article 28 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20703/FATM-2025-Loomis-Article-28-Presentation"
+        }
+      ]
+    },
+    {
+      "article": "29",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "corrected-2025-fatm-article-29-motions-635d9539",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Corrected 2025 FATM Article 29 Motions",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20622/Corrected-2025-FATM-Article-29-Motions"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-freedman-article-29-procedural-motion-482fb203",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Freedman Article 29 Procedural Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20678/FATM-2025-Freedman-Article-29-Procedural-Motion"
+        },
+        {
+          "category": "presentation",
+          "id": "article-29-zoning-bylaw-2025-fall-town-meeting-2957ac43",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 29 Zoning Bylaw 2025 Fall Town Meeting",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20680/Article-29-Zoning-Bylaw-2025-Fall-Town-Meeting"
+        }
+      ]
+    },
+    {
+      "article": "31",
+      "open_items": [
+        "No article-specific sponsor presentation source identified by title."
+      ],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "article-31-motion-b-sb-memo-to-town-meeting-45196d67",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 31 Motion B SB Memo to Town Meeting",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20681/Article-31-Motion-B-SB-Memo-to-Town-Meeting"
+        }
+      ]
+    },
+    {
+      "article": "33",
+      "open_items": [],
+      "sources": [
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-mckenzie-article-33-procedural-motion-ca82e72a",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 McKenzie Article 33 Procedural Motion",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20615/FATM-2025-McKenzie-Article-33-Procedural-Motion"
+        },
+        {
+          "category": "motion_or_amendment",
+          "id": "fatm-2025-mckenzie-article-33-substitute-motion-b-c5cf7f88",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 McKenzie Article 33 Substitute Motion B",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20648/FATM-2025-McKenzie-Article-33-Substitute-Motion-B"
+        },
+        {
+          "category": "presentation",
+          "id": "fatm-2025-article-33-presentation-3fdbd751",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Article 33 Presentation",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20687/FATM-2025-Article-33-Presentation"
+        },
+        {
+          "category": "related_document",
+          "id": "article-33-faqs-part-2-from-sponsor-bc2d61f0",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 33 FAQs Part 2 from Sponsor",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20690/Article-33-FAQs-Part-2-from-Sponsor"
+        },
+        {
+          "category": "related_document",
+          "id": "article-33-faqs-from-sponsor-5e73c643",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "Article 33 FAQs from Sponsor",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20685/Article-33-FAQs-from-Sponsor"
+        },
+        {
+          "category": "related_document",
+          "id": "fatm-2025-article-33-school-committee-memo-36a0cc47",
+          "local_path": "",
+          "official": true,
+          "status": "identified",
+          "title": "FATM 2025 Article 33 School Committee Memo",
+          "url": "https://www.natickma.gov/DocumentCenter/View/20693/FATM-2025-Article-33-School-Committee-Memo"
+        }
+      ]
+    }
+  ],
+  "generated_from": "manifest.json",
+  "meeting_id": "FATM 2025",
+  "meeting_level_sources": [
+    {
+      "category": "minutes_or_actions",
+      "id": "unofficial-vote-count-6036b702",
+      "local_path": "",
+      "official": false,
+      "status": "identified",
+      "title": "UNOFFICIAL VOTE COUNT",
+      "url": "https://docs.google.com/document/d/1nOAJCPYd5aFZ4bPZeRSYWLnSdvyyWytS/edit?usp=sharing&ouid=116951714630296913125&rtpof=true&sd=true"
+    },
+    {
+      "category": "warrant",
+      "id": "2025-fatm-warrant-approved-4f2fda15",
+      "local_path": "sources/2025-fatm-warrant-approved-25f443fa.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 FATM Warrant - Approved",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20307/2025-FATM-Warrant---Approved"
+    },
+    {
+      "category": "finance_committee",
+      "id": "2025-fatm-fincom-recommendation-book-d0d35dc2",
+      "local_path": "sources/2025-fatm-fincom-recommendation-book-feed5395.pdf",
+      "official": true,
+      "status": "parsed",
+      "title": "2025 FATM_FinCom_Recommendation Book",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20518/2025-FATM_FinCom_Recommendation-Book"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "final-charter-and-bylaw-committee-meeting-report-for-fall-annual-town-meeting-2025-a1d11045",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Final Charter and Bylaw Committee Meeting Report for Fall Annual Town Meeting 2025",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20662/Final-Charter-and-Bylaw-Committee-Meeting-Report-for-Fall-Annual-Town-Meeting-2025"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-fall-2025-102125-report-ba97ff20",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Fall 2025 102125 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20937/Natick-ATM-Fall-2025-102125-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-fall-2025-102325-report-945ec3c8",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Fall 2025 102325 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20938/Natick-ATM-Fall-2025-102325-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-fall-2025-102825-report-3da841bc",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Fall 2025 102825 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20932/Natick-ATM-Fall-2025-102825-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "natick-atm-fall-2025-103025-report-5c0c9ce8",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Natick ATM Fall 2025 103025 Report",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20939/Natick-ATM-Fall-2025-103025-Report"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-fatm-october-21-session-1-e033e23f",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "2025 FATM October 21 Session 1",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20934/2025-FATM-October-21-Session-1"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-fatm-october-23-session-2-394f3a00",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "2025 FATM October 23 Session 2",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20933/2025-FATM-October-23-Session-2"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-fatm-october-28-session-3-e00f08a9",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "2025 FATM October 28 Session 3",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20936/2025-FATM-October-28-Session-3"
+    },
+    {
+      "category": "minutes_or_actions",
+      "id": "2025-fatm-october-30-session-4-65061719",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "2025 FATM October 30 Session 4",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20935/2025-FATM-October-30-Session-4"
+    },
+    {
+      "category": "finance_committee",
+      "id": "https-sites-google-com-natickma-org-fincom-32e7a5d7",
+      "local_path": "",
+      "official": false,
+      "status": "identified",
+      "title": "https://sites.google.com/natickma.org/fincom",
+      "url": "https://sites.google.com/natickma.org/fincom"
+    }
+  ],
+  "open_items": [
+    "This index uses article numbers found in source titles only.",
+    "Parse the official warrant and motion documents to confirm article titles and complete article coverage."
+  ],
+  "uncategorized_article_sources": [
+    {
+      "category": "related_document",
+      "id": "intent-to-call-2025-fall-annual-town-meeting-842a8741",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Intent to Call 2025 Fall Annual Town Meeting",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20067/Intent-to-Call-2025-Fall-Annual-Town-Meeting"
+    },
+    {
+      "category": "related_document",
+      "id": "fatm-2025-moderator-letter-to-members-e5db4a89",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "FATM 2025 Moderator Letter to Members",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20547/FATM-2025-Moderator-Letter-to-Members"
+    },
+    {
+      "category": "related_document",
+      "id": "fatm-2025-natick-town-meeting-rules-cb524697",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "FATM 2025 Natick Town Meeting Rules",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20616/FATM-2025-Natick-Town-Meeting-Rules"
+    },
+    {
+      "category": "related_document",
+      "id": "town-counsel-memo-on-cpc-and-town-meeting-roles-db0f6f60",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Town Counsel Memo on CPC and Town Meeting roles",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20724/Town-Counsel-Memo-on-CPC-and-Town-Meeting-roles"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "consideration-of-use-of-consent-agenda-at-fatm-2025-8d9c81ec",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "Consideration of Use of Consent Agenda at FATM 2025",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20571/Consideration-of-Use-of-Consent-Agenda-at-FATM-2025"
+    },
+    {
+      "category": "motion_or_amendment",
+      "id": "fatm-2025-grigely-motion-g-amendment-bec6181f",
+      "local_path": "",
+      "official": true,
+      "status": "identified",
+      "title": "FATM 2025 Grigely Motion G Amendment",
+      "url": "https://www.natickma.gov/DocumentCenter/View/20728/FATM-2025-Grigely-Motion-G-Amendment"
+    }
+  ]
+}
