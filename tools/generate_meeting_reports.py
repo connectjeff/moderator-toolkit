@@ -316,13 +316,11 @@ def motion_label(motions: list[dict[str, object]]) -> str:
 
 
 def article_trace(
-    meeting_sources: list[dict[str, object]],
     article_sources: list[dict[str, object]],
     motions: list[dict[str, object]],
-    actions: list[dict[str, object]],
 ) -> str:
     seen: dict[str, dict[str, object]] = {}
-    for source in meeting_sources + article_sources:
+    for source in article_sources:
         seen[text(source.get("id"))] = source
     for motion in motions:
         if motion.get("source_id") and text(motion.get("source_id")) not in seen:
@@ -333,17 +331,6 @@ def article_trace(
                 "category": "motion_or_amendment",
                 "status": motion.get("status"),
                 "official": True,
-            }
-    for action in actions:
-        if action.get("source_id") and text(action.get("source_id")) not in seen:
-            seen[text(action.get("source_id"))] = {
-                "id": action.get("source_id"),
-                "title": action.get("source_title"),
-                "url": action.get("source_url"),
-                "category": "minutes_or_actions",
-                "status": "parsed",
-                "official": action.get("source_provenance") != "accepted_unofficial",
-                "accepted_unofficial": action.get("source_provenance") == "accepted_unofficial",
             }
     if not seen:
         return "<p>No article-specific source trace recorded.</p>"
@@ -362,7 +349,6 @@ def article_trace(
 def article_section(
     meeting_dir: Path,
     article: dict[str, object],
-    meeting_sources: list[dict[str, object]],
     article_sources: list[dict[str, object]],
     fincom: dict[str, object] | None,
     motions: list[dict[str, object]],
@@ -392,7 +378,7 @@ def article_section(
     <div class="field"><label>Final Action</label>{esc(action_label(actions))}</div>
   </div>
   <p><strong>Warrant request:</strong> {esc(excerpt(article.get('warrant_text'), 500))}</p>
-  <div class="trace"><strong>Traceability:</strong>{article_trace(meeting_sources, article_sources, motions, actions)}</div>
+  <div class="trace"><strong>Article-specific traceability:</strong>{article_trace(article_sources, motions)}</div>
   <details>
     <summary>Preparation notes and unresolved items</summary>
     {open_item_list(article_open_items)}
@@ -442,7 +428,6 @@ def generate_report(meeting_dir: Path) -> Path:
         text(article.get("article")): list(article.get("sources", []))
         for article in source_index.get("articles", [])
     }
-    meeting_sources = list(source_index.get("meeting_level_sources", []))
     source_categories = defaultdict(list)
     for source in sources:
         source_categories[text(source.get("category"), "uncategorized")].append(source)
@@ -473,7 +458,6 @@ def generate_report(meeting_dir: Path) -> Path:
         article_section(
             meeting_dir,
             article,
-            meeting_sources,
             article_sources.get(text(article.get("article")), []),
             fincom_by_article.get(text(article.get("article"))),
             motions_by_article.get(text(article.get("article")), []),
