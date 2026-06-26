@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SATM 2026 Moderator Report</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f8f5;
+  --ink: #1d2522;
+  --muted: #59625e;
+  --line: #cfd8d0;
+  --panel: #ffffff;
+  --accent: #0f766e;
+  --accent-dark: #115e59;
+  --warn: #9a3412;
+  --soft: #e9f4f1;
+  --soft-warn: #fff3e8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: var(--accent-dark); text-decoration-thickness: 0.08em; }
+header {
+  padding: 32px clamp(18px, 4vw, 48px) 24px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+main { padding: 24px clamp(18px, 4vw, 48px) 48px; }
+h1, h2, h3 { line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3.75rem); max-width: 980px; }
+h2 { font-size: 1.35rem; margin-top: 32px; margin-bottom: 12px; }
+h3 { font-size: 1rem; margin-bottom: 8px; }
+p { margin: 8px 0; }
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 16px;
+  color: var(--muted);
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.nav a, .pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+.stat, .panel, .article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.stat { padding: 14px; }
+.stat strong { display: block; font-size: 1.8rem; line-height: 1; }
+.stat span { color: var(--muted); }
+.panel { padding: 16px; margin-bottom: 14px; }
+.article { padding: 16px; margin-bottom: 16px; }
+.article-title {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.article-title h3 { font-size: 1.1rem; }
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.field {
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+}
+.field.warning { border-color: var(--warn); background: var(--soft-warn); padding: 8px 10px; }
+.field label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+th, td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--soft); font-size: 0.82rem; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+.scroll { overflow-x: auto; }
+.source-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+.source-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 12px;
+}
+.source-card p { color: var(--muted); font-size: 0.9rem; overflow-wrap: anywhere; }
+.tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 5px;
+  background: var(--soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.tag.warn { background: var(--soft-warn); color: var(--warn); }
+.trace { margin-top: 10px; font-size: 0.9rem; }
+.trace ul { margin: 6px 0 0; padding-left: 18px; }
+.open-items li { margin-bottom: 5px; }
+footer {
+  padding: 16px clamp(18px, 4vw, 48px) 32px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+@media print {
+  body { background: #ffffff; font-size: 12px; }
+  header, main, footer { padding-left: 0; padding-right: 0; }
+  .nav { display: none; }
+  .article, .panel, .stat { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Town Moderator's Toolkit</div>
+    <h1>SATM 2026 Moderator Report</h1>
+    <div class="meta">
+      <span>Natick, MA</span>
+      <span>Retrieved 2026-06-16</span>
+      <span><a href="https://www.natickma.gov/2347/2026-Spring-Annual-Town-Meeting">Official meeting page</a></span>
+    </div>
+    <nav class="nav" aria-label="Report sections">
+      <a href="#overview">Overview</a>
+      <a href="#prep">Preparation</a>
+      <a href="#articles">Articles</a>
+      <a href="#sources">Sources</a>
+      <a href="#open-items">Open Items</a>
+    </nav>
+  </header>
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <div class="grid">
+        <div class="stat"><strong>18</strong><span>warrant articles</span></div>
+        <div class="stat"><strong>18</strong><span>FinCom recommendations</span></div>
+        <div class="stat"><strong>9</strong><span>motion/amendment records</span></div>
+        <div class="stat"><strong>0</strong><span>articles with parsed outcomes</span></div>
+        <div class="stat"><strong>51</strong><span>official source entries</span></div>
+        <div class="stat"><strong>43</strong><span>items needing review</span></div>
+      </div>
+    </section>
+
+    <section id="prep">
+      <h2>Preparation</h2>
+      <div class="panel">
+        <p>This report is generated only from the meeting manifest and already archived/parser outputs in this folder. Use it as an index into the article briefs and source materials before the article comes to the floor.</p>
+        <p><span class="tag">13</span> parsed source records <span class="tag">0</span> accepted unofficial records <span class="tag warn">43</span> source or review flags</p>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr><th>Article</th><th>Title</th><th>Sponsor</th><th>FinCom</th><th>Motions</th><th>Final Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="articles/article-01-authorize-select-board-to-acquire-obtain-abandon-or-relocate-easements.md">1</a></td><td>Authorize Select Board to Acquire, Obtain, Abandon or Relocate Easements</td><td>Town Administrator</td><td>Favorable (12-0-1)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-02-committee-article.md">2</a></td><td>Committee Article</td><td>Town Administrator</td><td>Favorable (9-2-2)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-03-omnibus-budget.md">3</a></td><td>Omnibus Budget</td><td>Town Administrator</td><td>Favorable (ALL Motions) (A: 11-0-0)</td><td>1 procedural motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-04-stabilization-funds-and-opeb.md">4</a></td><td>Stabilization Funds and OPEB</td><td>Town Administrator</td><td>Favorable (13-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-05-unpaid-bills.md">5</a></td><td>Unpaid Bills</td><td>Town Administrator</td><td>No Action (13-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-06-peg-access-and-cable-related-fund.md">6</a></td><td>PEG Access and Cable Related Fund</td><td>Town Administrator</td><td>Favorable (13-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-07-amend-bylaw-article-41a-revolving-funds.md">7</a></td><td>Amend Bylaw Article 41A (Revolving Funds)</td><td>Town Administrator</td><td>Favorable (11-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-08-revolving-funds.md">8</a></td><td>Revolving Funds</td><td>Town Administrator</td><td>Favorable (11-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-09-capital-equipment-and-improvement.md">9</a></td><td>Capital Equipment and Improvement</td><td>Town Administrator</td><td>All Favorable (10-0-0 (All))</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-10-collective-bargaining.md">10</a></td><td>Collective Bargaining</td><td>Town Administrator</td><td>No Action (13-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-11-personnel-board-classification-and-pay-plan.md">11</a></td><td>Personnel Board Classification and Pay Plan</td><td>Town Administrator</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-12-an-act-authorizing-the-town-of-natick-to-continue-the-employment-of-police-chief-james-hicks-beyond-the-age-of-65.md">12</a></td><td>An Act Authorizing the Town of Natick to Continue the Employment of Police Chief James Hicks Beyond the Age Of 65</td><td>Select Board</td><td>No Recommendation (6-4-0)</td><td>1 motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-13-an-act-authorizing-the-town-of-natick-to-continue-the-employment-of-deputy-police-chief-brian-lauzon-beyond-the-age-of-65.md">13</a></td><td>An Act Authorizing the Town of Natick to Continue the Employment of Deputy Police Chief Brian Lauzon Beyond the Age of 65</td><td>Select Board</td><td>Refer to Sponsor (9-1-1)</td><td>1 motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-14-amend-bylaw-article-50-section-16-animal-control.md">14</a></td><td>Amend Bylaw Article 50, Section 16 (Animal Control)</td><td>Town Administrator</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-15-community-preservation-fund-appropriation-of-community-preservation-funds.md">15</a></td><td>Community Preservation Fund: Appropriation of Community Preservation Funds</td><td>Community Preservation Committee</td><td>Favorable (11-0-0)</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-16-hybrid-town-meeting-committee-report-term-extension-and-or-amend-charge.md">16</a></td><td>Hybrid Town Meeting Committee Report, Term Extension and/or Amend Charge</td><td>Hybrid Town Meeting Committee</td><td>Favorable (A &amp; B) (9-0-2 (A &amp; B))</td><td>No parsed article motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-17-natural-and-synthetic-turf-field-study-group-report.md">17</a></td><td>Natural and Synthetic Turf Field Study Group Report</td><td>Select Board</td><td>No Recommendation (7-3-2)</td><td>1 motion</td><td>No parsed final action</td></tr>
+<tr><td><a href="articles/article-18-resolution-to-honor-the-1776-natick-resolve-for-independence-and-to-uphold-the-united-states-constitution-in-2026.md">18</a></td><td>Resolution to honor the 1776 Natick Resolve for Independence and to uphold the United States Constitution in 2026</td><td>Joshua Ostroff et al</td><td>Favorable (9-1-3)</td><td>1 amendment</td><td>No parsed final action</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="articles">
+      <h2>Articles</h2>
+      
+<article class="article" id="article-1">
+  <div class="article-title">
+    <h3><a href="articles/article-01-authorize-select-board-to-acquire-obtain-abandon-or-relocate-easements.md">Article 1: Authorize Select Board to Acquire, Obtain, Abandon or Relocate Easements</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-1)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to authorize the Select Board, during Fiscal Year 2027, to acquire on behalf of the Town any and all easements for any of the following purposes: roads, sidewalks, vehicular and/or pedestrian access or passage, drainage and utilities, provided however that such authorization pertains only to easements acquired at no cost to the Town; and, further, to authorize the Select Board, subsequent to a public hearing, during Fiscal Year 2027 to abandon or relocate...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-2">
+  <div class="article-title">
+    <h3><a href="articles/article-02-committee-article.md">Article 2: Committee Article</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (9-2-2)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to hear and discuss the reports of town oﬃcers, boards, and committees; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-3">
+  <div class="article-title">
+    <h3><a href="articles/article-03-omnibus-budget.md">Article 3: Omnibus Budget</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (ALL Motions) (A: 11-0-0)</div>
+    <div class="field"><label>Motions</label>1 procedural motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> Town To determine what sum of money the Town will appropriate and raise, transfer from available funds for the operation of the government of the Town of Natick, including debt and interest, during Fiscal Year 2026 (July 1, 2025, through June 30, 2026) and to provide for reserve funds for Fiscal Year 2026 and to see what budgets for Fiscal Year 2026 will be reduced to o ffset said additional appropriations; To determine what sum of money the Town will appropriate and raise, or transfer from...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22000/Article-3-Procedural-Motion-Coffey">Article 3 Procedural Motion Coffey</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-4">
+  <div class="article-title">
+    <h3><a href="articles/article-04-stabilization-funds-and-opeb.md">Article 4: Stabilization Funds and OPEB</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> General Stabilization To see what sum of money the Town will vote to raise and appropriate, transfer from available funds or otherwise provide for the purpose of supplementing the Stabilization Fund established under Article 22 of the warrant for Annual Town Meeting of 1961, as authorized by Chapter 40, Section 5B of the General Laws, as amended; Operational Stabilization To see what sum of money the Town will vote to raise and appropriate, transfer from available funds or otherwise provide...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-5">
+  <div class="article-title">
+    <h3><a href="articles/article-05-unpaid-bills.md">Article 5: Unpaid Bills</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Action (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, transfer from available funds, or otherwise provide for the payment of unpaid bills of previous years, incurred by the departments, boards and o ﬃcers of the Town of Natick; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-6">
+  <div class="article-title">
+    <h3><a href="articles/article-06-peg-access-and-cable-related-fund.md">Article 6: PEG Access and Cable Related Fund</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to appropriate from the PEG Access and Cable Related Fund, established by vote of 2019 Special Town Meeting #1 under Article 1, as authorized by Chapter 44, Section 53F 3/4 of the General Laws, as amended, to fund PEG access programming, as well as certain other municipal cable related expenses; or otherwise act thereon. 3</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-7">
+  <div class="article-title">
+    <h3><a href="articles/article-07-amend-bylaw-article-41a-revolving-funds.md">Article 7: Amend Bylaw Article 41A (Revolving Funds)</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (11-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend Article 41A (Revolving Funds) of the Natick Town Bylaws as provided for under Massachusetts General Laws Chapter 44, section 53E 1/2; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-8">
+  <div class="article-title">
+    <h3><a href="articles/article-08-revolving-funds.md">Article 8: Revolving Funds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (11-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote on the limit of the total amount that may be expended from each revolving fund established pursuant to Massachusetts General Laws Chapter 44, section 53E 1/2 and Article 41A (Revolving Funds) of the Natick Town Bylaws; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-9">
+  <div class="article-title">
+    <h3><a href="articles/article-09-capital-equipment-and-improvement.md">Article 9: Capital Equipment and Improvement</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>All Favorable (10-0-0 (All))</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, borrow, transfer from available funds or otherwise provide to implement a Capital Improvement Program as may be required for capital equipment for the various departments of the Town of Natick; to protect the physical infrastructure of the Town of Natick, to add new physical infrastructure, or to improve community assets; and further to determine whether this appropriation shall be raised by borrowing or otherwise; or...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-10">
+  <div class="article-title">
+    <h3><a href="articles/article-10-collective-bargaining.md">Article 10: Collective Bargaining</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Action (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, transfer from available funds, or otherwise provide, to implement any Collective Bargaining Agreements between the Town of Natick and any recognized bargaining units of the Town; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-11">
+  <div class="article-title">
+    <h3><a href="articles/article-11-personnel-board-classification-and-pay-plan.md">Article 11: Personnel Board Classification and Pay Plan</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town, pursuant to the authority contained in Section 108A of Chapter 41 of the General Laws, will vote to amend Article 24 of the Natick Town Bylaws, specifically the Classification and Pay Plan referenced in Section 3, paragraph 3.10 therein, by adding, deleting or amending position titles; re-classifying positions to a different Grade; and/or effecting changes in the salary ranges as presently established; or otherwise act thereon. 4</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-12">
+  <div class="article-title">
+    <h3><a href="articles/article-12-an-act-authorizing-the-town-of-natick-to-continue-the-employment-of-police-chief-james-hicks-beyond-the-age-of-65.md">Article 12: An Act Authorizing the Town of Natick to Continue the Employment of Police Chief James Hicks Beyond the Age Of 65</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Select Board</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (6-4-0)</div>
+    <div class="field"><label>Motions</label>1 motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to authorize the Select Board to file Special Legislation with the General Court under the Home Rule Amendment to the Massachusetts Constitution or take any other action thereon, said Special Legislation to read as follows; provided, however, that the General Court may make clerical or editorial changes of form only to the bill, unless the Select Board approves amendments thereto before enactment by the General Court, which amendments shall be within the public...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans">Article 12 Motion Bruce Evans</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21939/Select-Board-Articles-12-and-13-FINAL-April-20">Select Board Articles 12 and 13 FINAL April 20</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>No parsed final action is available for this article.</li><li>1 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-13">
+  <div class="article-title">
+    <h3><a href="articles/article-13-an-act-authorizing-the-town-of-natick-to-continue-the-employment-of-deputy-police-chief-brian-lauzon-beyond-the-age-of-65.md">Article 13: An Act Authorizing the Town of Natick to Continue the Employment of Deputy Police Chief Brian Lauzon Beyond the Age of 65</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Select Board</div>
+    <div class="field"><label>Finance Committee</label>Refer to Sponsor (9-1-1)</div>
+    <div class="field"><label>Motions</label>1 motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to authorize the Select Board to file Special Legislation with the General Court under the Home Rule Amendment to the Massachusetts Constitution or take any other action thereon, said Special Legislation to read as follows; provided, however, that the General Court may make clerical or editorial changes of form only to the bill, unless the Select Board approves amendments thereto before enactment by the General Court, which amendments shall be within the public...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21978/Article-13-Motion-Bruce-Evans">Article 13 Motion Bruce Evans</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>No parsed final action is available for this article.</li><li>1 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-14">
+  <div class="article-title">
+    <h3><a href="articles/article-14-amend-bylaw-article-50-section-16-animal-control.md">Article 14: Amend Bylaw Article 50, Section 16 (Animal Control)</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will amend Natick Town Bylaws Article 50, Section 16 (Animal Control); or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-15">
+  <div class="article-title">
+    <h3><a href="articles/article-15-community-preservation-fund-appropriation-of-community-preservation-funds.md">Article 15: Community Preservation Fund: Appropriation of Community Preservation Funds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Community Preservation Committee</div>
+    <div class="field"><label>Finance Committee</label>Favorable (11-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to appropriate the Community Preservation Fund annual revenues into each of the Community Preservation Act (CPA) accounts, which include Community (Affordable) Housing, Open Space and Recreation, and Historic Resources; and further appropriate annual revenues for administration and operation for use by the Community Preservation Committee (CPC) in Fiscal Year 2027, in accordance with General Laws Chapter 44B, or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-16">
+  <div class="article-title">
+    <h3><a href="articles/article-16-hybrid-town-meeting-committee-report-term-extension-and-or-amend-charge.md">Article 16: Hybrid Town Meeting Committee Report, Term Extension and/or Amend Charge</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Hybrid Town Meeting Committee</div>
+    <div class="field"><label>Finance Committee</label>Favorable (A &amp; B) (9-0-2 (A &amp; B))</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what action the Town will take to hear and/or discuss a report of the Hybrid Town Meeting Committee; and to see what action Town Meeting will take to: 1) extend the term of the Hybrid Town Meeting Committee and/or 2) amend the charge of the committee. Or otherwise act thereon. 6</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>No parsed final action is available for this article.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-17">
+  <div class="article-title">
+    <h3><a href="articles/article-17-natural-and-synthetic-turf-field-study-group-report.md">Article 17: Natural and Synthetic Turf Field Study Group Report</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Select Board</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (7-3-2)</div>
+    <div class="field"><label>Motions</label>1 motion</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to hear and/or discuss the report of the Natural and Synthetic Turf Field Study Group, or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21979/Article-17-Motion-Bruce-Evans">Article 17 Motion Bruce Evans</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>No parsed final action is available for this article.</li><li>1 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-18">
+  <div class="article-title">
+    <h3><a href="articles/article-18-resolution-to-honor-the-1776-natick-resolve-for-independence-and-to-uphold-the-united-states-constitution-in-2026.md">Article 18: Resolution to honor the 1776 Natick Resolve for Independence and to uphold the United States Constitution in 2026</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Joshua Ostroff et al</div>
+    <div class="field"><label>Finance Committee</label>Favorable (9-1-3)</div>
+    <div class="field"><label>Motions</label>1 amendment</div>
+    <div class="field"><label>Final Action</label>No parsed final action</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to approve a resolution commemorating the 250th anniversary of the Natick Town Meeting Resolve for Independence, and a ﬃrming Natick support of the Constitution of the United States, or otherwise act thereon. 7 Y ou are directed to serve this Warrant by causing an attested copy of said Warrant to be posted in the Post Oﬃce in said Natick, and at the following public places in said Natick, to wit: Precinct 1: Reliable Cleaners, 214 West Central Street; Precinct 2:...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">FinCom_Recommendation_Book_SATM26</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">Natick ATM Spring 2026 042826 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">Natick ATM Spring 2026 043026 Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss">Article 18 Amendment Foss</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff">Article 18 Amendment Jeanne Ostroff</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff">Article 18 Procedural Motion Ostroff</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="https://www.natickma.gov/DocumentCenter/View/21991/Article-18-Presentation---Ostroff">Article 18 Presentation - Ostroff</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</a> <span class="tag">Warrant</span> <span class="tag">official</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>No parsed final action is available for this article.</li><li>2 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+    </section>
+
+    <section id="sources">
+      <h2>Source Materials</h2>
+      <p>Each source card links to the archived local artifact when present, extracted text when present, and the original URL recorded in the manifest.</p>
+      <h3>Finance Committee</h3><div class="source-list">
+<article class="source-card" id="source-fincom-recommendation-book-satm26-05931d83">
+  <h3>FinCom_Recommendation_Book_SATM26</h3>
+  <p><span class="tag">Finance Committee</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/fincom-recommendation-book-satm26-feed5395.pdf">local</a> | <a href="working/extracted-text/fincom-recommendation-book-satm26.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21665/FinCom_Recommendation_Book_SATM26">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-https-sites-google-com-natickma-org-fincom-32e7a5d7">
+  <h3>https://sites.google.com/natickma.org/fincom</h3>
+  <p><span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://sites.google.com/natickma.org/fincom">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+</div><h3>Meeting Page</h3><div class="source-list">
+<article class="source-card" id="source-official-meeting-page">
+  <h3>2026 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Meeting Page</span> <span class="tag">official</span> <span class="tag">archived</span></p>
+  <p><a href="sources/official-meeting-page.html">local</a> | <a href="https://www.natickma.gov/2347/2026-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Official Natick Town Meeting page used as source manifest entry point.</p>
+</article>
+</div><h3>Minutes And Actions</h3><div class="source-list">
+<article class="source-card" id="source-natick-atm-spring-2026-042826-report-d621316b">
+  <h3>Natick ATM Spring 2026 042826 Report</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/natick-atm-spring-2026-042826-report-c54d58e9.pdf">local</a> | <a href="working/extracted-text/natick-atm-spring-2026-042826-report.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/22178/Natick-ATM-Spring-2026-042826-Report">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-natick-atm-spring-2026-043026-report-35cb2005">
+  <h3>Natick ATM Spring 2026 043026 Report</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/natick-atm-spring-2026-043026-report-9916f2a8.pdf">local</a> | <a href="working/extracted-text/natick-atm-spring-2026-043026-report.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/22179/Natick-ATM-Spring-2026-043026-Report">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+</div><h3>Motions And Amendments</h3><div class="source-list">
+<article class="source-card" id="source-consideration-of-use-of-consent-agenda-at-satm-2026-638f9448">
+  <h3>Consideration of Use of Consent Agenda at SATM 2026</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/consideration-of-use-of-consent-agenda-at-satm-2026-28d6d6a5.pdf">local</a> | <a href="working/extracted-text/consideration-of-use-of-consent-agenda-at-satm-2026.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21808/Consideration-of-Use-of-Consent-Agenda-at-SATM-2026">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-satm-2026-consent-agenda-motion-84fae260">
+  <h3>SATM 2026 CONSENT AGENDA MOTION</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/satm-2026-consent-agenda-motion-805ded3b.pdf">local</a> | <a href="working/extracted-text/satm-2026-consent-agenda-motion.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21855/SATM-2026-CONSENT-AGENDA-MOTION">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-18-procedural-motion-ostroff-a186275d">
+  <h3>Article 18 Procedural Motion Ostroff</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-18-procedural-motion-ostroff-30009c58.pdf">local</a> | <a href="working/extracted-text/article-18-procedural-motion-ostroff.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21935/Article-18-Procedural-Motion-Ostroff">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-3-procedural-motion-coffey-ac9c126b">
+  <h3>Article 3 Procedural Motion Coffey</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-procedural-motion-coffey-d12a8b1c.pdf">local</a> | <a href="working/extracted-text/article-3-procedural-motion-coffey.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/22000/Article-3-Procedural-Motion-Coffey">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-12-motion-bruce-evans-b2d6382d">
+  <h3>Article 12 Motion Bruce Evans</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-12-motion-bruce-evans-0f99cd12.pdf">local</a> | <a href="working/extracted-text/article-12-motion-bruce-evans.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21977/Article-12-Motion-Bruce-Evans">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-13-motion-bruce-evans-95e86b01">
+  <h3>Article 13 Motion Bruce Evans</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-13-motion-bruce-evans-424c04d8.pdf">local</a> | <a href="working/extracted-text/article-13-motion-bruce-evans.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21978/Article-13-Motion-Bruce-Evans">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-17-motion-bruce-evans-787697c8">
+  <h3>Article 17 Motion Bruce Evans</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-17-motion-bruce-evans-ba95c252.pdf">local</a> | <a href="working/extracted-text/article-17-motion-bruce-evans.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21979/Article-17-Motion-Bruce-Evans">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-18-amendment-jeanne-ostroff-0d7233fd">
+  <h3>Article 18 Amendment Jeanne Ostroff</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-18-amendment-jeanne-ostroff-b0191398.pdf">local</a> | <a href="working/extracted-text/article-18-amendment-jeanne-ostroff.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21936/Article-18-Amendment-Jeanne-Ostroff">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-18-amendment-foss-27be3901">
+  <h3>Article 18 Amendment Foss</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-18-amendment-foss-1863abe9.pdf">local</a> | <a href="working/extracted-text/article-18-amendment-foss.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21934/Article-18-Amendment-Foss">source URL</a></p>
+  <p>Listed under page section: Motions &amp; Amendments</p>
+</article>
+</div><h3>Presentations</h3><div class="source-list">
+<article class="source-card" id="source-2026-stm-natick-net-zero-updatefinal-277e146a">
+  <h3>2026 STM - Natick Net Zero UpdateFINAL</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21901/2026-STM---Natick-Net-Zero-UpdateFINAL">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-fy-2027-budget-presentation-town-meeting-1d6d657f">
+  <h3>FY 2027 Budget Presentation - Town Meeting</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21925/FY-2027-Budget-Presentation---Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-nps-fy27-budget-townmeeting-32338589">
+  <h3>NPS FY27 Budget TownMeeting</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21937/NPS-FY27-Budget-TownMeeting">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-keefe-tech-presentation-fy27-20d8e47e">
+  <h3>Keefe Tech Presentation FY27</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21993/Keefe-Tech-Presentation-FY27">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-select-board-articles-12-and-13-final-april-20-fcb4221f">
+  <h3>Select Board Articles 12 and 13 FINAL April 20</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21939/Select-Board-Articles-12-and-13-FINAL-April-20">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-natural-and-synthetic-turf-field-study-group-update-town-meeting-spring-2026-228f8001">
+  <h3>Natural and Synthetic Turf Field Study Group Update_ Town Meeting Spring 2026</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21975/Natural-and-Synthetic-Turf-Field-Study-Group--Update_-Town-Meeting-Spring-2026">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-natick-hybrid-tm-committee-update-to-town-meeting-d02a9e2e">
+  <h3>Natick Hybrid TM Committee Update to Town Meeting</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21938/Natick-Hybrid-TM-Committee-Update-to-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-18-presentation-ostroff-5bb727fe">
+  <h3>Article 18 Presentation - Ostroff</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21991/Article-18-Presentation---Ostroff">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+</div><h3>Related Document</h3><div class="source-list">
+<article class="source-card" id="source-intent-to-call-2026-spring-annual-town-meeting-1529e9d7">
+  <h3>Intent to Call 2026 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21091/Intent-to-Call-2026-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-satm-2026-moderator-letter-to-members-c46a3894">
+  <h3>SATM 2026 Moderator Letter to Members</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21807/SATM-2026-Moderator-Letter-to-Members">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-fy-2027-town-administrator-amended-budget-final-6c227a83">
+  <h3>FY 2027 Town Administrator Amended Budget Final</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21851/FY-2027-Town-Administrator-Amended-Budget-Final">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-general-by-law-re-statements-and-rules-satm-2026-3e034525">
+  <h3>General By-law Re-statements and Rules (SATM 2026)</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21852/General-By-law-Re-statements-and-Rules-SATM-2026">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-natick-s-resolve-for-independence-86da5627">
+  <h3>Natick&#x27;s Resolve for Independence</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21976/Naticks-Resolve-for-Independence">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-natick-town-moderator-statement-in-celebration-of-the-250th-anniversary-of-the-american-revolution-f1fd4916">
+  <h3>Natick Town Moderator Statement in Celebration of the 250th Anniversary of the American Revolution</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21853/Natick-Town-Moderator-Statement-in-Celebration-of-the-250th-Anniversary-of-the-American-Revolution">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-paul-connolly-satm-2007-resolution-f7b6fae3">
+  <h3>Paul Connolly SATM 2007 Resolution</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21854/Paul-Connolly-SATM-2007-Resolution">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+</div><h3>Resources</h3><div class="source-list">
+<article class="source-card" id="source-unofficial-voting-results-for-satm-2026-9dad95dc">
+  <h3>Unofficial voting results for SATM 2026</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://docs.google.com/spreadsheets/d/1qg9FzcODIbArdq8de8yq8Kd8bSsPYIkG/edit?gid=551829808#gid=551829808">source URL</a></p>
+  <p>Listed under page section: 2026 Spring Annual Town Meeting will continue Thursday April 30th at 7:30 PM at the Kennedy Middle School Auditorium located at 165 Mill Street.</p>
+</article>
+
+<article class="source-card" id="source-declaration-of-independence-a3c74fd7">
+  <h3>Declaration of Independence</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.archives.gov/founding-docs/declaration-transcript">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-constitution-of-the-united-states-d81c7cba">
+  <h3>Constitution of the United States</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.archives.gov/founding-docs/constitution-transcript">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-administration-fy2027-budget-book-ae667722">
+  <h3>Town Administration FY2027 Budget Book</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/21851">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-natick-public-schools-fy2027-budget-book-d5618545">
+  <h3>Natick Public Schools FY2027 Budget Book</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://aptg.co/VHpQjZ">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-primer-videos-3a129dee">
+  <h3>Town Meeting Primer Videos</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://u.peg.tv/s/81v9lg">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-coffee-with-a-purpose-e01f4c39">
+  <h3>Coffee with a Purpose</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://youtu.be/6-gV9OyFWE4?si=V5TgcftQRr9mL03v">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-members-contact-list-pdf-84e3c79d">
+  <h3>Town Meeting Members Contact List (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/19476/TMM-List--Master-Spring-2025">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-handbook-pdf-722c3b4f">
+  <h3>Town Meeting Member Handbook (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/11789/TMM-handbook-Draft-07202021">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-motion-form-595e759e">
+  <h3>Town Meeting Motion Form</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/8048/Town-Meeting-Motion-Form">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-new-member-orientation-pdf-c7c79435">
+  <h3>Town Meeting New Member Orientation (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/19549/Town-Meeting-Member-Orientation">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-time-40e7aaa9">
+  <h3>Town Meeting Time</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://massmoderators.org/tmt4/">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-moderator-2bc0b0e3">
+  <h3>Town Moderator</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/642/Moderator">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-attorney-general-approvals-08c2a414">
+  <h3>Attorney General Approvals</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1503/Attorney-General-Approvals">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2025-fall-annual-town-meeting-c725d2a2">
+  <h3>2025 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2287/2025-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2025-spring-annual-town-meeting-1c66b2e0">
+  <h3>2025 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2228/2025-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2024-fall-annual-town-meeting-ed7e560d">
+  <h3>2024 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2170/2024-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2024-spring-annual-town-meeting-caae36be">
+  <h3>2024 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2092/2024-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2024-special-town-meeting-2909202e">
+  <h3>2024 Special Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2259/2024-Special-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2023-fall-annual-town-meeting-5f0aa38d">
+  <h3>2023 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1999/2023-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2023-spring-annual-town-meeting-8ad599b5">
+  <h3>2023 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1895/2023-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2022-fall-annual-town-meeting-34338325">
+  <h3>2022 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1871/2022-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2022-spring-annual-town-meeting-b0f64f1d">
+  <h3>2022 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1822/2022-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2021-fall-annual-town-meeting-8b314942">
+  <h3>2021 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1796/2021-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-2021-spring-annual-town-meeting-b1df986c">
+  <h3>2021 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1765/2021-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-prior-town-meetings-0f7868a9">
+  <h3>Prior Town Meetings</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1902/Prior-Town-Meetings">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-natick-public-schools-18ff15e3">
+  <h3>Natick Public Schools</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://www.natickps.org/">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+</div><h3>Warrant</h3><div class="source-list">
+<article class="source-card" id="source-2026-satm-warrant-approved-3-2-2026-docx-1-1-a836d09e">
+  <h3>2026 SATM Warrant Approved 3.2.2026.docx (1) (1)</h3>
+  <p><span class="tag">Warrant</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2026-satm-warrant-approved-3-2-2026-docx-1-1-50e155de.pdf">local</a> | <a href="working/extracted-text/2026-satm-warrant-approved-3-2-2026-docx-1-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/21455/2026-SATM-Warrant-Approved-322026docx-1-1">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+</div>
+    </section>
+
+    <section id="open-items">
+      <h2>Open Items</h2>
+      <div class="grid">
+        <div class="panel"><h3>Manifest</h3><ul class="open-items"><li>Review the manifest categories before generating article briefs.</li><li>Download and parse warrant, motions, Finance Committee recommendation book, and minutes/action documents.</li><li>Mark external links as official only when they are official town-linked materials or otherwise independently verified.</li></ul></div>
+        <div class="panel"><h3>Parser And Review Notes</h3><ul class="open-items"><li>This parser uses extracted PDF text and should be reviewer-checked.</li><li>The next feature should merge these article records with the manifest article-source index.</li><li>Review parsed sections before using them as final moderator briefing text.</li><li>Recommendation summaries are extracted from official text but are not legal or procedural advice.</li><li>Parser is intentionally conservative and does not decide procedural validity.</li><li>Review blank-template and supporting-material records before relying on them.</li><li>Outcome parsing is conservative and should be reviewed against official minutes/action PDFs.</li><li>Raw voting-system reports are archived but may not produce article outcomes without prose result text.</li><li>This index uses article numbers found in source titles only.</li><li>Parse the official warrant and motion documents to confirm article titles and complete article coverage.</li></ul></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Generated from local project artifacts. Outcome records: 0. Source policy: docs/official-source-policy.md.
+  </footer>
+</body>
+</html>

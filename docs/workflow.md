@@ -171,6 +171,28 @@ python3 tools/generate_article_briefs.py \
   --output-dir "data/meetings/SATM 2026/articles"
 ```
 
+## 10. Generate Moderator HTML Reports
+
+Generate a report for every meeting folder from already archived and parsed local artifacts:
+
+```sh
+python3 tools/generate_meeting_reports.py --all
+```
+
+Or generate one meeting report:
+
+```sh
+python3 tools/generate_meeting_reports.py "data/meetings/SATM 2026"
+```
+
+Each report is written to `data/meetings/<MEETING>/report.html` and includes:
+
+- Meeting overview and source-coverage counts.
+- Moderator preparation table by article.
+- Article-level links to briefs, Finance Committee recommendation status, motions, final action status, and source traceability.
+- Manifest source cards with local archived artifacts, extracted text, and original source URLs when available.
+- Open source, parser, and reviewer items.
+
 ## Current Review Notes
 
 - SATM 2026 parsed 18 warrant articles.
@@ -189,3 +211,4 @@ python3 tools/generate_article_briefs.py \
 - Draft article briefs are conservative. They now include parsed FinCom recommendation fields where the source passes the meeting-header check, parsed motion/amendment details where text is available, and parsed final actions where official session minutes are available.
 - FATM draft article briefs now include parsed final-action rows from official session minutes.
 - Draft for/against bullets are heuristic extraction aids and require reviewer confirmation.
+- Moderator HTML reports have been generated for SATM 2026, SATM 2025, and FATM 2025 from local artifacts only.

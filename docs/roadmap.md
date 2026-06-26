@@ -48,18 +48,18 @@ Next:
 ## Priority 5: Past Meeting Review
 
 - Done for FATM 2025: Summarize final actions and votes by article from official session minutes.
+- Started: Add meeting reports showing action status, vote counts where parsed, and articles without parsed final outcomes.
 - Started: Compare warrant intent, motion text, Finance Committee recommendation, and final Town Meeting action.
 - Track reconsideration, referral, indefinite postponement, amendments, and other final-action handling.
 
 Next:
 
 - Build a reliable parser for raw voting-system reports so SATM 2026 can get final-action rows even without prose minutes.
-- Add a past-meeting dashboard showing action status, vote counts, referrals, and articles without parsed final outcomes.
 - Distinguish final main-motion result from intermediate procedural outcomes in a compact article status field.
 
 ## Priority 6: User Interface
 
-- Provide a meeting dashboard with article status, source coverage, and floor-readiness notes.
+- Done: Generate per-meeting HTML reports with article status, source coverage, preparation notes, and source traceability.
 - Add filters for unresolved issues, motions received, Finance Committee positions, and likely procedural complexity.
 - Export moderator packets as Markdown, PDF, or Word.
 

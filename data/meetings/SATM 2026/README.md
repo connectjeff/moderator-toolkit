@@ -4,6 +4,8 @@ Spring Annual Town Meeting 2026 for Natick, Massachusetts.
 
 Official meeting page: https://www.natickma.gov/2347/2026-Spring-Annual-Town-Meeting
 
+Moderator report: [report.html](report.html)
+
 ## Source Manifest
 
 | Source | URL | Type | Official | Retrieved | Status |
@@ -19,5 +21,6 @@ Official meeting page: https://www.natickma.gov/2347/2026-Spring-Annual-Town-Mee
 
 - `sources/` downloaded official source artifacts.
 - `articles/` generated article briefs.
+- `report.html` generated moderator overview, preparation, and source-traceability report.
 - `working/` intermediate extraction outputs.
 - `exports/` moderator packets and reviewed deliverables.

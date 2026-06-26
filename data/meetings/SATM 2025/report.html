@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SATM 2025 Moderator Report</title>
+  <style>
+:root {
+  color-scheme: light;
+  --bg: #f7f8f5;
+  --ink: #1d2522;
+  --muted: #59625e;
+  --line: #cfd8d0;
+  --panel: #ffffff;
+  --accent: #0f766e;
+  --accent-dark: #115e59;
+  --warn: #9a3412;
+  --soft: #e9f4f1;
+  --soft-warn: #fff3e8;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 15px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+a { color: var(--accent-dark); text-decoration-thickness: 0.08em; }
+header {
+  padding: 32px clamp(18px, 4vw, 48px) 24px;
+  background: #ffffff;
+  border-bottom: 1px solid var(--line);
+}
+main { padding: 24px clamp(18px, 4vw, 48px) 48px; }
+h1, h2, h3 { line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2rem, 5vw, 3.75rem); max-width: 980px; }
+h2 { font-size: 1.35rem; margin-top: 32px; margin-bottom: 12px; }
+h3 { font-size: 1rem; margin-bottom: 8px; }
+p { margin: 8px 0; }
+.eyebrow {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 16px;
+  color: var(--muted);
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.nav a, .pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 4px 8px;
+  background: var(--panel);
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+.stat, .panel, .article {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+.stat { padding: 14px; }
+.stat strong { display: block; font-size: 1.8rem; line-height: 1; }
+.stat span { color: var(--muted); }
+.panel { padding: 16px; margin-bottom: 14px; }
+.article { padding: 16px; margin-bottom: 16px; }
+.article-title {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.article-title h3 { font-size: 1.1rem; }
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+.field {
+  border-left: 3px solid var(--accent);
+  padding-left: 10px;
+}
+.field.warning { border-color: var(--warn); background: var(--soft-warn); padding: 8px 10px; }
+.field label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+th, td {
+  border-bottom: 1px solid var(--line);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
+th { background: var(--soft); font-size: 0.82rem; text-transform: uppercase; }
+tr:last-child td { border-bottom: 0; }
+.scroll { overflow-x: auto; }
+.source-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 10px;
+}
+.source-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  padding: 12px;
+}
+.source-card p { color: var(--muted); font-size: 0.9rem; overflow-wrap: anywhere; }
+.tag {
+  display: inline-block;
+  border-radius: 4px;
+  padding: 2px 5px;
+  background: var(--soft);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.tag.warn { background: var(--soft-warn); color: var(--warn); }
+.trace { margin-top: 10px; font-size: 0.9rem; }
+.trace ul { margin: 6px 0 0; padding-left: 18px; }
+.open-items li { margin-bottom: 5px; }
+footer {
+  padding: 16px clamp(18px, 4vw, 48px) 32px;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  background: #ffffff;
+}
+@media print {
+  body { background: #ffffff; font-size: 12px; }
+  header, main, footer { padding-left: 0; padding-right: 0; }
+  .nav { display: none; }
+  .article, .panel, .stat { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Town Moderator's Toolkit</div>
+    <h1>SATM 2025 Moderator Report</h1>
+    <div class="meta">
+      <span>Natick, MA</span>
+      <span>Retrieved 2026-06-26</span>
+      <span><a href="https://www.natickma.gov/2228/2025-Spring-Annual-Town-Meeting">Official meeting page</a></span>
+    </div>
+    <nav class="nav" aria-label="Report sections">
+      <a href="#overview">Overview</a>
+      <a href="#prep">Preparation</a>
+      <a href="#articles">Articles</a>
+      <a href="#sources">Sources</a>
+      <a href="#open-items">Open Items</a>
+    </nav>
+  </header>
+  <main>
+    <section id="overview">
+      <h2>Overview</h2>
+      <div class="grid">
+        <div class="stat"><strong>25</strong><span>warrant articles</span></div>
+        <div class="stat"><strong>25</strong><span>FinCom recommendations</span></div>
+        <div class="stat"><strong>10</strong><span>motion/amendment records</span></div>
+        <div class="stat"><strong>25</strong><span>articles with parsed outcomes</span></div>
+        <div class="stat"><strong>52</strong><span>official source entries</span></div>
+        <div class="stat"><strong>22</strong><span>items needing review</span></div>
+      </div>
+    </section>
+
+    <section id="prep">
+      <h2>Preparation</h2>
+      <div class="panel">
+        <p>This report is generated only from the meeting manifest and already archived/parser outputs in this folder. Use it as an index into the article briefs and source materials before the article comes to the floor.</p>
+        <p><span class="tag">34</span> parsed source records <span class="tag">1</span> accepted unofficial records <span class="tag warn">22</span> source or review flags</p>
+      </div>
+      <div class="scroll">
+        <table>
+          <thead>
+            <tr><th>Article</th><th>Title</th><th>Sponsor</th><th>FinCom</th><th>Motions</th><th>Final Action</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><a href="articles/article-01-authorize-select-board-to-acquire-obtain-abandon-or-relocate-easements.md">1</a></td><td>Authorize Select Board to Acquire, Obtain, Abandon or Relocate Easements</td><td>Town Administrator</td><td>Favorable (13-0-0)</td><td>No parsed article motion</td><td>vote count only (125-1-0)</td></tr>
+<tr><td><a href="articles/article-02-committee-article.md">2</a></td><td>Committee Article</td><td>Town Administrator</td><td>No Action (12-0-0)</td><td>No parsed article motion</td><td>vote count only (119-5-3)</td></tr>
+<tr><td><a href="articles/article-03-omnibus-budget.md">3</a></td><td>Omnibus Budget</td><td>Town Administrator</td><td>Favorable (All Motions) (9-5-0 (Motion A))</td><td>1 amendment</td><td>vote count only (A: 116-7-0 B: 117-2-0 C: 107-2-1)</td></tr>
+<tr><td><a href="articles/article-04-rescind-authorized-unissued-debt.md">4</a></td><td>Rescind Authorized, Unissued Debt</td><td>Town Administrator</td><td>No Action (12-0-0)</td><td>No parsed article motion</td><td>vote count only (100-4-1)</td></tr>
+<tr><td><a href="articles/article-05-unpaid-bills.md">5</a></td><td>Unpaid Bills</td><td>Town Administrator</td><td>Favorable (13-0-0)</td><td>No parsed article motion</td><td>vote count only (106-11-1)</td></tr>
+<tr><td><a href="articles/article-06-revolving-funds.md">6</a></td><td>Revolving Funds</td><td>Town Administrator</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>vote count only (117-0-1)</td></tr>
+<tr><td><a href="articles/article-07-stabilization-funds-and-opeb.md">7</a></td><td>Stabilization Funds and OPEB</td><td>Town Administrator</td><td>Favorable (14-0-0)</td><td>1 procedural motion</td><td>vote count only (114-2-0)</td></tr>
+<tr><td><a href="articles/article-08-transfer-of-unexpended-bond-proceeds.md">8</a></td><td>Transfer of Unexpended Bond Proceeds</td><td>Town Administrator</td><td>No Action (13-0-0)</td><td>No parsed article motion</td><td>vote count only (112-5-1)</td></tr>
+<tr><td><a href="articles/article-09-peg-access-and-cable-related-fund.md">9</a></td><td>PEG Access and Cable Related Fund</td><td>Town Administrator</td><td>Favorable (14-0-0)</td><td>No parsed article motion</td><td>vote count only (115-0-1)</td></tr>
+<tr><td><a href="articles/article-10-school-bus-transportation-subsidy.md">10</a></td><td>School Bus Transportation Subsidy</td><td>Superintendent of Schools</td><td>No Action (11-2-1)</td><td>No parsed article motion</td><td>vote count only (91-16-7)</td></tr>
+<tr><td><a href="articles/article-11-capital-equipment-and-improvement.md">11</a></td><td>Capital Equipment and Improvement</td><td>Town Administrator</td><td>Favorable (12-0-0 (A, B, C))</td><td>2 amendment</td><td>vote count only (A: 113-0-0 B: 110-1-1 C: 104-2-0 D: 123-0-0)</td></tr>
+<tr><td><a href="articles/article-12-collective-bargaining.md">12</a></td><td>Collective Bargaining</td><td>Town Administrator</td><td>Favorable (14-0-0)</td><td>No parsed article motion</td><td>vote count only (119-2-0)</td></tr>
+<tr><td><a href="articles/article-13-personnel-board-classification-and-pay-plan.md">13</a></td><td>Personnel Board Classification and Pay Plan</td><td>Town Administrator</td><td>Favorable (13-0-0)</td><td>1 motion</td><td>vote count only (122-2-0)</td></tr>
+<tr><td><a href="articles/article-14-increase-amount-to-be-credited-under-senior-veteran-s-work-program-ch-59-5k.md">14</a></td><td>Increase Amount to be Credited Under Senior/Veteran’s Work Program, Ch.59, 5K</td><td>Board of Assessors/Council on Aging</td><td>No Action (13-0-1)</td><td>No parsed article motion</td><td>vote count only (109-5-3)</td></tr>
+<tr><td><a href="articles/article-15-community-preservation-act-cpa-administrative-funds.md">15</a></td><td>Community Preservation Act (CPA) Administrative Funds</td><td>Community Preservation Committee</td><td>Favorable (13-1-0)</td><td>1 procedural motion</td><td>vote count only (107-11-0)</td></tr>
+<tr><td><a href="articles/article-16-amend-zoning-bylaw-section-326-1-height.md">16</a></td><td>Amend Zoning Bylaw: Section 326.1 Height</td><td>Planning Board</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>vote count only (119-2-1)</td></tr>
+<tr><td><a href="articles/article-17-amend-zoning-bylaws-flood-plain-district.md">17</a></td><td>Amend Zoning Bylaws: Flood Plain District</td><td>Town Administrator</td><td>No Recommendation (6-3-1)</td><td>No parsed article motion</td><td>passed (107-16-3)</td></tr>
+<tr><td><a href="articles/article-18-amend-zoning-bylaws-accessory-dwelling-adu-gross-floor-area.md">18</a></td><td>Amend Zoning Bylaws: Accessory Dwelling (ADU), Gross Floor Area</td><td>Town Administrator</td><td>No Recommendation (7-5-0)</td><td>No parsed article motion</td><td>passed (116-10-1)</td></tr>
+<tr><td><a href="articles/article-19-amend-zoning-bylaws-and-zoning-map-indoor-recreational-overlay-district.md">19</a></td><td>Amend Zoning Bylaws and Zoning Map: Indoor Recreational Overlay District</td><td>Planning Board</td><td>No Recommendation (7-5-0)</td><td>No parsed article motion</td><td>passed (105-22-1)</td></tr>
+<tr><td><a href="articles/article-20-amend-zoning-bylaws-body-art-establishment.md">20</a></td><td>Amend Zoning Bylaws: Body Art Establishment</td><td>Planning Board</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>vote count only (115-8-1)</td></tr>
+<tr><td><a href="articles/article-21-amend-zoning-bylaws-use-regulation-schedule.md">21</a></td><td>Amend Zoning Bylaws: Use Regulation Schedule</td><td>Planning Board</td><td>Favorable (12-0-0)</td><td>No parsed article motion</td><td>vote count only (114-6-1)</td></tr>
+<tr><td><a href="articles/article-22-amend-town-of-natick-bylaws-article-80-water-supply-protection.md">22</a></td><td>Amend Town of Natick Bylaws, Article 80: Water Supply Protection</td><td>Town Administrator</td><td>No Recommendation (6-6-0)</td><td>No parsed article motion</td><td>passed (107-9-1)</td></tr>
+<tr><td><a href="articles/article-23-charter-and-bylaw-review-committee-report-and-extension.md">23</a></td><td>Charter and Bylaw Review Committee Report and Extension</td><td>Charter and ByLaw Review Committee</td><td>Favorable (13-0-0)</td><td>No parsed article motion</td><td>vote count only (101-2-0)</td></tr>
+<tr><td><a href="articles/article-24-bylaw-changes.md">24</a></td><td>Bylaw Changes</td><td>Charter and Bylaw Review Committee</td><td>Favorable (A-D) (13-0-0 (All Motions))</td><td>No parsed article motion</td><td>referred (A: 100-5-1 B: 105-3-0 C: 109-0-0 D: 105-4-1 E: 108-2-1 F: 102-7-3)</td></tr>
+<tr><td><a href="articles/article-25-stabilization-funds.md">25</a></td><td>Stabilization Funds</td><td>Paul Griesmer, RIck Jennett et. al.</td><td>Favorable (9-2-1 (Motion A))</td><td>1 procedural motion</td><td>failed (A: 29-81-0 B: 25-83-1)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="articles">
+      <h2>Articles</h2>
+      
+<article class="article" id="article-1">
+  <div class="article-title">
+    <h3><a href="articles/article-01-authorize-select-board-to-acquire-obtain-abandon-or-relocate-easements.md">Article 1: Authorize Select Board to Acquire, Obtain, Abandon or Relocate Easements</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (125-1-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to authorize the Select Board, during Fiscal Year 2026, to acquire on behalf of the Town any and all easements for any of the following purposes: roads, sidewalks, vehicular and/or pedestrian access or passage, drainage and utilities, provided however that such authorization pertains only to easements acquired at no cost to the Town; and, further, to authorize the Select Board, subsequent to a public hearing, during Fiscal Year 2026 to abandon or relocate...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-2">
+  <div class="article-title">
+    <h3><a href="articles/article-02-committee-article.md">Article 2: Committee Article</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Action (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (119-5-3)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to hear and discuss the reports of town officers, boards, and committees; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-3">
+  <div class="article-title">
+    <h3><a href="articles/article-03-omnibus-budget.md">Article 3: Omnibus Budget</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (All Motions) (9-5-0 (Motion A))</div>
+    <div class="field"><label>Motions</label>1 amendment</div>
+    <div class="field"><label>Final Action</label>vote count only (A: 116-7-0 B: 117-2-0 C: 107-2-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> Town To determine what sum of money the Town will appropriate and raise, transfer from available funds for the operation of the government of the Town of Natick, including debt and interest, during Fiscal Year 2025 (July 1, 2024, through June 30, 2025) and to provide for reserve funds for Fiscal Year 2025 and to see what budgets for Fiscal Year 2025 will be reduced to offset said additional appropriations; To determine what sum of money the Town will appropriate and raise, or transfer from...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/article-3-motion-a-amendment-1-2679cde7.pdf">Article 3 Motion A Amendment 1</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/article-3-motion-a-as-amended-by-amendment-1-5700907d.pdf">Article 3 Motion A as Amended by Amendment 1</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/article-3-budget-presentation-john-townsend-16cec4c9.pdf">Article 3 Budget Presentation John Townsend</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/article-3-keefe-tech-jon-evans-19d1727c.pdf">Article 3 Keefe Tech Jon Evans</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/article-3-nps-melissa-spash-5432e37c.pdf">Article 3 NPS Melissa Spash</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>1 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-4">
+  <div class="article-title">
+    <h3><a href="articles/article-04-rescind-authorized-unissued-debt.md">Article 4: Rescind Authorized, Unissued Debt</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Action (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (100-4-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to rescind the authorization for unissued debt that has been determined is no longer needed for the completion of various projects; or otherwise act thereon. 3</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-5">
+  <div class="article-title">
+    <h3><a href="articles/article-05-unpaid-bills.md">Article 5: Unpaid Bills</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (106-11-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, transfer from available funds, or otherwise provide for the payment of unpaid bills of previous years, incurred by the departments, boards and officers of the Town of Natick; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-6">
+  <div class="article-title">
+    <h3><a href="articles/article-06-revolving-funds.md">Article 6: Revolving Funds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (117-0-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote on the limit on the total amount that may be expended from each revolving fund established pursuant to Chapter 44 section 53E ½ of the General Laws and Town by-law; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-7">
+  <div class="article-title">
+    <h3><a href="articles/article-07-stabilization-funds-and-opeb.md">Article 7: Stabilization Funds and OPEB</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (14-0-0)</div>
+    <div class="field"><label>Motions</label>1 procedural motion</div>
+    <div class="field"><label>Final Action</label>vote count only (114-2-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> General Stabilization To see what sum of money the Town will vote to raise and appropriate, transfer from available funds or otherwise provide for the purpose of supplementing the Stabilization Fund established under Article 22 of the warrant for Annual Town Meeting of 1961, as authorized by Chapter 40, Section 5B of the General Laws, as amended; Operational Stabilization To see what sum of money the Town will vote to raise and appropriate, transfer from available funds or otherwise provide...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf">Procedural Motion: Move Article 25 before Article 7</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-8">
+  <div class="article-title">
+    <h3><a href="articles/article-08-transfer-of-unexpended-bond-proceeds.md">Article 8: Transfer of Unexpended Bond Proceeds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Action (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (112-5-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will authorize the transfer of unexpended proceeds from amounts previously borrowed to pay costs of various capital projects, which projects are now complete, and for 4 which such funds are no longer needed, to pay costs of one or more capital projects; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-9">
+  <div class="article-title">
+    <h3><a href="articles/article-09-peg-access-and-cable-related-fund.md">Article 9: PEG Access and Cable Related Fund</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (14-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (115-0-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to appropriate from the PEG Access and Cable Related Fund, established by vote of 2019 Special Town Meeting #1 under Article 1, as authorized by Chapter 44, Section 53F ¾ of the General Laws, as amended, to fund PEG access programming, as well as certain other municipal cable related expenses; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-10">
+  <div class="article-title">
+    <h3><a href="articles/article-10-school-bus-transportation-subsidy.md">Article 10: School Bus Transportation Subsidy</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Superintendent of Schools</div>
+    <div class="field"><label>Finance Committee</label>No Action (11-2-1)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (91-16-7)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to appropriate and raise, or transfer from available funds, a sum of money for the purpose of operation and administration of the school bus transportation system, and to reduce or offset fees charged for students who elect to use the school bus transportation system for transportation to and from school, for Fiscal Year 2026 (July 1, 2025 through June 30, 2026); or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-11">
+  <div class="article-title">
+    <h3><a href="articles/article-11-capital-equipment-and-improvement.md">Article 11: Capital Equipment and Improvement</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0 (A, B, C))</div>
+    <div class="field"><label>Motions</label>2 amendment</div>
+    <div class="field"><label>Final Action</label>vote count only (A: 113-0-0 B: 110-1-1 C: 104-2-0 D: 123-0-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, borrow, transfer from available funds or otherwise provide to implement a Capital Improvement Program as may be required for capital equipment for the various departments of the Town of Natick; to protect the physical infrastructure of the Town of Natick, to add new physical infrastructure, or to improve community assets; and further to determine whether this appropriation shall be raised by borrowing or otherwise; or...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/article-11-motion-b-amendment-1-42631eac.pdf">Article 11 Motion B Amendment 1</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/article-11-motion-d-amendment-1-poliandri-a5a67f02.pdf">Article 11 Motion D Amendment 1 Poliandri</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>2 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-12">
+  <div class="article-title">
+    <h3><a href="articles/article-12-collective-bargaining.md">Article 12: Collective Bargaining</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (14-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (119-2-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what sum of money the Town will vote to raise and appropriate, transfer from available funds, or otherwise provide, to implement any Collective Bargaining Agreements between the Town of Natick and any recognized bargaining units of the Town; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-13">
+  <div class="article-title">
+    <h3><a href="articles/article-13-personnel-board-classification-and-pay-plan.md">Article 13: Personnel Board Classification and Pay Plan</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>1 motion</div>
+    <div class="field"><label>Final Action</label>vote count only (122-2-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town, pursuant to the authority contained in Section 108A of Chapter 41 of the General Laws, will vote to amend Article 24 of the Natick Town By-Laws, specifically the Classification and Pay Plan referenced in Section 3, paragraph 3.10 therein, by adding, deleting or amending position titles; re-classifying positions to a different Grade; and/or effecting changes in the salary ranges as presently established; or otherwise act thereon. 5</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/article-13-revised-main-motion-f241e003.pdf">Article 13 Revised Main Motion</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-14">
+  <div class="article-title">
+    <h3><a href="articles/article-14-increase-amount-to-be-credited-under-senior-veteran-s-work-program-ch-59-5k.md">Article 14: Increase Amount to be Credited Under Senior/Veteran’s Work Program, Ch.59, 5K</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Board of Assessors/Council on Aging</div>
+    <div class="field"><label>Finance Committee</label>No Action (13-0-1)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (109-5-3)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to adjust the PROPERTY TAX LIABILITY REDUCED IN EXCHANGE FOR VOLUNTEER SERVICES; PERSONS OVER AGE 60 Ch 59 § 5K and REDUCTION OF PROPERTY TAX OBLIGATION OF VETERAN IN EXCHANGE FOR VOLUNTEER SERVICES, Ch 59 § 5N by allowing the maximum reduction of the real property tax bill to be based on 125 volunteer service hours in a given tax year, rather than $1,500; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-15">
+  <div class="article-title">
+    <h3><a href="articles/article-15-community-preservation-act-cpa-administrative-funds.md">Article 15: Community Preservation Act (CPA) Administrative Funds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Community Preservation Committee</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-1-0)</div>
+    <div class="field"><label>Motions</label>1 procedural motion</div>
+    <div class="field"><label>Final Action</label>vote count only (107-11-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to appropriate the five (5) percent Administrative Funds from the Community Preservation Fund for use by the Community Preservation Committee (CPC) for administrative expenses in the Fiscal Year 2026, in accordance with M.G.L. Chapter 44B, Section 6, or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/procedural-motion-move-article-15-to-may-1st-49b9a8ad.pdf">Procedural Motion: Move Article 15 to May 1st</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-16">
+  <div class="article-title">
+    <h3><a href="articles/article-16-amend-zoning-bylaw-section-326-1-height.md">Article 16: Amend Zoning Bylaw: Section 326.1 Height</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Planning Board</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (119-2-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending Section 326.1 Height; and further amend any other associated sections of the Natick Zoning Bylaws, where applicable; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/articles-16-and-18-21-zoning-bylaws-amanda-loomis-0f19e0e4.pdf">Articles 16 and 18-21 Zoning Bylaws Amanda Loomis</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-17">
+  <div class="article-title">
+    <h3><a href="articles/article-17-amend-zoning-bylaws-flood-plain-district.md">Article 17: Amend Zoning Bylaws: Flood Plain District</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (6-3-1)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>passed (107-16-3)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending § III-A.3 Flood Plain District; amend Section 200 – Definitions; and further amend any other associated sections of the Natick Zoning Bylaws, where applicable; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/article-17-floodplain-overlay-bylaw-claire-rundelli-f91255f2.pdf">Article 17 Floodplain Overlay Bylaw Claire Rundelli</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-18">
+  <div class="article-title">
+    <h3><a href="articles/article-18-amend-zoning-bylaws-accessory-dwelling-adu-gross-floor-area.md">Article 18: Amend Zoning Bylaws: Accessory Dwelling (ADU), Gross Floor Area</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (7-5-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>passed (116-10-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending Section 200 – Definitions, Gross Floor Area and Accessory Dwelling Units Gross Floor Area; amending § III-M Accessory Dwelling Unit regarding Gross Floor Area; and further amend any other associated sections of the Natick Zoning Bylaws, where applicable; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-19">
+  <div class="article-title">
+    <h3><a href="articles/article-19-amend-zoning-bylaws-and-zoning-map-indoor-recreational-overlay-district.md">Article 19: Amend Zoning Bylaws and Zoning Map: Indoor Recreational Overlay District</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Planning Board</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (7-5-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>passed (105-22-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending Section III-L Indoor Recreational Overlay District, and amend any other associated sections of the Natick Zoning 6 Bylaws, where applicable; and further amend the Natick Zoning Map by deleting the Indoor Recreational Overlay District; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-20">
+  <div class="article-title">
+    <h3><a href="articles/article-20-amend-zoning-bylaws-body-art-establishment.md">Article 20: Amend Zoning Bylaws: Body Art Establishment</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Planning Board</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (115-8-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending Section III-A.2.F9. Body Art Establishment; amend Section 200 – Definitions for Body Art and Personal Services Establishment; and further amend any other associated sections of the Natick Zoning Bylaws, where applicable; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-21">
+  <div class="article-title">
+    <h3><a href="articles/article-21-amend-zoning-bylaws-use-regulation-schedule.md">Article 21: Amend Zoning Bylaws: Use Regulation Schedule</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Planning Board</div>
+    <div class="field"><label>Finance Committee</label>Favorable (12-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (114-6-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick Zoning Bylaws by amending § III-A.2 Use Regulations Schedule (Use Categories within the Use Headers: I. Professional and Medical Office Uses; J. Research and Development, Laboratory, and Technology Uses; K. Manufacturing and Industrial Uses; M. Other Uses); amend Section 200 – Definitions; and further amend any other associated sections of the Natick Zoning Bylaws, where applicable; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-22">
+  <div class="article-title">
+    <h3><a href="articles/article-22-amend-town-of-natick-bylaws-article-80-water-supply-protection.md">Article 22: Amend Town of Natick Bylaws, Article 80: Water Supply Protection</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Town Administrator</div>
+    <div class="field"><label>Finance Committee</label>No Recommendation (6-6-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>passed (107-9-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see if the Town will vote to amend the Natick General Bylaws by amending Article 80, Water Supply Protection, to update the provisions relating to nonessential outdoor water use restrictions; or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-23">
+  <div class="article-title">
+    <h3><a href="articles/article-23-charter-and-bylaw-review-committee-report-and-extension.md">Article 23: Charter and Bylaw Review Committee Report and Extension</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Charter and ByLaw Review Committee</div>
+    <div class="field"><label>Finance Committee</label>Favorable (13-0-0)</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>vote count only (101-2-0)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what action the Town will take to hear a report of the Charter and ByLaw Review Committee, To see what action the Town Meeting will take to extend or to revise the term of the Charter and ByLaw Review Committee, To see what action the Town Meeting will take to appropriate funds to continue work with special legal counsel and to authorize, if necessary, the Charter and ByLaw Review Committee to use such counsel; Or otherwise act thereon.</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-24">
+  <div class="article-title">
+    <h3><a href="articles/article-24-bylaw-changes.md">Article 24: Bylaw Changes</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Charter and Bylaw Review Committee</div>
+    <div class="field"><label>Finance Committee</label>Favorable (A-D) (13-0-0 (All Motions))</div>
+    <div class="field"><label>Motions</label>No parsed article motion</div>
+    <div class="field"><label>Final Action</label>referred (A: 100-5-1 B: 105-3-0 C: 109-0-0 D: 105-4-1 E: 108-2-1 F: 102-7-3)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what actions the town will take to amend the Bylaws of the Town with regard to: Article 21A Collector of Taxes: 7 1) Article 21 – A Collector of Taxes i) in Section 6 to modify or add appropriate references to the General Laws for interest rates on delinquent charges and bills in tax title and ii) in Section 7 to modify a) the timing and publication requirements including but not limited to changing the word “newspaper of general circulation” to the Town website and /or to print...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li></ul>
+  </details>
+</article>
+
+<article class="article" id="article-25">
+  <div class="article-title">
+    <h3><a href="articles/article-25-stabilization-funds.md">Article 25: Stabilization Funds</a></h3>
+    <span><span class="tag">parsed_from_warrant</span></span>
+  </div>
+  <div class="summary">
+    <div class="field"><label>Sponsor</label>Paul Griesmer, RIck Jennett et. al.</div>
+    <div class="field"><label>Finance Committee</label>Favorable (9-2-1 (Motion A))</div>
+    <div class="field"><label>Motions</label>1 procedural motion</div>
+    <div class="field"><label>Final Action</label>failed (A: 29-81-0 B: 25-83-1)</div>
+  </div>
+  <p><strong>Warrant request:</strong> To see what actions the Town will take i) to change the purpose of any stabilization fund of the town, including without limitation the Operational Stabilization Fund created under Article 4 of 2011 Spring Annual Town Meeting and the Capital Stabilization Fund created under Article 2 of 2010 Fall Annual Town Meeting, to allow such stabilization funds to be used for any lawful municipal purpose whether any such lawful municipal purpose becomes the sole purpose or an additional purpose of any...</p>
+  <div class="trace"><strong>Traceability:</strong><ul><li><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">2025 SATM_FinCom_Recommendation Book</a> <span class="tag">Finance Committee</span> <span class="tag">official</span></li><li><a href="https://sites.google.com/natickma.org/fincom">https://sites.google.com/natickma.org/fincom</a> <span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span></li><li><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">2025 SATM Apr 22 session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">2025 SATM Apr 29 session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">2025 SATM May 1 session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">2025 SATM May 6 session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">2025 SATM May 8 session 5</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">Article 23 CBRC report slides SATM 2025</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/crbc-2025-spring-report-2d872a42.pdf">CRBC 2025 Spring Report</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">Town Meeting Member Voting 4/29/25 Session 1</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">Town Meeting Member Voting 5/01/25 Session 2</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">Town Meeting Member Voting 5/06/25 Session 3</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">Town Meeting Member Voting 5/08/25 Session 4</a> <span class="tag">Minutes And Actions</span> <span class="tag">official</span></li><li><a href="sources/voting-results-unofficial-6516060a.csv">Voting Results (Unofficial)</a> <span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span></li><li><a href="sources/article-25-ip-motion-sidney-pct-8-7119a73c.pdf">Article 25 IP Motion - Sidney Pct 8</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf">Procedural Motion: Move Article 25 before Article 7</a> <span class="tag">Motions And Amendments</span> <span class="tag">official</span></li><li><a href="sources/article-25-document-index-9932ec66.pdf">Article 25 Document Index</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/article-25-paul-griesmer-7eb0a270.pdf">Article 25 Paul Griesmer</a> <span class="tag">Presentations</span> <span class="tag">official</span></li><li><a href="sources/article-25-stabilization-funds-analysis-v5-0-21e81d49.pdf">Article 25 Stabilization Funds Analysis - v5.0</a> <span class="tag">Related Document</span> <span class="tag">official</span></li><li><a href="sources/2025-satm-warrant-final-a474b32f.pdf">2025 SATM Warrant_Final</a> <span class="tag">Warrant</span> <span class="tag">official</span></li><li><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">Coffee with a Purpose Review of Warrant Articles</a> <span class="tag">Warrant</span> <span class="tag warn">needs verification</span></li></ul></div>
+  <details>
+    <summary>Preparation notes and unresolved items</summary>
+    <ul class="open-items"><li>Confirm article title, sponsor, and text against the official warrant PDF.</li><li>Attach article-specific motions, amendments, recommendations, and final action sources.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>Confirm parsed motion text against the official PDF.</li><li>Determine precedence, scope, and vote threshold before floor use.</li><li>1 motion/source record(s) need manual review.</li></ul>
+  </details>
+</article>
+
+    </section>
+
+    <section id="sources">
+      <h2>Source Materials</h2>
+      <p>Each source card links to the archived local artifact when present, extracted text when present, and the original URL recorded in the manifest.</p>
+      <h3>Finance Committee</h3><div class="source-list">
+<article class="source-card" id="source-2025-satm-fincom-recommendation-book-c8f6ca16">
+  <h3>2025 SATM_FinCom_Recommendation Book</h3>
+  <p><span class="tag">Finance Committee</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-fincom-recommendation-book-c2ce0b8e.pdf">local</a> | <a href="working/extracted-text/2025-satm-fincom-recommendation-book.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19531/2025-SATM_FinCom_Recommendation-Book">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-https-sites-google-com-natickma-org-fincom-32e7a5d7">
+  <h3>https://sites.google.com/natickma.org/fincom</h3>
+  <p><span class="tag">Finance Committee</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://sites.google.com/natickma.org/fincom">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+</div><h3>Meeting Page</h3><div class="source-list">
+<article class="source-card" id="source-official-meeting-page">
+  <h3>2025 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Meeting Page</span> <span class="tag">official</span> <span class="tag">archived</span></p>
+  <p><a href="sources/official-meeting-page.html">local</a> | <a href="https://www.natickma.gov/2228/2025-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Official Natick Town Meeting page used as source manifest entry point.</p>
+</article>
+</div><h3>Minutes And Actions</h3><div class="source-list">
+<article class="source-card" id="source-voting-results-unofficial-6516060a">
+  <h3>Voting Results (Unofficial)</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">accepted unofficial</span> <span class="tag">archived</span></p>
+  <p><a href="sources/voting-results-unofficial-6516060a.csv">local</a> | <a href="https://docs.google.com/spreadsheets/d/17w5JCojbY0SGiU_PvJOQRdTG4gRKGZFT/edit?gid=437810531#gid=437810531">source URL</a></p>
+  <p>Listed under page section: SATM 2025 Session #4 on Thursday May 8th, 2025 at KMS; accepted as unofficial Finance Committee workspace vote-result source per project policy.</p>
+</article>
+
+<article class="source-card" id="source-crbc-2025-spring-report-a9feb059">
+  <h3>CRBC 2025 Spring Report</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/crbc-2025-spring-report-2d872a42.pdf">local</a> | <a href="working/extracted-text/crbc-2025-spring-report.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19614/CRBC-2025-Spring-Report">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-2025-satm-apr-22-session-1-1b9f91f9">
+  <h3>2025 SATM Apr 22 session 1</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-apr-22-session-1-40770ff1.pdf">local</a> | <a href="working/extracted-text/2025-satm-apr-22-session-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20363/2025-SATM--Apr-22-session-1">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-2025-satm-apr-29-session-2-e52be2a6">
+  <h3>2025 SATM Apr 29 session 2</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-apr-29-session-2-97477ec7.pdf">local</a> | <a href="working/extracted-text/2025-satm-apr-29-session-2.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20362/2025-SATM-Apr-29-session-2">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-2025-satm-may-1-session-3-046a5ed9">
+  <h3>2025 SATM May 1 session 3</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-may-1-session-3-e0c1b777.pdf">local</a> | <a href="working/extracted-text/2025-satm-may-1-session-3.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20360/2025-SATM-May-1-session-3">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-2025-satm-may-6-session-4-5fe7f34c">
+  <h3>2025 SATM May 6 session 4</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-may-6-session-4-0ec47c56.pdf">local</a> | <a href="working/extracted-text/2025-satm-may-6-session-4.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20359/2025-SATM-May-6-session-4">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-2025-satm-may-8-session-5-5c3aacf0">
+  <h3>2025 SATM May 8 session 5</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-may-8-session-5-fe1169e8.pdf">local</a> | <a href="working/extracted-text/2025-satm-may-8-session-5.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20361/2025-SATM-May-8-session-5">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-voting-4-29-25-session-1-cd89229f">
+  <h3>Town Meeting Member Voting 4/29/25 Session 1</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-meeting-member-voting-4-29-25-session-1-6a213e9a.pdf">local</a> | <a href="working/extracted-text/town-meeting-member-voting-4-29-25-session-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20357/Town-Meeting-Member-Voting-42925-Session-1">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-voting-5-01-25-session-2-f947a776">
+  <h3>Town Meeting Member Voting 5/01/25 Session 2</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-meeting-member-voting-5-01-25-session-2-de92f400.pdf">local</a> | <a href="working/extracted-text/town-meeting-member-voting-5-01-25-session-2.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20356/Town-Meeting-Member-Voting-50125-Session-2">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-voting-5-06-25-session-3-987f208c">
+  <h3>Town Meeting Member Voting 5/06/25 Session 3</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-meeting-member-voting-5-06-25-session-3-aa88ef52.pdf">local</a> | <a href="working/extracted-text/town-meeting-member-voting-5-06-25-session-3.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20355/Town-Meeting-Member-Voting-50625-Session-3">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-voting-5-08-25-session-4-aa08fccc">
+  <h3>Town Meeting Member Voting 5/08/25 Session 4</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-meeting-member-voting-5-08-25-session-4-9e4624fe.pdf">local</a> | <a href="working/extracted-text/town-meeting-member-voting-5-08-25-session-4.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/20358/Town-Meeting-Member-Voting-50825-Session-4">source URL</a></p>
+  <p>Listed under page section: Minutes &amp; Actions</p>
+</article>
+
+<article class="source-card" id="source-article-23-cbrc-report-slides-satm-2025-49ba7595">
+  <h3>Article 23 CBRC report slides SATM 2025</h3>
+  <p><span class="tag">Minutes And Actions</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-23-cbrc-report-slides-satm-2025-e5134189.pdf">local</a> | <a href="working/extracted-text/article-23-cbrc-report-slides-satm-2025.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19707/Article-23-CBRC-report-slides-SATM-2025">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+</div><h3>Motions And Amendments</h3><div class="source-list">
+<article class="source-card" id="source-motion-reading-of-articles-and-motions-98418b94">
+  <h3>Motion: Reading of Articles and Motions</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/motion-reading-of-articles-and-motions-db3deec0.pdf">local</a> | <a href="working/extracted-text/motion-reading-of-articles-and-motions.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19586/Motion-Reading-of-Articles-and-Motions">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-procedural-motion-move-article-15-to-may-1st-4d84d248">
+  <h3>Procedural Motion: Move Article 15 to May 1st</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/procedural-motion-move-article-15-to-may-1st-49b9a8ad.pdf">local</a> | <a href="working/extracted-text/procedural-motion-move-article-15-to-may-1st.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19621/Procedural-Motion-Move-Article-15-to-May-1st">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-procedural-motion-move-article-25-before-article-7-19fa385b">
+  <h3>Procedural Motion: Move Article 25 before Article 7</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/procedural-motion-move-article-25-before-article-7-55f84be3.pdf">local</a> | <a href="working/extracted-text/procedural-motion-move-article-25-before-article-7.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19592/Procedural-Motion-Move-Article-25-before-Article-7">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-resolution-honoring-frank-foss-c1ed891d">
+  <h3>Resolution Honoring Frank Foss</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/resolution-honoring-frank-foss-087183e1.pdf">local</a> | <a href="working/extracted-text/resolution-honoring-frank-foss.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19581/Resolution-Honoring-Frank-Foss">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-3-motion-a-as-amended-by-amendment-1-1b5aa701">
+  <h3>Article 3 Motion A as Amended by Amendment 1</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-motion-a-as-amended-by-amendment-1-5700907d.pdf">local</a> | <a href="working/extracted-text/article-3-motion-a-as-amended-by-amendment-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19580/Article-3-Motion-A-as-Amended-by-Amendment-1">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-3-motion-a-amendment-1-3a74882d">
+  <h3>Article 3 Motion A Amendment 1</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-motion-a-amendment-1-2679cde7.pdf">local</a> | <a href="working/extracted-text/article-3-motion-a-amendment-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19579/Article-3-Motion-A-Amendment-1">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-11-motion-b-amendment-1-dd9ed2af">
+  <h3>Article 11 Motion B Amendment 1</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-11-motion-b-amendment-1-42631eac.pdf">local</a> | <a href="working/extracted-text/article-11-motion-b-amendment-1.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19697/Article-11-Motion-B-Amendment-1">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-11-motion-d-amendment-1-poliandri-f3ef35f0">
+  <h3>Article 11 Motion D Amendment 1 Poliandri</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-11-motion-d-amendment-1-poliandri-a5a67f02.pdf">local</a> | <a href="working/extracted-text/article-11-motion-d-amendment-1-poliandri.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19699/-Article-11-Motion-D-Amendment-1-Poliandri">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-13-revised-main-motion-2f73759a">
+  <h3>Article 13 Revised Main Motion</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-13-revised-main-motion-f241e003.pdf">local</a> | <a href="working/extracted-text/article-13-revised-main-motion.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19634/Article-13-Revised-Main-Motion">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+
+<article class="source-card" id="source-article-25-ip-motion-sidney-pct-8-61b98aac">
+  <h3>Article 25 IP Motion - Sidney Pct 8</h3>
+  <p><span class="tag">Motions And Amendments</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-25-ip-motion-sidney-pct-8-7119a73c.pdf">local</a> | <a href="working/extracted-text/article-25-ip-motion-sidney-pct-8.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19693/Article-25-IP-Motion---Sidney-Pct-8">source URL</a></p>
+  <p>Listed under page section: Motions and Amendments</p>
+</article>
+</div><h3>Presentations</h3><div class="source-list">
+<article class="source-card" id="source-article-3-budget-presentation-john-townsend-07f3a314">
+  <h3>Article 3 Budget Presentation John Townsend</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-budget-presentation-john-townsend-16cec4c9.pdf">local</a> | <a href="working/extracted-text/article-3-budget-presentation-john-townsend.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19577/Article-3-Budget-Presentation-John-Townsend">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-3-keefe-tech-jon-evans-95f3ccc3">
+  <h3>Article 3 Keefe Tech Jon Evans</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-keefe-tech-jon-evans-19d1727c.pdf">local</a> | <a href="working/extracted-text/article-3-keefe-tech-jon-evans.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19578/Article-3-Keefe-Tech-Jon-Evans">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-3-nps-melissa-spash-a5ee1fb3">
+  <h3>Article 3 NPS Melissa Spash</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-3-nps-melissa-spash-5432e37c.pdf">local</a> | <a href="working/extracted-text/article-3-nps-melissa-spash.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19620/Article-3-NPS-Melissa-Spash">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-articles-16-and-18-21-zoning-bylaws-amanda-loomis-dad9cdd5">
+  <h3>Articles 16 and 18-21 Zoning Bylaws Amanda Loomis</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/articles-16-and-18-21-zoning-bylaws-amanda-loomis-0f19e0e4.pdf">local</a> | <a href="working/extracted-text/articles-16-and-18-21-zoning-bylaws-amanda-loomis.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19590/Articles-16-and-18-21-Zoning-Bylaws-Amanda-Loomis">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-17-floodplain-overlay-bylaw-claire-rundelli-58eb5092">
+  <h3>Article 17 Floodplain Overlay Bylaw Claire Rundelli</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-17-floodplain-overlay-bylaw-claire-rundelli-f91255f2.pdf">local</a> | <a href="working/extracted-text/article-17-floodplain-overlay-bylaw-claire-rundelli.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19589/Article-17-Floodplain-Overlay-Bylaw-Claire-Rundelli-">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-25-paul-griesmer-6ef56e31">
+  <h3>Article 25 Paul Griesmer</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-25-paul-griesmer-7eb0a270.pdf">local</a> | <a href="working/extracted-text/article-25-paul-griesmer.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19717/Article-25-Paul-Griesmer">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+
+<article class="source-card" id="source-article-25-document-index-37697307">
+  <h3>Article 25 Document Index</h3>
+  <p><span class="tag">Presentations</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-25-document-index-9932ec66.pdf">local</a> | <a href="working/extracted-text/article-25-document-index.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19716/Article-25-Document-Index">source URL</a></p>
+  <p>Listed under page section: Sponsor Presentations</p>
+</article>
+</div><h3>Related Document</h3><div class="source-list">
+<article class="source-card" id="source-town-moderator-letter-to-members-in-preparation-for-satm-2025-47537cdf">
+  <h3>Town Moderator Letter to Members in preparation for SATM 2025</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-moderator-letter-to-members-in-preparation-for-satm-2025-4ff22876.pdf">local</a> | <a href="working/extracted-text/town-moderator-letter-to-members-in-preparation-for-satm-2025.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19524/Town-Moderator-Letter-to-Members-in-preparation-for-SATM-2025">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-town-moderator-statement-on-the-250th-anniversary-of-the-american-revolutionary-war-0c0d9b11">
+  <h3>Town Moderator Statement on the 250th Anniversary of the American Revolutionary War</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/town-moderator-statement-on-the-250th-anniversary-of-the-american-revolutionary-war-f33aba6a.pdf">local</a> | <a href="working/extracted-text/town-moderator-statement-on-the-250th-anniversary-of-the-american-revolutionary-war.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19525/Town-Moderator-Statement-on-the-250th-Anniversary-of--the-American-Revolutionary-War">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-natick-town-meeting-general-by-law-re-statements-and-rules-a7de5d1d">
+  <h3>Natick Town Meeting: General By-law Re-statements and Rules</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/natick-town-meeting-general-by-law-re-statements-and-rules-6503d71e.pdf">local</a> | <a href="working/extracted-text/natick-town-meeting-general-by-law-re-statements-and-rules.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19585/Natick-Town-Meeting-General-By-law-Re-statements-and-Rules">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-article-25-stabilization-funds-analysis-v5-0-fd79eadd">
+  <h3>Article 25 Stabilization Funds Analysis - v5.0</h3>
+  <p><span class="tag">Related Document</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/article-25-stabilization-funds-analysis-v5-0-21e81d49.pdf">local</a> | <a href="working/extracted-text/article-25-stabilization-funds-analysis-v5-0.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19636/Article-25-Stabilization-Funds-Analysis---v50">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+</div><h3>Resources</h3><div class="source-list">
+<article class="source-card" id="source-articles-1-14-22-a493c91b">
+  <h3>Articles 1-14, 22</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://videoplayer.telvue.com/player/994DtmGEsi0VDYK3jJI2BJ72GfgNIpU2/media/945714?autostart=false&amp;showtabssearch=true&amp;fullscreen=false">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-articles-15-21-1a4b0a41">
+  <h3>Articles 15-21</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://videoplayer.telvue.com/player/994DtmGEsi0VDYK3jJI2BJ72GfgNIpU2/media/946512?autostart=false&amp;showtabssearch=true&amp;fullscreen=false">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-articles-23-25-e301f73a">
+  <h3>Articles 23-25</h3>
+  <p><span class="tag">Resources</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://videoplayer.telvue.com/player/994DtmGEsi0VDYK3jJI2BJ72GfgNIpU2/media/947475?autostart=false&amp;showtabssearch=true&amp;fullscreen=false">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-members-contact-list-pdf-84e3c79d">
+  <h3>Town Meeting Members Contact List (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/19476/TMM-List--Master-Spring-2025">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-member-handbook-pdf-722c3b4f">
+  <h3>Town Meeting Member Handbook (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/11789/TMM-handbook-Draft-07202021">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-motion-form-595e759e">
+  <h3>Town Meeting Motion Form</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/8048/Town-Meeting-Motion-Form">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-town-meeting-new-member-orientation-pdf-c7c79435">
+  <h3>Town Meeting New Member Orientation (PDF)</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/19549/Town-Meeting-Member-Orientation">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+
+<article class="source-card" id="source-spring-2025-ago-approval-d2def2a7">
+  <h3>Spring 2025 AGO Approval</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/DocumentCenter/View/20588/Spring-2025-AGO-Approval">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2026-spring-annual-town-meeting-6f77dd89">
+  <h3>2026 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2347/2026-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2025-fall-annual-town-meeting-c725d2a2">
+  <h3>2025 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2287/2025-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2024-fall-annual-town-meeting-ed7e560d">
+  <h3>2024 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2170/2024-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2024-spring-annual-town-meeting-caae36be">
+  <h3>2024 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2092/2024-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2024-special-town-meeting-2909202e">
+  <h3>2024 Special Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/2259/2024-Special-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2023-fall-annual-town-meeting-5f0aa38d">
+  <h3>2023 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1999/2023-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2023-spring-annual-town-meeting-8ad599b5">
+  <h3>2023 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1895/2023-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2022-fall-annual-town-meeting-34338325">
+  <h3>2022 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1871/2022-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2022-spring-annual-town-meeting-b0f64f1d">
+  <h3>2022 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1822/2022-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2021-fall-annual-town-meeting-8b314942">
+  <h3>2021 Fall Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1796/2021-Fall-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-2021-spring-annual-town-meeting-b1df986c">
+  <h3>2021 Spring Annual Town Meeting</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1765/2021-Spring-Annual-Town-Meeting">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+
+<article class="source-card" id="source-prior-town-meetings-0f7868a9">
+  <h3>Prior Town Meetings</h3>
+  <p><span class="tag">Resources</span> <span class="tag">official</span> <span class="tag">identified</span></p>
+  <p><a href="https://www.natickma.gov/1902/Prior-Town-Meetings">source URL</a></p>
+  <p>Listed under page section: Attorney General Approval</p>
+</article>
+</div><h3>Warrant</h3><div class="source-list">
+<article class="source-card" id="source-2025-satm-warrant-final-7b45c3e6">
+  <h3>2025 SATM Warrant_Final</h3>
+  <p><span class="tag">Warrant</span> <span class="tag">official</span> <span class="tag">parsed</span></p>
+  <p><a href="sources/2025-satm-warrant-final-a474b32f.pdf">local</a> | <a href="working/extracted-text/2025-satm-warrant-final.txt">text</a> | <a href="https://www.natickma.gov/DocumentCenter/View/19220/2025-SATM-Warrant_Final">source URL</a></p>
+  <p>Listed under page section: Related Documents</p>
+</article>
+
+<article class="source-card" id="source-coffee-with-a-purpose-review-of-warrant-articles-7c596714">
+  <h3>Coffee with a Purpose Review of Warrant Articles</h3>
+  <p><span class="tag">Warrant</span> <span class="tag warn">needs verification</span> <span class="tag warn">identified</span></p>
+  <p><a href="https://www.youtube.com/watch?v=Z7mz7TsZSq8">source URL</a></p>
+  <p>Listed under page section: Resource Materials</p>
+</article>
+</div>
+    </section>
+
+    <section id="open-items">
+      <h2>Open Items</h2>
+      <div class="grid">
+        <div class="panel"><h3>Manifest</h3><ul class="open-items"><li>Review the manifest categories before generating article briefs.</li><li>Download and parse warrant, motions, Finance Committee recommendation book, and minutes/action documents.</li><li>Mark external links as official only when they are official town-linked materials or otherwise independently verified.</li></ul></div>
+        <div class="panel"><h3>Parser And Review Notes</h3><ul class="open-items"><li>This parser uses extracted PDF text and should be reviewer-checked.</li><li>The next feature should merge these article records with the manifest article-source index.</li><li>Review parsed sections before using them as final moderator briefing text.</li><li>Recommendation summaries are extracted from official text but are not legal or procedural advice.</li><li>Parser is intentionally conservative and does not decide procedural validity.</li><li>Review blank-template and supporting-material records before relying on them.</li><li>Outcome parsing is conservative and should be reviewed against source materials.</li><li>Accepted unofficial vote-result sources must be labeled and should not be described as official final actions.</li><li>Raw voting-system reports are archived but may not produce article outcomes without prose result text.</li><li>This index uses article numbers found in source titles only.</li><li>Parse the official warrant and motion documents to confirm article titles and complete article coverage.</li></ul></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    Generated from local project artifacts. Outcome records: 84. Source policy: docs/official-source-policy.md.
+  </footer>
+</body>
+</html>
