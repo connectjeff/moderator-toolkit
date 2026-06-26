@@ -23,7 +23,7 @@ Official meeting page: https://www.natickma.gov/2228/2025-Spring-Annual-Town-Mee
 - Official motion/amendment documents parsed: 10, with 6 substantive records and 4 blank-template records requiring review.
 - Official action records parsed: 59, covering 8 articles.
 - Accepted unofficial vote-result records parsed: 25, covering all warrant articles.
-- No official consent agenda source was parsed from the Finance Committee recommendation book or meeting page.
+- No consent agenda was used for SATM 2025.
 - The page links to `Voting Results (Unofficial)`. This source is marked `official: false` and `accepted_unofficial: true` because it is linked from the official meeting page and accepted under the project policy for Finance Committee Google workspace files.
 
 ## Workspace
